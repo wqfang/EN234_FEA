@@ -73,7 +73,32 @@ subroutine user_element_static(lmn, element_identifier, n_nodes, node_property_l
     n_state_variables, initial_state_variables, &                                                ! Input variables
     updated_state_variables,element_stiffness,element_residual, fail)      ! Output variables
   
-  
+
+    else if ( element_identifier == 101) then           ! Basic fully integrated 2D linear elastic plain strain element
+
+        call el_linelast_2dbasic(lmn, element_identifier, n_nodes, node_property_list, &           ! Input variables
+    n_properties, element_properties, element_coords, length_coord_array, &                      ! Input variables
+    dof_increment, dof_total, length_dof_array, &                                                ! Input variables
+    n_state_variables, initial_state_variables, &                                                ! Input variables
+    updated_state_variables,element_stiffness,element_residual, fail)      ! Output variables
+
+    else if ( element_identifier == 102) then           ! Basic fully integrated 2D linear elastic plain stress element
+
+        call el_linelast_2dbasic_stress(lmn, element_identifier, n_nodes, node_property_list, &           ! Input variables
+    n_properties, element_properties, element_coords, length_coord_array, &                      ! Input variables
+    dof_increment, dof_total, length_dof_array, &                                                ! Input variables
+    n_state_variables, initial_state_variables, &                                                ! Input variables
+    updated_state_variables,element_stiffness,element_residual, fail)      ! Output variables
+
+    else if ( element_identifier == 103) then           ! Basic fully integrated 2D linear elastic axisymmetic element
+
+        call el_linelast_2dbasic_axisym(lmn, element_identifier, n_nodes, node_property_list, &           ! Input variables
+    n_properties, element_properties, element_coords, length_coord_array, &                      ! Input variables
+    dof_increment, dof_total, length_dof_array, &                                                ! Input variables
+    n_state_variables, initial_state_variables, &                                                ! Input variables
+    updated_state_variables,element_stiffness,element_residual, fail)      ! Output variables
+
+
     else
         write (IOW, 99001) element_identifier
         stop
@@ -156,6 +181,13 @@ subroutine user_element_dynamic(lmn, element_identifier, n_nodes, node_property_
             n_state_variables, initial_state_variables, &                                                  ! Input variables
             updated_state_variables,element_residual,element_deleted)                                      ! Output variables
   
+    else if ( element_identifier == 101) then               ! Basic fully integrated 2D linear elastic element
+
+    call el_linelast_2dbasic_dynamic(lmn, element_identifier, n_nodes, node_property_list, &           ! Input variables
+            n_properties, element_properties,element_coords, length_coord_array, &                         ! Input variables
+            dof_increment, dof_total, length_dof_array,  &                                                 ! Input variables
+            n_state_variables, initial_state_variables, &                                                  ! Input variables
+            updated_state_variables,element_residual,element_deleted)
     else
         write (IOW, 99001) element_identifier
         stop
@@ -232,6 +264,29 @@ subroutine user_element_fieldvariables(lmn, element_identifier, n_nodes, node_pr
                 n_field_variables,field_variable_names, &                                                                ! Field variable definition
                 nodal_fieldvariables)      ! Output variables
 
+        else if ( element_identifier == 101 ) then          ! Basic fully integrated 2D linear elastic element
+            call fieldvars_linelast_2dbasic(lmn, element_identifier, n_nodes, node_property_list, &           ! Input variables
+                n_properties, element_properties,element_coords, length_coord_array, &                                   ! Input variables
+                dof_increment, dof_total, length_dof_array, &                                                            ! Input variables
+                n_state_variables, initial_state_variables,updated_state_variables, &                                    ! Input variables
+                n_field_variables,field_variable_names, &                                                                ! Field variable definition
+                nodal_fieldvariables)      ! Output variables
+        
+        else if ( element_identifier == 102 ) then          ! Basic fully integrated 2D linear elastic element
+            call fieldvars_linelast_2dbasic_stress(lmn, element_identifier, n_nodes, node_property_list, &           ! Input variables
+                n_properties, element_properties,element_coords, length_coord_array, &                                   ! Input variables
+                dof_increment, dof_total, length_dof_array, &                                                            ! Input variables
+                n_state_variables, initial_state_variables,updated_state_variables, &                                    ! Input variables
+                n_field_variables,field_variable_names, &                                                                ! Field variable definition
+                nodal_fieldvariables)      ! Output variables
+        
+        else if ( element_identifier == 103 ) then          ! Basic fully integrated 2D linear elastic element
+            call fieldvars_linelast_2dbasic_axisym(lmn, element_identifier, n_nodes, node_property_list, &           ! Input variables
+                n_properties, element_properties,element_coords, length_coord_array, &                                   ! Input variables
+                dof_increment, dof_total, length_dof_array, &                                                            ! Input variables
+                n_state_variables, initial_state_variables,updated_state_variables, &                                    ! Input variables
+                n_field_variables,field_variable_names, &                                                                ! Field variable definition
+                nodal_fieldvariables)      ! Output variables
         else
 
         write (IOW, 99001) element_identifier
