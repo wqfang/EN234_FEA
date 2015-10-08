@@ -15,7 +15,7 @@ program en234fea
 
   infil = './input_files/Holeplate_3d.in'
   open (unit = IOR, file = infil, status = 'old', ERR=500)
-  outfil = './Output_files/Holeplate_3d.out'
+  outfil = './output_files/Holeplate_3d.out'
   open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
 
