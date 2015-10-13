@@ -112,11 +112,11 @@ subroutine el_linelast_2dbasic_axisym(lmn, element_identifier, n_nodes, node_pro
         dNdx(1:n_nodes,1:2) = matmul(dNdxi(1:n_nodes,1:2),dxidx)
         B = 0.d0
         B(1,1:2*n_nodes-1:2) = dNdx(1:n_nodes,1)
-        B(2,2:2*n_nodes:2)   = dNdx(1:n_nodes,2)
+        B(4,2:2*n_nodes:2)   = dNdx(1:n_nodes,2)
         B(3,1:2*n_nodes-1:2) = dNdx(1:n_nodes,2)
         B(3,2:2*n_nodes:2)   = dNdx(1:n_nodes,1)
         RR = dot_product(x(1,1:n_nodes),N(1:n_nodes))
-        B(4,1:2*n_nodes-1:2) = N(1:n_nodes)/RR
+        B(2,1:2*n_nodes-1:2) = N(1:n_nodes)/RR
 
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)
@@ -362,11 +362,11 @@ subroutine fieldvars_linelast_2dbasic_axisym(lmn, element_identifier, n_nodes, n
         dNdx(1:n_nodes,1:2) = matmul(dNdxi(1:n_nodes,1:2),dxidx)
         B = 0.d0
         B(1,1:2*n_nodes-1:2) = dNdx(1:n_nodes,1)
-        B(2,2:2*n_nodes:2)   = dNdx(1:n_nodes,2)
+        B(4,2:2*n_nodes:2)   = dNdx(1:n_nodes,2)
         B(3,1:2*n_nodes-1:2) = dNdx(1:n_nodes,2)
         B(3,2:2*n_nodes:2)   = dNdx(1:n_nodes,1)
         RR = dot_product(x(1,1:n_nodes),N(1:n_nodes))
-        B(4,1:2*n_nodes-1:2) = N(1:n_nodes)/RR
+        B(2,1:2*n_nodes-1:2) = N(1:n_nodes)/RR
 
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)

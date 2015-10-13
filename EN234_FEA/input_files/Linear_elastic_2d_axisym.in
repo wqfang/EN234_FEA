@@ -44,7 +44,7 @@
 %     The parameters are no. nodes on the element,  total no. state variables, integer identifier
 
       ELEMENTS
-        PARAMETERS, 8, 0, 101
+        PARAMETERS, 8, 0, 103
 %       Define element properties - the values are passed to user subroutine elstif in the order they are listed here
 %       For the example provided, the params are Youngs Modulus, Poissons ratio
         PROPERTIES
@@ -114,14 +114,14 @@
 
 %  Print the initial mesh to a file named initial_mesh.dat
 
-   PRINT INITIAL MESH, Output_files/initial_mesh.dat
+   PRINT INITIAL MESH, Linear_elastic_2d_axisym/initial_mesh.dat
 
 %   TIME, VALUE, 0.d0        % Use this to specify the initial time
 %   TIME, INCREMENT, 0.01d0  % Use this to specify a time increment (often needed for check stiffness)
 
 %   The CHECK STIFFNESS key tests the element subroutine to ensure that
 %   the residual force vector is consistent with the stiffness
-       CHECK STIFFNESS, 101
+       CHECK STIFFNESS, 103
 
 
 
@@ -136,7 +136,7 @@
           INITIAL TIME STEP, 1.d0       
           MAX TIME STEP, 1.d0
           MIN TIME STEP, 0.001d0
-          MAX NUMBER OF STEPS, 3
+          MAX NUMBER OF STEPS, 10
           STOP TIME, 10.d0
           STATE PRINT STEP INTERVAL, 1
           USER PRINT STEP INTERVAL, 1
@@ -160,7 +160,7 @@
 %         The projected states are controlled by the user - see subroutine elstat in file usrelem.f90
 %         Also (for this example file) subroutine state_linelast_3dbasic in file el_linelast_3Dbasic.f90
 %         In this example the states are the stresses sxx,syy,szz,sxy,sxz,syz
-         PRINT STATE, Output_files/contourplots.dat
+         PRINT STATE, Linear_elastic_2d_axisym/contourplots.dat
             DEGREES OF FREEDOM
             FIELD VARIABLES, S11,S22,S33,S12
             DISPLACED MESH

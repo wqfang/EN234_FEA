@@ -218,7 +218,7 @@ subroutine compute_element_volume_average_3D(lmn,vol_averaged_strain,vol_average
 
 end subroutine compute_element_volume_average_3D
 
-subroutine compute_J_integral(area_integral_option,Width,Height,J_integral_value)
+subroutine compute_J_integral(J_integral_value)
     use Types
     use ParamIO
     use Mesh, only : extract_element_data
@@ -234,11 +234,6 @@ subroutine compute_J_integral(area_integral_option,Width,Height,J_integral_value
     use Element_Utilities, only : calculate_shapefunctions
     use Element_Utilities, only : invert_small
     implicit none
-
-    integer, intent ( in )      :: area_integral_option                                    ! Element number
-
-    real (prec), intent( in )   :: Width
-    real (prec), intent( in )   :: Height
 
     real (prec), intent( out )  ::  J_integral_value
 
@@ -256,6 +251,7 @@ subroutine compute_J_integral(area_integral_option,Width,Height,J_integral_value
     integer      :: status
     integer      :: iof
     integer      :: lmn               ! Element number
+    integer      :: lmn_start,lmn_end ! First and last crack tip element
     integer      :: i                 ! Loop counter
 
 !   The arrays below have to be given dimensions large enough to store the data. It doesnt matter if they are too large.
@@ -269,7 +265,6 @@ subroutine compute_J_integral(area_integral_option,Width,Height,J_integral_value
     real( prec ), allocatable   :: x(:,:)                                  ! Nodal coords x(i,a) is ith coord of ath node
     real( prec ), allocatable   :: dof_increment(:)                        ! DOF increment, using usual element storage convention
     real( prec ), allocatable   :: dof_total(:)                            ! accumulated DOF, using usual element storage convention
-    real( prec ), allocatable   :: nodal_q(:)                              ! Nodal values of q
 
     real (prec), allocatable  ::  B(:,:)                                   ! strain = B*(dof_total+dof_increment)
     !
@@ -282,13 +277,18 @@ subroutine compute_J_integral(area_integral_option,Width,Height,J_integral_value
     allocate(element_properties(length_property_array), stat=status)
     allocate(initial_state_variables(length_state_variable_array), stat=status)
     allocate(updated_state_variables(length_state_variable_array), stat=status)
-    allocate(x(3,length_coord_array/3), stat=status)
+    allocate(x(2,length_coord_array/2), stat=status)
     allocate(dof_increment(length_dof_array), stat=status)
     allocate(dof_total(length_dof_array), stat=status)
-    allocate(nodal_q(length_node_array), stat=status)
     allocate(B(3,length_dof_array), stat=status)
 
   !  Write your code to calculate the J integral here
+
+  !  You will need to loop over the crack tip elements, and sum the contribution to the J integral from each element.
+  !
+  !  You can access the first and last crack tip element using
+  !    lmn_start = zone_list(2)%start_element
+  !    lmn_end = zone_list(2)%end_element
 
   !  The two subroutines below extract data for elements and nodes (see module Mesh.f90 for the source code for these subroutines)
 
@@ -296,8 +296,8 @@ subroutine compute_J_integral(area_integral_option,Width,Height,J_integral_value
                                             n_state_variables,initial_state_variables,updated_state_variables)
 
     do i = 1, n_nodes
-        iof = 3*(i-1)+1     ! Points to first DOF for the node in the dof_increment and dof_total arrays
-        call extract_node_data(node_list(i),node_identifier,n_coords,x(1:3,i),n_dof, &
+        iof = 2*(i-1)+1     ! Points to first DOF for the node in the dof_increment and dof_total arrays
+        call extract_node_data(node_list(i),node_identifier,n_coords,x(1:2,i),n_dof, &
                                                  dof_increment(iof:iof+2),dof_total(iof:iof+2))
     end do
 
@@ -310,7 +310,6 @@ subroutine compute_J_integral(area_integral_option,Width,Height,J_integral_value
     deallocate(x)
     deallocate(dof_increment)
     deallocate(dof_total)
-    deallocate(nodal_q)
     deallocate(B)
 
 
