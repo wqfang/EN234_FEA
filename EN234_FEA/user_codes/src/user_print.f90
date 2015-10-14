@@ -11,12 +11,11 @@ subroutine user_print(n_steps)
   implicit none
   
   integer :: n_steps                                 ! Current step number
-  integer ::  lmn, lmn_start, lmn_end
   integer ::  status
 !  integer ::  n_state_vars_per_intpt                                         ! No. state variables per integration point
 !  real (prec) ::   vol_averaged_strain(6)                                    ! Volume averaged strain in an element
 !  real (prec), allocatable ::   vol_averaged_state_variables(:)              ! Volume averaged state variables in an element
-  real (prec) ::  J_integral_value, J_integral_value_sum
+  real (prec) ::  J_integral_value
 
 
 !
@@ -28,19 +27,9 @@ subroutine user_print(n_steps)
 !
 !
 
-   lmn_start = zone_list(2)%start_element
-   lmn_end = zone_list(2)%end_element
-   J_integral_value_sum = 0.0
 
-    do lmn =  lmn_start, lmn_end
-
-        call compute_J_integral(lmn,J_integral_value)
-
-        J_integral_value_sum = J_integral_value_sum + J_integral_value
-
-    end do
-
-    write(user_print_units(1),'(1x,I5,E15.7)') n_steps,J_integral_value_sum
+    call compute_J_integral(J_integral_value)
+    write(user_print_units(1),'(1x,I5,E15.7)') n_steps,J_integral_value
 
 !   allocate(vol_averaged_state_variables(length_state_variable_array), stat=status)
 !
@@ -231,7 +220,7 @@ subroutine compute_element_volume_average_3D(lmn,vol_averaged_strain,vol_average
 
 end subroutine compute_element_volume_average_3D
 
-subroutine compute_J_integral(lmn,J_integral_value)
+subroutine compute_J_integral(J_integral_value)
     use Types
     use ParamIO
     use Mesh, only : extract_element_data
@@ -307,10 +296,15 @@ subroutine compute_J_integral(lmn,J_integral_value)
   !  Write your code to calculate the J integral here
 
 
+
+   lmn_start = zone_list(2)%start_element
+   lmn_end = zone_list(2)%end_element
+
+
    r0 = 0.0006
    J_integral_value = 0
 
-
+   do lmn =  lmn_start, lmn_end
 
       call extract_element_data(lmn,element_identifier,n_nodes,node_list,n_properties,element_properties, &
                                             n_state_variables,initial_state_variables,updated_state_variables)
@@ -369,6 +363,7 @@ subroutine compute_J_integral(lmn,J_integral_value)
 
     end do
 
+    end do
 
   !  You will need to loop over the crack tip elements, and sum the contribution to the J integral from each element.
   !

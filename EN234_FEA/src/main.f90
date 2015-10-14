@@ -40,7 +40,7 @@ program en234fea
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)
 !  outfil = './Linear_elastic_2d_axisym/linear_elastic_2d_axisym.out'
 !  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
-!
+!!
 ! Homework 3, Basic 2D linear elasticity with different element types.
 !  infil = './input_files/holeplate_2d_tri3.in'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)

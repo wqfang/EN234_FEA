@@ -122,10 +122,11 @@ subroutine el_linelast_2dbasic_axisym(lmn, element_identifier, n_nodes, node_pro
         dstrain = matmul(B,dof_increment)
       
         stress = matmul(D,strain+dstrain)
-        element_residual(1:2*n_nodes) = element_residual(1:2*n_nodes) - matmul(transpose(B),stress)*w(kint)*determinant
+        element_residual(1:2*n_nodes) = element_residual(1:2*n_nodes) - matmul(transpose(B),stress)*w(kint)&
+        *determinant*2*PI*RR
 
         element_stiffness(1:2*n_nodes,1:2*n_nodes) = element_stiffness(1:2*n_nodes,1:2*n_nodes) &
-            + matmul(transpose(B(1:4,1:2*n_nodes)),matmul(D,B(1:4,1:2*n_nodes)))*w(kint)*determinant
+            + matmul(transpose(B(1:4,1:2*n_nodes)),matmul(D,B(1:4,1:2*n_nodes)))*w(kint)*determinant*2*PI*RR
 
     end do
   
@@ -382,19 +383,26 @@ subroutine fieldvars_linelast_2dbasic_axisym(lmn, element_identifier, n_nodes, n
         ! In the code below the strcmp( string1, string2, nchar) function returns true if the first nchar characters in strings match
         do k = 1,n_field_variables
             if (strcmp(field_variable_names(k),'S11',3) ) then
-                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(1)*N(1:n_nodes)*determinant*w(kint)
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(1)*N(1:n_nodes)&
+                *determinant*w(kint)
             else if (strcmp(field_variable_names(k),'S22',3) ) then
-                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(2)*N(1:n_nodes)*determinant*w(kint)
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(2)*N(1:n_nodes)&
+                *determinant*w(kint)
             else if (strcmp(field_variable_names(k),'S33',3) ) then
-                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(4)*N(1:n_nodes)*determinant*w(kint)
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(4)*N(1:n_nodes)&
+                *determinant*w(kint)
             else if (strcmp(field_variable_names(k),'S12',3) ) then
-                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(3)*N(1:n_nodes)*determinant*w(kint)
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(3)*N(1:n_nodes)&
+                *determinant*w(kint)
             else if (strcmp(field_variable_names(k),'S13',3) ) then
-                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(5)*N(1:n_nodes)*determinant*w(kint)
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(5)*N(1:n_nodes)&
+                *determinant*w(kint)
             else if (strcmp(field_variable_names(k),'S23',3) ) then
-                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(6)*N(1:n_nodes)*determinant*w(kint)
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(6)*N(1:n_nodes)&
+                *determinant*w(kint)
             else if (strcmp(field_variable_names(k),'SMISES',6) ) then
-                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + smises*N(1:n_nodes)*determinant*w(kint)
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + smises*N(1:n_nodes)&
+                *determinant*w(kint)
             endif
         end do
  
