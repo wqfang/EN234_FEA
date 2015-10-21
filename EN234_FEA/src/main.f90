@@ -15,7 +15,7 @@ program en234fea
 
 !  infil = './input_files/Holeplate_3d.in'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)
-!  outfil = './Output_files/Holeplate_3d.out'
+!  outfil = './Holeplate_3d/Holeplate_3d.out'
 !  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
 
@@ -46,10 +46,12 @@ program en234fea
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)
 !  outfil = './Output_files/holeplate_2d_tri3.out'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)
-!  infil = './input_files/holeplate_2d_tri6.in'
+
+!  infil = './input_files/Holeplate_2d_tri6.in'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)
-!  outfil = './Output_files/holeplate_2d_tri6.out'
+!  outfil = './holeplate_2d_tri6/holeplate_2d_tri6.out'
 !  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
 !  infil = './input_files/holeplate_2d_quad4_stress.in'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)
 !  outfil = './Holeplate_2d_quad4_stress/holeplate_2d_quad4_stress.out'
@@ -69,15 +71,40 @@ program en234fea
 !
 !  Homework 4, crack tip elements and the J integral
 
-  infil = './input_files/crack_tri6.in'
-  open (unit = IOR, file = infil, status = 'old', ERR=500)
-  outfil = './crack_tri6/crack_tri6.out'
-  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+!  infil = './input_files/crack_tri6.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './crack_tri6/crack_tri6.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
 !  Homework 5, small-strain B bar element - test with same files as in HW3, but
 !  try approaching incompressible limit by making Poisson's ratio close to 0.5
 
-!
+  infil = './input_files/Holeplate_3d_Bbar.in'
+  open (unit = IOR, file = infil, status = 'old', ERR=500)
+  outfil = './Holeplate_3d_Bbar/Holeplate_3d_Bbar.out'
+  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+!  infil = './input_files/Holeplate_3d.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './Holeplate_3d/Holeplate_3d.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+!  infil = './input_files/Holeplate_2d_quad4_Bbar.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './Holeplate_2d_quad4_Bbar/Holeplate_2d_quad4_Bbar.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+!  infil = './input_files/holeplate_2d_quad4.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './Holeplate_2d_quad4/holeplate_2d_quad4.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+!  infil = './input_files/Holeplate_2d_tri6_Bbar.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './Holeplate_2d_tri6_Bbar/Holeplate_2d_tri6_Bbar.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+
 ! Homework 6: small-strain Armstrong-Frederick kinematic hardening model
 !  infil = './input_files/cyclic_plastic_3d.in'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)

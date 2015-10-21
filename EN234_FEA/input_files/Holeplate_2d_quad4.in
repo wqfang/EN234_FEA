@@ -310,7 +310,7 @@
 %       Define element properties - the values are passed to user subroutine elstif in the order they are listed here
 %       For the example provided, the params are Youngs Modulus, Poissons ratio
         PROPERTIES
-         100.d0, 0.3d0
+         100.d0, 0.49999d0
         END PROPERTIES
 %     Define mass density (for explicity dynamics only)
 %       DENSITY, 10.d0
@@ -625,7 +625,7 @@
 
 %  Print the initial mesh to a file named initial_mesh.dat
 
-   PRINT INITIAL MESH, initial_mesh.dat
+   PRINT INITIAL MESH, holeplate_2d_quad4\initial_mesh.dat
 
 %   TIME, VALUE, 0.d0        % Use this to specify the initial time
 %   TIME, INCREMENT, 0.01d0  % Use this to specify a time increment (often needed for check stiffness)
@@ -672,7 +672,7 @@
 %         The projected states are controlled by the user - see subroutine elstat in file usrelem.f90
 %         Also (for this example file) subroutine state_linelast_3dbasic in file el_linelast_3Dbasic.f90
 %         In this example the states are the stresses sxx,syy,szz,sxy,sxz,syz
-         PRINT STATE, Output_files\contourplots.dat
+         PRINT STATE, holeplate_2d_quad4\contourplots.dat
             DEGREES OF FREEDOM
             FIELD VARIABLES, S11,S22,S33,S12
             DISPLACED MESH

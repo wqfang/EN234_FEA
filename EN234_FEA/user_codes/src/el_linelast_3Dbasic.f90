@@ -15,6 +15,7 @@ subroutine el_linelast_3dbasic(lmn, element_identifier, n_nodes, node_property_l
     use Element_Utilities, only : N => shape_functions_3D
     use Element_Utilities, only : dNdxi => shape_function_derivatives_3D
     use Element_Utilities, only:  dNdx => shape_function_spatial_derivatives_3D
+    use Element_Utilities, only:  dNbardx => vol_avg_shape_function_derivatives_3D
     use Element_Utilities, only : xi => integrationpoints_3D, w => integrationweights_3D
     use Element_Utilities, only : dxdxi => jacobian_3D
     use Element_Utilities, only : initialize_integration_points
@@ -55,7 +56,7 @@ subroutine el_linelast_3dbasic(lmn, element_identifier, n_nodes, node_property_l
           
 
     ! Local Variables
-    integer      :: n_points,kint
+    integer      :: n_points,kint,I,J
 
     real (prec)  ::  strain(6), dstrain(6)             ! Strain vector contains [e11, e22, e33, 2e12, 2e13, 2e23]
     real (prec)  ::  stress(6)                         ! Stress vector contains [s11, s22, s33, s12, s13, s23]
@@ -63,7 +64,9 @@ subroutine el_linelast_3dbasic(lmn, element_identifier, n_nodes, node_property_l
     real (prec)  ::  B(6,length_dof_array)             ! strain = B*(dof_total+dof_increment)
     real (prec)  ::  dxidx(3,3), determinant           ! Jacobian inverse and determinant
     real (prec)  ::  x(3,length_coord_array/3)         ! Re-shaped coordinate array x(i,a) is ith coord of ath node
-    real (prec)  :: E, xnu, D44, D11, D12              ! Material properties
+    real (prec)  ::  E, xnu, D44, D11, D12             ! Material properties
+    real (prec)  ::  el_vol                            ! element volume
+    real (prec)  ::  B_diff(20,3)                      !
     !
     !     Subroutine to compute element stiffness matrix and residual force vector for 3D linear elastic elements
     !     El props are:
@@ -99,6 +102,26 @@ subroutine el_linelast_3dbasic(lmn, element_identifier, n_nodes, node_property_l
     D(5,5) = d44
     D(6,6) = d44
   
+
+    !     --  Loop over integration points
+        if ( element_identifier == 1011 ) then
+   el_vol = 0
+   dNbardx = 0
+    do kint = 1, n_points
+        call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
+        dxdxi = matmul(x(1:3,1:n_nodes),dNdxi(1:n_nodes,1:3))
+        call invert_small(dxdxi,dxidx,determinant)
+        dNdx(1:n_nodes,1:3) = matmul(dNdxi(1:n_nodes,1:3),dxidx)
+            do I = 1,n_nodes
+                do J = 1,3
+                    dNbardx(I,J) = dNbardx(I,J) + dNdx(I,J)*w(kint)*determinant
+                enddo
+            enddo
+            el_vol = el_vol + w(kint)*determinant
+    enddo
+            dNbardx = dNbardx/el_vol
+        end if
+
     !     --  Loop over integration points
     do kint = 1, n_points
         call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
@@ -115,6 +138,18 @@ subroutine el_linelast_3dbasic(lmn, element_identifier, n_nodes, node_property_l
         B(5,3:3*n_nodes:3)   = dNdx(1:n_nodes,1)
         B(6,2:3*n_nodes-1:3) = dNdx(1:n_nodes,3)
         B(6,3:3*n_nodes:3)   = dNdx(1:n_nodes,2)
+
+        if ( element_identifier == 1011 ) then
+
+            B_diff = (dNbardx - dNdx)/3
+            do I = 1,3
+            B(I,1:3*n_nodes-2:3)= B(I,1:3*n_nodes-2:3) + B_diff(1:n_nodes,1)
+            B(I,2:3*n_nodes-1:3)= B(I,2:3*n_nodes-1:3) + B_diff(1:n_nodes,2)
+            B(I,3:3*n_nodes :3)= B(I,3:3*n_nodes :3) + B_diff(1:n_nodes,3)
+            enddo
+
+        end if
+
 
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)
@@ -265,6 +300,7 @@ subroutine fieldvars_linelast_3dbasic(lmn, element_identifier, n_nodes, node_pro
     use Element_Utilities, only : N => shape_functions_3D
     use Element_Utilities, only: dNdxi => shape_function_derivatives_3D
     use Element_Utilities, only: dNdx => shape_function_spatial_derivatives_3D
+    use Element_Utilities, only:  dNbardx => vol_avg_shape_function_derivatives_3D
     use Element_Utilities, only : xi => integrationpoints_3D, w => integrationweights_3D
     use Element_Utilities, only : dxdxi => jacobian_3D
     use Element_Utilities, only : initialize_integration_points
@@ -307,7 +343,7 @@ subroutine fieldvars_linelast_3dbasic(lmn, element_identifier, n_nodes, node_pro
     ! Local Variables
     logical      :: strcmp
   
-    integer      :: n_points,kint,k
+    integer      :: n_points,kint,k,I,J
 
     real (prec)  ::  strain(6), dstrain(6)             ! Strain vector contains [e11, e22, e33, 2e12, 2e13, 2e23]
     real (prec)  ::  stress(6)                         ! Stress vector contains [s11, s22, s33, s12, s13, s23]
@@ -318,7 +354,9 @@ subroutine fieldvars_linelast_3dbasic(lmn, element_identifier, n_nodes, node_pro
     real (prec)  ::  x(3,length_coord_array/3)         ! Re-shaped coordinate array x(i,a) is ith coord of ath node
     real (prec)  :: E, xnu, D44, D11, D12              ! Material properties
     real (prec)  :: p, smises                          ! Pressure and Mises stress
-    !
+    real (prec)  ::  B_diff(20,3)                      !
+    real (prec)  ::  el_vol                            ! element volume
+
     !     Subroutine to compute element contribution to project element integration point data to nodes
 
     !     element_properties(1)         Young's modulus
@@ -348,7 +386,25 @@ subroutine fieldvars_linelast_3dbasic(lmn, element_identifier, n_nodes, node_pro
     D(4,4) = d44
     D(5,5) = d44
     D(6,6) = d44
-  
+
+            if ( element_identifier == 1011 ) then
+   el_vol = 0
+   dNbardx = 0
+    do kint = 1, n_points
+        call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
+        dxdxi = matmul(x(1:3,1:n_nodes),dNdxi(1:n_nodes,1:3))
+        call invert_small(dxdxi,dxidx,determinant)
+        dNdx(1:n_nodes,1:3) = matmul(dNdxi(1:n_nodes,1:3),dxidx)
+            do I = 1,n_nodes
+                do J = 1,3
+                    dNbardx(I,J) = dNbardx(I,J) + dNdx(I,J)*w(kint)*determinant
+                enddo
+            enddo
+            el_vol = el_vol + w(kint)*determinant
+    enddo
+                dNbardx = dNbardx/el_vol
+        end if
+
     !     --  Loop over integration points
     do kint = 1, n_points
         call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
@@ -365,6 +421,17 @@ subroutine fieldvars_linelast_3dbasic(lmn, element_identifier, n_nodes, node_pro
         B(5,3:3*n_nodes:3)   = dNdx(1:n_nodes,1)
         B(6,2:3*n_nodes-1:3) = dNdx(1:n_nodes,3)
         B(6,3:3*n_nodes:3)   = dNdx(1:n_nodes,2)
+
+        if ( element_identifier == 1011 ) then
+
+            B_diff = (dNbardx - dNdx)/3
+            do I = 1,3
+            B(I,1:3*n_nodes-2:3)= B(I,1:3*n_nodes-2:3) + B_diff(1:n_nodes,1)
+            B(I,2:3*n_nodes-1:3)= B(I,2:3*n_nodes-1:3) + B_diff(1:n_nodes,2)
+            B(I,3:3*n_nodes :3)= B(I,3:3*n_nodes :3) + B_diff(1:n_nodes,3)
+            enddo
+
+        end if
 
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)
