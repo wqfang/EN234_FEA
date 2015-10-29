@@ -1,0 +1,305 @@
+
+
+ The input file has been read successfully 
+ Number of elements:                1
+ Number of nodes:                   8
+ Number of constraints:             0
+ Total no. degrees of freedom:     16
+
+
+ Direct Solver Profiler has completed profile computation 
+     Total number of equations         16
+     Maximum half bandwidth:           15
+     Mean half bandwidth:               8
+     RMS half bandwidth:                9
+     Size of stiffness matrix:        120
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:      Infinity
+      Min diagonal in reduced matrix:    0.4941-323
+      Ratio:                               Infinity
+      Maximum no. diagonal digits lost:   0
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+    Step number     1 has completed successfully
+    Steps remaining:                           9
+    Elapsed time:                     1.0000    
+    Time remaining:                   9.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.4741E+00
+      Min diagonal in reduced matrix:    0.7143E-01
+      Ratio:                             0.6637E+01
+      Maximum no. diagonal digits lost:   0
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .50000    
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .25000    
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .12500    
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .62500E-01
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .31250E-01
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .15625E-01
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .78125E-02
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .39062E-02
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .19531E-02
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  Newton Raphson for strain_33 completed successfully 
+          NaN    1
+  NaN detected in residual 
+ Time step has been reduced to the minimum allowable value without convergence 
+ Analysis has been terminated 

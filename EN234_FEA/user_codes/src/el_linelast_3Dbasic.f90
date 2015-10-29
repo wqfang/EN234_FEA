@@ -84,24 +84,8 @@ subroutine el_linelast_3dbasic(lmn, element_identifier, n_nodes, node_property_l
     if (n_nodes == 20) n_points = 27
 
     call initialize_integration_points(n_points, n_nodes, xi, w)
-
-    element_residual = 0.d0
+   element_residual = 0.d0
     element_stiffness = 0.d0
-	
-    D = 0.d0
-    E = element_properties(1)
-    xnu = element_properties(2)
-    d44 = 0.5D0*E/(1+xnu) 
-    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
-    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
-    D(1:3,1:3) = d12
-    D(1,1) = d11
-    D(2,2) = d11
-    D(3,3) = d11
-    D(4,4) = d44
-    D(5,5) = d44
-    D(6,6) = d44
-  
 
     !     --  Loop over integration points
         if ( element_identifier == 1011 ) then
@@ -153,8 +137,31 @@ subroutine el_linelast_3dbasic(lmn, element_identifier, n_nodes, node_property_l
 
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)
-      
-        stress = matmul(D,strain+dstrain)
+
+    if (n_properties == 2) then
+
+    D = 0.d0
+    E = element_properties(1)
+    xnu = element_properties(2)
+    d44 = 0.5D0*E/(1+xnu)
+    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
+    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
+    D(1:3,1:3) = d12
+    D(1,1) = d11
+    D(2,2) = d11
+    D(3,3) = d11
+    D(4,4) = d44
+    D(5,5) = d44
+    D(6,6) = d44
+
+    stress = matmul(D,strain+dstrain)
+
+    else if (n_properties == 4) then
+
+    call  hypoelastic_tangent_3D(strain+dstrain,n_properties,element_properties,stress,D)
+
+    end if
+
         element_residual(1:3*n_nodes) = element_residual(1:3*n_nodes) - matmul(transpose(B),stress)*w(kint)*determinant
 
         element_stiffness(1:3*n_nodes,1:3*n_nodes) = element_stiffness(1:3*n_nodes,1:3*n_nodes) &
@@ -243,21 +250,7 @@ subroutine el_linelast_3dbasic_dynamic(lmn, element_identifier, n_nodes, node_pr
     call initialize_integration_points(n_points, n_nodes, xi, w)
 
     element_residual = 0.d0
-	
-    D = 0.d0
-    E = element_properties(1)
-    xnu = element_properties(2)
-    d44 = 0.5D0*E/(1+xnu) 
-    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
-    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
-    D(1:3,1:3) = d12
-    D(1,1) = d11
-    D(2,2) = d11
-    D(3,3) = d11
-    D(4,4) = d44
-    D(5,5) = d44
-    D(6,6) = d44
-  
+
     !     --  Loop over integration points
     do kint = 1, n_points
         call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
@@ -277,8 +270,32 @@ subroutine el_linelast_3dbasic_dynamic(lmn, element_identifier, n_nodes, node_pr
 
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)
-      
-        stress = matmul(D,strain+dstrain)
+
+    if (n_properties == 2) then
+
+    D = 0.d0
+    E = element_properties(1)
+    xnu = element_properties(2)
+    d44 = 0.5D0*E/(1+xnu)
+    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
+    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
+    D(1:3,1:3) = d12
+    D(1,1) = d11
+    D(2,2) = d11
+    D(3,3) = d11
+    D(4,4) = d44
+    D(5,5) = d44
+    D(6,6) = d44
+
+    stress = matmul(D,strain+dstrain)
+
+    else if (n_properties == 4) then
+
+    call  hypoelastic_tangent_3D(strain+dstrain,n_properties,element_properties,stress,D)
+
+    end if
+
+
         element_residual(1:3*n_nodes) = element_residual(1:3*n_nodes) - matmul(transpose(B),stress)*w(kint)*determinant
 
     end do
@@ -373,21 +390,9 @@ subroutine fieldvars_linelast_3dbasic(lmn, element_identifier, n_nodes, node_pro
 
     nodal_fieldvariables = 0.d0
 	
-    D = 0.d0
-    E = element_properties(1)
-    xnu = element_properties(2)
-    d44 = 0.5D0*E/(1+xnu) 
-    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
-    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
-    D(1:3,1:3) = d12
-    D(1,1) = d11
-    D(2,2) = d11
-    D(3,3) = d11
-    D(4,4) = d44
-    D(5,5) = d44
-    D(6,6) = d44
 
-            if ( element_identifier == 1011 ) then
+
+        if ( element_identifier == 1011 ) then
    el_vol = 0
    dNbardx = 0
     do kint = 1, n_points
@@ -435,7 +440,31 @@ subroutine fieldvars_linelast_3dbasic(lmn, element_identifier, n_nodes, node_pro
 
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)
-        stress = matmul(D,strain+dstrain)
+
+    if (n_properties == 2) then
+
+    D = 0.d0
+    E = element_properties(1)
+    xnu = element_properties(2)
+    d44 = 0.5D0*E/(1+xnu)
+    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
+    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
+    D(1:3,1:3) = d12
+    D(1,1) = d11
+    D(2,2) = d11
+    D(3,3) = d11
+    D(4,4) = d44
+    D(5,5) = d44
+    D(6,6) = d44
+
+    stress = matmul(D,strain+dstrain)
+
+    else if (n_properties == 4) then
+
+    call  hypoelastic_tangent_3D(strain+dstrain,n_properties,element_properties,stress,D)
+
+    end if
+
         p = sum(stress(1:3))/3.d0
         sdev = stress
         sdev(1:3) = sdev(1:3)-p

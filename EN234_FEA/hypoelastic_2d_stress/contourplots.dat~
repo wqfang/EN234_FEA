@@ -1,0 +1,15 @@
+ VARIABLES = X,Y,DU1,DU2,U1,U2,S11,S22,S33,S12
+ ZONE, T="0.1000D+01" F=FEPOINT, I=    9 J=    4
+                NaN                NaN                NaN                NaN   0.0000000000E+00   0.0000000000E+00                NaN                NaN   0.0000000000E+00                NaN
+                NaN                NaN                NaN                NaN   0.0000000000E+00   0.0000000000E+00                NaN                NaN   0.0000000000E+00                NaN
+                NaN                NaN                NaN                NaN   0.0000000000E+00   0.0000000000E+00                NaN                NaN   0.0000000000E+00                NaN
+                NaN                NaN                NaN                NaN   0.0000000000E+00   0.0000000000E+00                NaN                NaN   0.0000000000E+00                NaN
+                NaN                NaN                NaN                NaN   0.0000000000E+00   0.0000000000E+00                NaN                NaN   0.0000000000E+00                NaN
+                NaN                NaN                NaN                NaN   0.0000000000E+00   0.0000000000E+00                NaN                NaN   0.0000000000E+00                NaN
+                NaN                NaN                NaN                NaN   0.0000000000E+00   0.0000000000E+00                NaN                NaN   0.0000000000E+00                NaN
+                NaN                NaN                NaN                NaN   0.0000000000E+00   0.0000000000E+00                NaN                NaN   0.0000000000E+00                NaN
+                NaN                NaN                NaN                NaN   0.0000000000E+00   0.0000000000E+00                NaN                NaN   0.0000000000E+00                NaN
+           1           5           9           8
+           5           2           6           9
+           9           6           3           7
+           8           9           7           4

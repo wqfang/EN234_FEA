@@ -26,8 +26,8 @@
   Newton Raphson iteration       1
   Correction norm               0.312288D-01
   Generalized Force norm        0.134175D-01
-  Out of balance force norm     0.511742D-14
-  Ratio                         0.114621D-12
+  Out of balance force norm     0.512946D-14
+  Ratio                         0.114891D-12
   Tolerance                     0.100000D-04
 
 
@@ -65,10 +65,10 @@
 
 
   Newton Raphson iteration       1
-  Correction norm               0.259442D-14
+  Correction norm               0.440855D-14
   Generalized Force norm        0.268349D-01
-  Out of balance force norm     0.798673D-15
-  Ratio                         0.297624D-13
+  Out of balance force norm     0.879075D-15
+  Ratio                         0.327586D-13
   Tolerance                     0.100000D-04
 
 
@@ -106,10 +106,10 @@
 
 
   Newton Raphson iteration       1
-  Correction norm               0.129967D-14
+  Correction norm               0.220513D-14
   Generalized Force norm        0.402524D-01
-  Out of balance force norm     0.801223D-15
-  Ratio                         0.199050D-13
+  Out of balance force norm     0.892269D-15
+  Ratio                         0.221669D-13
   Tolerance                     0.100000D-04
 
 
@@ -147,10 +147,10 @@
 
 
   Newton Raphson iteration       1
-  Correction norm               0.305423D-16
+  Correction norm               0.317792D-16
   Generalized Force norm        0.536699D-01
-  Out of balance force norm     0.806352D-15
-  Ratio                         0.150243D-13
+  Out of balance force norm     0.881528D-15
+  Ratio                         0.164250D-13
   Tolerance                     0.100000D-04
 
 
@@ -188,10 +188,10 @@
 
 
   Newton Raphson iteration       1
-  Correction norm               0.375349D-16
+  Correction norm               0.289386D-16
   Generalized Force norm        0.670873D-01
-  Out of balance force norm     0.795012D-15
-  Ratio                         0.118504D-13
+  Out of balance force norm     0.882887D-15
+  Ratio                         0.131603D-13
   Tolerance                     0.100000D-04
 
 
@@ -229,10 +229,10 @@
 
 
   Newton Raphson iteration       1
-  Correction norm               0.225118D-16
+  Correction norm               0.353537D-16
   Generalized Force norm        0.805048D-01
-  Out of balance force norm     0.792808D-15
-  Ratio                         0.984796D-14
+  Out of balance force norm     0.892127D-15
+  Ratio                         0.110817D-13
   Tolerance                     0.100000D-04
 
 
@@ -270,10 +270,10 @@
 
 
   Newton Raphson iteration       1
-  Correction norm               0.413751D-16
+  Correction norm               0.768770D-16
   Generalized Force norm        0.939222D-01
-  Out of balance force norm     0.794460D-15
-  Ratio                         0.845870D-14
+  Out of balance force norm     0.934237D-15
+  Ratio                         0.994692D-14
   Tolerance                     0.100000D-04
 
 
@@ -311,10 +311,10 @@
 
 
   Newton Raphson iteration       1
-  Correction norm               0.330694D-16
+  Correction norm               0.118133D-15
   Generalized Force norm        0.107340D+00
-  Out of balance force norm     0.831415D-15
-  Ratio                         0.774565D-14
+  Out of balance force norm     0.895671D-15
+  Ratio                         0.834427D-14
   Tolerance                     0.100000D-04
 
 
@@ -352,10 +352,10 @@
 
 
   Newton Raphson iteration       1
-  Correction norm               0.333533D-16
+  Correction norm               0.103293D-15
   Generalized Force norm        0.120757D+00
-  Out of balance force norm     0.812409D-15
-  Ratio                         0.672763D-14
+  Out of balance force norm     0.889573D-15
+  Ratio                         0.736663D-14
   Tolerance                     0.100000D-04
 
 
@@ -393,10 +393,10 @@
 
 
   Newton Raphson iteration       1
-  Correction norm               0.601122D-16
+  Correction norm               0.130718D-15
   Generalized Force norm        0.134175D+00
-  Out of balance force norm     0.184458D-14
-  Ratio                         0.137476D-13
+  Out of balance force norm     0.904919D-15
+  Ratio                         0.674433D-14
   Tolerance                     0.100000D-04
 
 

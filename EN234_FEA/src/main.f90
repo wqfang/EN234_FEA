@@ -10,7 +10,7 @@ program en234fea
 !
 !  infil = './input_files/linear_elastic_3d.in'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)
-!  outfil = './Output_files/linear_elastic_3d.out'
+!  outfil = './Linear_elastic_3d/linear_elastic_3d.out'
 !  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
 !  infil = './input_files/Holeplate_3d.in'
@@ -79,10 +79,21 @@ program en234fea
 !  Homework 5, small-strain B bar element - test with same files as in HW3, but
 !  try approaching incompressible limit by making Poisson's ratio close to 0.5
 
-  infil = './input_files/Holeplate_3d_Bbar.in'
+!  infil = './input_files/hypoelastic_3d.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './hypoelastic_3d/hypoelastic_3d.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+!  infil = './input_files/hypoelastic_2d.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './hypoelastic_2d/hypoelastic_2d.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+  infil = './input_files/hypoelastic_2d_stress.in'
   open (unit = IOR, file = infil, status = 'old', ERR=500)
-  outfil = './Holeplate_3d_Bbar/Holeplate_3d_Bbar.out'
+  outfil = './hypoelastic_2d_stress/hypoelastic_2d_stress.out'
   open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
 
 !  infil = './input_files/Holeplate_3d.in'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)

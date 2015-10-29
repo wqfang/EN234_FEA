@@ -89,17 +89,7 @@ subroutine el_linelast_2dbasic(lmn, element_identifier, n_nodes, node_property_l
     element_residual = 0.d0
     element_stiffness = 0.d0
 
-    D = 0.d0
-    E = element_properties(1)
-    xnu = element_properties(2)
-    d33 = 0.5D0*E/(1+xnu)
-    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
-    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
-    D(1,2) = d12
-    D(2,1) = d12
-    D(1,1) = d11
-    D(2,2) = d11
-    D(3,3) = d33
+
 
 !     --  Loop over integration points
         if ( element_identifier == 111 ) then
@@ -143,8 +133,28 @@ subroutine el_linelast_2dbasic(lmn, element_identifier, n_nodes, node_property_l
 
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)
-      
-        stress = matmul(D,strain+dstrain)
+
+    if (n_properties == 2) then
+
+    D = 0.d0
+    E = element_properties(1)
+    xnu = element_properties(2)
+    d33 = 0.5D0*E/(1+xnu)
+    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
+    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
+    D(1,2) = d12
+    D(2,1) = d12
+    D(1,1) = d11
+    D(2,2) = d11
+    D(3,3) = d33
+
+    stress = matmul(D,strain+dstrain)
+
+    else if (n_properties == 4) then
+
+    call  hypoelastic_tangent_2D(strain+dstrain,n_properties,element_properties,stress,D)
+
+    end if
         element_residual(1:2*n_nodes) = element_residual(1:2*n_nodes) - matmul(transpose(B),stress)*w(kint)*determinant
 
         element_stiffness(1:2*n_nodes,1:2*n_nodes) = element_stiffness(1:2*n_nodes,1:2*n_nodes) &
@@ -363,17 +373,7 @@ subroutine fieldvars_linelast_2dbasic(lmn, element_identifier, n_nodes, node_pro
 
     nodal_fieldvariables = 0.d0
 
-    D = 0.d0
-    E = element_properties(1)
-    xnu = element_properties(2)
-    d33 = 0.5D0*E/(1+xnu)
-    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
-    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
-    D(1,2) = d12
-    D(2,1) = d12
-    D(1,1) = d11
-    D(2,2) = d11
-    D(3,3) = d33
+
 !     --  Loop over integration points
         if ( element_identifier == 111 ) then
    el_vol = 0
@@ -417,9 +417,28 @@ subroutine fieldvars_linelast_2dbasic(lmn, element_identifier, n_nodes, node_pro
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)
 
-        stress = matmul(D,strain+dstrain)
+    if (n_properties == 2) then
 
-        p = sum(stress(1:2))/2.d0
+    D = 0.d0
+    E = element_properties(1)
+    xnu = element_properties(2)
+    d33 = 0.5D0*E/(1+xnu)
+    d11 = (1.D0-xnu)*E/( (1+xnu)*(1-2.D0*xnu) )
+    d12 = xnu*E/( (1+xnu)*(1-2.D0*xnu) )
+    D(1,2) = d12
+    D(2,1) = d12
+    D(1,1) = d11
+    D(2,2) = d11
+    D(3,3) = d33
+
+    stress = matmul(D,strain+dstrain)
+
+    else if (n_properties == 4) then
+
+    call  hypoelastic_tangent_2D(strain+dstrain,n_properties,element_properties,stress,D)
+
+    end if
+        p = sum(stress(1:2))/3.d0
         sdev = stress
         sdev(1:2) = sdev(1:2)-p
         smises = dsqrt( dot_product(sdev(1:2),sdev(1:2)) + 2.d0*(sdev(3)*sdev(3)) )*dsqrt(1.5d0)

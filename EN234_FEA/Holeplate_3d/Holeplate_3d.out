@@ -14,13 +14,295 @@
      RMS half bandwidth:              390
      Size of stiffness matrix:    4613967
 
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  1366
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  1708
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  3622
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  3623
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  3624
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4117
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4118
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4119
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4120
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4121
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4122
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4390
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4524
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4525
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4526
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4527
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4533
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4534
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4535
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4536
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4642
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4643
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4857
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4858
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4859
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4860
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4875
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4876
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4877
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  4878
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5138
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5140
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5141
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5142
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5144
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5146
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5147
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5148
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5362
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5363
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5364
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5379
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5380
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5381
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5382
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5505
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5506
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5507
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5508
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5614
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5739
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5740
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5741
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5742
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5973
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5974
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5975
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  5976
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  6316
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  6318
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  7144
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  7145
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  7146
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  7540
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  7541
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  7542
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  7936
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  7937
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  7938
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  8332
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  8333
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  8334
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  8728
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  8729
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  8730
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  9124
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  9126
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  9520
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  9522
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  9916
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation  9918
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 10312
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 10313
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 10314
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 10708
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 10709
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 10710
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 11104
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 11105
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 11106
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 11500
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 11896
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 12309
+
+ **** DIRECT SOLVER WARNING 1 **** 
+  Loss of at least 7 digits in reducing diagonal of equation 12312
+
 
  Direct Solver has completed LU decomposition 
     Conditioning information: 
-      Max diagonal in reduced matrix:    0.2654E+06
-      Min diagonal in reduced matrix:    0.1000E+01
-      Ratio:                             0.2654E+06
-      Maximum no. diagonal digits lost:   4
+      Max diagonal in reduced matrix:    0.4650E+05
+      Min diagonal in reduced matrix:    0.5009E-12
+      Ratio:                             0.9284E+17
+      Maximum no. diagonal digits lost:  16
 
 
     Step number     1 has completed successfully
