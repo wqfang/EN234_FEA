@@ -262,6 +262,7 @@ subroutine hypoelastic_tangent_2D_stress(strain,n_properties,element_properties,
     dstress_strain_33 = (4.d0/9.d0/strain_e**2)*(Et-Es)*strain_33**2+4.d0*Es/9.d0+K
     dstrain_33 = -stress_33/dstress_strain_33
 
+
     strain_33 = strain_33 + relax *dstrain_33
 ! Check convergence
     err1 = dstrain_33*dstrain_33
