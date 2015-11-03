@@ -7318,7 +7318,7 @@ END MESH
 
 %  Print the initial mesh to a file named initial_mesh.dat
 
-   PRINT INITIAL MESH, initial_mesh.dat
+   PRINT INITIAL MESH, Holeplate_hyperelastic/initial_mesh.dat
 
 %   The CHECK STIFFNESS key tests the element subroutine to ensure that
 %   the residual force vector is consistent with the stiffness
@@ -7364,7 +7364,7 @@ END MESH
 
 
 
-         PRINT STATE, Output_files\contourplots.dat
+         PRINT STATE, Holeplate_hyperelastic/contourplots.dat
 %            DEGREES OF FREEDOM
             FIELD VARIABLES, S11,S22,S33,S12,S13,S23
             DISPLACED MESH

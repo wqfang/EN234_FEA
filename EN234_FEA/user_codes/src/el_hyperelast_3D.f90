@@ -82,7 +82,7 @@ subroutine el_hyperelast_3d(lmn, element_identifier, n_nodes, node_property_list
     fail = .false.
     
     x = reshape(element_coords,(/3,length_coord_array/3/))
-    u = reshape(dof_total,(/3,length_dof_array/3/))
+    u = reshape(dof_total+dof_increment,(/3,length_dof_array/3/))
 
     if (n_nodes == 4) n_points = 1
     if (n_nodes == 10) n_points = 4
@@ -169,7 +169,7 @@ subroutine el_hyperelast_3d(lmn, element_identifier, n_nodes, node_property_list
     B_strain = matmul(F_bar,transpose(F_bar))
     B_kk = B_strain(1,1)+B_strain(2,2)+B_strain(3,3)
    !   Compute the Kirchhoff stress
-    m_stress = mu1*(B_strain- delta1*B_kk/3.d0)/(J_f**(5.d0/3.d0))+K1*(J_f-1)*delta1
+    m_stress = mu1*(B_strain- delta1*B_kk/3.d0)/(eta**(5.d0/3.d0))+K1*(eta-1.d0)*delta1
     stress(1) = m_stress(1,1)
     stress(2) = m_stress(2,2)
     stress(3) = m_stress(3,3)
@@ -195,7 +195,7 @@ subroutine el_hyperelast_3d(lmn, element_identifier, n_nodes, node_property_list
     IinvB = spread(identity,dim=2,ncopies=6)*spread(inv_Bvec,dim=1,ncopies=6)
     BinvB = spread(Bvec,dim=2,ncopies=6)    *spread(inv_Bvec,dim=1,ncopies=6)
     II    = spread(identity,dim=2,ncopies=6)*spread(identity,dim=1,ncopies=6)
-    D = mu1/(J_f**(2.d0/3.d0))*delta2 + mu1/(J_f**(2.d0/3.d0))/3*(B_kk/3.d0*IinvB-II-BinvB)+K1*J_f*(J_f-1.d0/2.d0)*IinvB
+    D = mu1/(eta**(2.d0/3.d0))*delta2 + mu1/(eta**(2.d0/3.d0))/3*(B_kk/3.d0*IinvB-II-BinvB)+K1*eta*(eta-1.d0/2.d0)*IinvB
    !    Assemble B_bar
         B = 0.d0
         B(1,1:3*n_nodes-2:3) = dNdy(1:n_nodes,1)
@@ -228,7 +228,7 @@ subroutine el_hyperelast_3d(lmn, element_identifier, n_nodes, node_property_list
     G(6,3) = Bvec(6)
     G(1,4) = Bvec(4)
     G(2,5) = Bvec(4)
-    G(4,4) = Bvec(3)
+    G(4,4) = Bvec(2)
     G(4,5) = Bvec(1)
     G(5,4) = Bvec(6)
     G(6,5) = Bvec(5)
@@ -280,12 +280,11 @@ subroutine el_hyperelast_3d(lmn, element_identifier, n_nodes, node_property_list
       ! Add the contributions from the current integration point to the integrals
         element_residual(1:3*n_nodes) = element_residual(1:3*n_nodes) - &
         matmul(transpose(B_bar(1:6,1:3*n_nodes)),tau)*w(kint)*determinant
-
+         !    write(6,*) tau(1:6)
         element_stiffness(1:3*n_nodes,1:3*n_nodes) = element_stiffness(1:3*n_nodes,1:3*n_nodes) &
             + matmul(transpose(B_bar(1:6,1:3*n_nodes)),matmul(matmul(D,G),B_star))*w(kint)*determinant&
             - Sigma*w(kint)*determinant + tau_kk/3.d0*(P+Q)*w(kint)*determinant
     end do
-  
     return
 end subroutine el_hyperelast_3d
 
@@ -511,7 +510,7 @@ subroutine fieldvars_hyperelast_3d(lmn, element_identifier, n_nodes, node_proper
 
 
     x = reshape(element_coords,(/3,length_coord_array/3/))
-    u = reshape(dof_total,(/3,length_dof_array/3/))
+    u = reshape(dof_total+dof_increment,(/3,length_dof_array/3/))
 
     if (n_nodes == 4) n_points = 1
     if (n_nodes == 10) n_points = 4
@@ -599,7 +598,7 @@ subroutine fieldvars_hyperelast_3d(lmn, element_identifier, n_nodes, node_proper
     B_strain = matmul(F_bar,transpose(F_bar))
     B_kk = B_strain(1,1)+B_strain(2,2)+B_strain(3,3)
    !   Compute the Kirchhoff stress
-    m_stress = mu1*(B_strain- delta1*B_kk/3.d0)/(J_f**(5.d0/3.d0))+K1*(J_f-1)*delta1
+    m_stress = mu1*(B_strain- delta1*B_kk/3.d0)/(eta**(5.d0/3.d0))+K1*(eta-1)*delta1
     stress(1) = m_stress(1,1)
     stress(2) = m_stress(2,2)
     stress(3) = m_stress(3,3)
