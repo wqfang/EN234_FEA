@@ -89,10 +89,10 @@ program en234fea
 !  outfil = './hypoelastic_2d/hypoelastic_2d.out'
 !  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
-  infil = './input_files/hypoelastic_2d_stress.in'
-  open (unit = IOR, file = infil, status = 'old', ERR=500)
-  outfil = './hypoelastic_2d_stress/hypoelastic_2d_stress.out'
-  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+!  infil = './input_files/hypoelastic_2d_stress.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './hypoelastic_2d_stress/hypoelastic_2d_stress.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
 
 !  infil = './input_files/Holeplate_3d.in'
@@ -123,10 +123,10 @@ program en234fea
 !  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
 ! Homework 7, stretch a hyperelastic bar, check stiffness.
-!  infil = './input_files/Hyperelastic_bar_stretch.in'
-!  open (unit = IOR, file = infil, status = 'old', ERR=500)
-!  outfil = './Output_files/hyperelastic_bar_stretch.out'
-!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+  infil = './input_files/Hyperelastic_bar_stretch.in'
+  open (unit = IOR, file = infil, status = 'old', ERR=500)
+  outfil = './Hyperelastic_bar_stretch/hyperelastic_bar_stretch.out'
+  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 !!
 !!  Homework 7, stretch and rotate a hyperelastic bar
 !  infil = './input_files/Hyperelastic_stretch_rotate.in'

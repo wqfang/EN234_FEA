@@ -1,0 +1,3192 @@
+
+
+ The input file has been read successfully 
+ Number of elements:                2
+ Number of nodes:                  12
+ Number of constraints:             0
+ Total no. degrees of freedom:     36
+
+  Column            1  node            1  DOF            1
+ Row    1 node    1 DOF    1 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+
+  Column            2  node            1  DOF            2
+ Row    1 node    1 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+
+  Column            3  node            1  DOF            3
+ Row    1 node    1 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+
+  Column            4  node            2  DOF            1
+ Row    1 node    1 DOF    1 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+
+  Column            5  node            2  DOF            2
+ Row    1 node    1 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+
+  Column            6  node            2  DOF            3
+ Row    1 node    1 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+
+  Column            7  node            3  DOF            1
+ Row    1 node    1 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+
+  Column            8  node            3  DOF            2
+ Row    1 node    1 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+
+  Column            9  node            3  DOF            3
+ Row    1 node    1 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+
+  Column           10  node            4  DOF            1
+ Row    1 node    1 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+
+  Column           11  node            4  DOF            2
+ Row    1 node    1 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+
+  Column           12  node            4  DOF            3
+ Row    1 node    1 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+
+  Column           13  node            5  DOF            1
+ Row    1 node    1 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+
+  Column           14  node            5  DOF            2
+ Row    1 node    1 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+
+  Column           15  node            5  DOF            3
+ Row    1 node    1 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+
+  Column           16  node            6  DOF            1
+ Row    1 node    1 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+
+  Column           17  node            6  DOF            2
+ Row    1 node    1 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+
+  Column           18  node            6  DOF            3
+ Row    1 node    1 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+
+  Column           19  node            7  DOF            1
+ Row    1 node    1 DOF    1 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+
+  Column           20  node            7  DOF            2
+ Row    1 node    1 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+
+  Column           21  node            7  DOF            3
+ Row    1 node    1 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+
+  Column           22  node            8  DOF            1
+ Row    1 node    1 DOF    1 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+
+  Column           23  node            8  DOF            2
+ Row    1 node    1 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+
+  Column           24  node            8  DOF            3
+ Row    1 node    1 DOF    1 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    2 node    1 DOF    2 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    3 node    1 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row    4 node    2 DOF    1 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    5 node    2 DOF    2 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row    6 node    2 DOF    3 Stiffness    -0.63426D+02 Numerical deriv    -0.00000D+00
+ Row    7 node    3 DOF    1 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row    8 node    3 DOF    2 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row    9 node    3 DOF    3 Stiffness    -0.63519D+02 Numerical deriv    -0.00000D+00
+ Row   10 node    4 DOF    1 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   11 node    4 DOF    2 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   12 node    4 DOF    3 Stiffness    -0.62870D+02 Numerical deriv    -0.00000D+00
+ Row   13 node    5 DOF    1 Stiffness    -0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   14 node    5 DOF    2 Stiffness    -0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   15 node    5 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   16 node    6 DOF    1 Stiffness     0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   17 node    6 DOF    2 Stiffness    -0.61806D+02 Numerical deriv    -0.00000D+00
+ Row   18 node    6 DOF    3 Stiffness     0.61759D+02 Numerical deriv    -0.00000D+00
+ Row   19 node    7 DOF    1 Stiffness     0.61111D+02 Numerical deriv    -0.00000D+00
+ Row   20 node    7 DOF    2 Stiffness     0.62639D+02 Numerical deriv    -0.00000D+00
+ Row   21 node    7 DOF    3 Stiffness     0.62685D+02 Numerical deriv    -0.00000D+00
+ Row   22 node    8 DOF    1 Stiffness    -0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   23 node    8 DOF    2 Stiffness     0.62778D+02 Numerical deriv    -0.00000D+00
+ Row   24 node    8 DOF    3 Stiffness     0.66204D+02 Numerical deriv    -0.00000D+00
+
+  Error detected in stiffness matrix 
+
+
+ Direct Solver Profiler has completed profile computation 
+     Total number of equations         36
+     Maximum half bandwidth:           23
+     Mean half bandwidth:              14
+     RMS half bandwidth:               15
+     Size of stiffness matrix:        486
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7096E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7096E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.718444D+00
+  Generalized Force norm        0.000000D+00
+  Out of balance force norm     0.000000D+00
+  Ratio                         0.000000D+00
+  Tolerance                     0.100000D-04
+
+
+    Step number     1 has completed successfully
+    Steps remaining:                          10
+    Elapsed time:                     1.0000    
+    Time remaining:                   19.000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.6481E-01
+      Min diagonal in reduced matrix:    0.1786E-01
+      Ratio:                             0.3630E+01
+      Maximum no. diagonal digits lost:   0
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .50000    
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.343980D+00
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.822699D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .25000    
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.169570D+00
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.827403D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .12500    
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.838542D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.829734D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .62500E-01
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.439969D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.830823D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .31250E-01
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.287955D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831239D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .15625E-01
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.252239D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831336D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .78125E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.250970D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831340D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .39062E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.254792D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831329D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+ +++ Newton-Raphson iterations have not converged +++ 
+     Timestep has been reduced to: .19531E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       1
+  Correction norm               0.257776D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831321D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       2
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       3
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       4
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       5
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       6
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       7
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       8
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration       9
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      10
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      11
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      12
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      13
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      14
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+
+
+  Newton Raphson iteration      15
+  Correction norm               0.261445D-01
+  Generalized Force norm        0.303361D+02
+  Out of balance force norm     0.252405D+02
+  Ratio                         0.831311D+00
+  Tolerance                     0.100000D-04
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.7492E+02
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.7492E+02
+      Maximum no. diagonal digits lost:   2
+ Time step has been reduced to the minimum allowable value without convergence 
+ Analysis has been terminated 

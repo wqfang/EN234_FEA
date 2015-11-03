@@ -258,8 +258,8 @@ subroutine hypoelastic_tangent_2D_stress(strain,n_properties,element_properties,
         Es = Et
         end if
     endif
-    stress_33 = 2.d0/3.d0 *stress_e * strain_33 /strain_e +3.d0*K*strain_kk
-    dstress_strain_33 = (4.d0/9.d0/strain_e**2)*(Et-Es)*strain_33**2+4.d0*Es/9.d0+K
+    stress_33 = 2.d0/3.d0 *stress_e * e_33 /strain_e +3.d0*K*strain_kk
+    dstress_strain_33 = (4.d0/9.d0/strain_e**2)*(Et-Es)*e_33**2+4.d0*Es/9.d0+K
     dstrain_33 = -stress_33/dstress_strain_33
 
 

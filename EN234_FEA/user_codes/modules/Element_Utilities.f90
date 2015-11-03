@@ -14,10 +14,18 @@ module Element_Utilities
     real (prec) :: shape_function_spatial_derivatives_2D(9,2)
     real (prec) :: shape_function_spatial_derivatives_3D(20,3)
 
+    real (prec) :: shape_function_Eulerian_derivatives_1D(3,1)
+    real (prec) :: shape_function_Eulerian_derivatives_2D(9,2)
+    real (prec) :: shape_function_Eulerian_derivatives_3D(20,3)
+
     real (prec) :: vol_avg_shape_function_derivatives_1D(3,1)
     real (prec) :: vol_avg_shape_function_derivatives_2D(9,2)
     real (prec) :: vol_avg_shape_function_derivatives_3D(20,3)
   
+    real (prec) :: vol_avg_shape_function_derivatives_y_1D(3,1)
+    real (prec) :: vol_avg_shape_function_derivatives_y_2D(9,2)
+    real (prec) :: vol_avg_shape_function_derivatives_y_3D(20,3)
+
     real (prec) :: integrationpoints_1D(6,1)
     real (prec) :: integrationpoints_2D(2,9)
     real (prec) :: integrationpoints_3D(3,64)
