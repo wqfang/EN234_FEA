@@ -148,7 +148,6 @@ subroutine el_hyperelast_3d(lmn, element_identifier, n_nodes, node_property_list
        dNbardyvec = reshape(transpose(dNbardy(1:n_nodes,1:3)),(/3*n_nodes/))
        dNbardy_aibk =spread(dNbardyvec,dim=2,ncopies=3*n_nodes)*spread(dNbardyvec,dim=1,ncopies=3*n_nodes)
        P = P/el_vol/eta - dNbardy_aibk
-
     !     --  Loop over integration points
     do kint = 1, n_points
         call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
@@ -176,7 +175,7 @@ subroutine el_hyperelast_3d(lmn, element_identifier, n_nodes, node_property_list
     stress(4) = m_stress(1,2)
     stress(5) = m_stress(1,3)
     stress(6) = m_stress(2,3)
-    tau = stress*J_f
+    tau = stress*eta
     tau_kk = sum(tau(1:3))
    ! Compute the Tangent Stiffness D
     call invert_small(B_strain,inv_B,J_b)
@@ -239,7 +238,7 @@ subroutine el_hyperelast_3d(lmn, element_identifier, n_nodes, node_property_list
     G(5,7) = Bvec(1)
     G(6,7) = Bvec(4)
     G(2,8) = Bvec(6)
-    G(3,9) = Bvec(5)
+    G(3,9) = Bvec(6)
     G(4,8) = Bvec(5)
     G(5,9) = Bvec(4)
     G(6,8) = Bvec(3)
