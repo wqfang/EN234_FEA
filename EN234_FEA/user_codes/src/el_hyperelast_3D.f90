@@ -148,6 +148,7 @@ subroutine el_hyperelast_3d(lmn, element_identifier, n_nodes, node_property_list
        dNbardyvec = reshape(transpose(dNbardy(1:n_nodes,1:3)),(/3*n_nodes/))
        dNbardy_aibk =spread(dNbardyvec,dim=2,ncopies=3*n_nodes)*spread(dNbardyvec,dim=1,ncopies=3*n_nodes)
        P = P/el_vol/eta - dNbardy_aibk
+
     !     --  Loop over integration points
     do kint = 1, n_points
         call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
@@ -606,105 +607,6 @@ subroutine fieldvars_hyperelast_3d(lmn, element_identifier, n_nodes, node_proper
     stress(6) = m_stress(2,3)
     tau = stress*J_f
     tau_kk = sum(tau(1:3))
-   ! Compute the Tangent Stiffness D
-!    call invert_small(B_strain,inv_B,J_b)
-!    Bvec(1) = B_strain(1,1)
-!    Bvec(2) = B_strain(2,2)
-!    Bvec(3) = B_strain(3,3)
-!    Bvec(4) = B_strain(1,2)
-!    Bvec(5) = B_strain(1,3)
-!    Bvec(6) = B_strain(2,3)
-!    inv_Bvec(1) = inv_B(1,1)
-!    inv_Bvec(2) = inv_B(2,2)
-!    inv_Bvec(3) = inv_B(3,3)
-!    inv_Bvec(4) = inv_B(1,2)
-!    inv_Bvec(5) = inv_B(1,3)
-!    inv_Bvec(6) = inv_B(2,3)
-!    IinvB = spread(identity,dim=2,ncopies=6)*spread(inv_Bvec,dim=1,ncopies=6)
-!    BinvB = spread(Bvec,dim=2,ncopies=6)    *spread(inv_Bvec,dim=1,ncopies=6)
-!    II    = spread(identity,dim=2,ncopies=6)*spread(identity,dim=1,ncopies=6)
-!    D = mu1/(J_f**(2.d0/3.d0))*delta2 + mu1/(J_f**(2.d0/3.d0))/3*(B_kk/3.d0*IinvB-II-BinvB)+K1*J_f*(J_f-1.d0/2.d0)*IinvB
-!   !    Assemble B_bar
-!        B = 0.d0
-!        B(1,1:3*n_nodes-2:3) = dNdy(1:n_nodes,1)
-!        B(2,2:3*n_nodes-1:3) = dNdy(1:n_nodes,2)
-!        B(3,3:3*n_nodes:3)   = dNdy(1:n_nodes,3)
-!        B(4,1:3*n_nodes-2:3) = dNdy(1:n_nodes,2)
-!        B(4,2:3*n_nodes-1:3) = dNdy(1:n_nodes,1)
-!        B(5,1:3*n_nodes-2:3) = dNdy(1:n_nodes,3)
-!        B(5,3:3*n_nodes:3)   = dNdy(1:n_nodes,1)
-!        B(6,2:3*n_nodes-1:3) = dNdy(1:n_nodes,3)
-!        B(6,3:3*n_nodes:3)   = dNdy(1:n_nodes,2)
-!
-!        B_bar = B
-!        B_diff = (dNbardy - dNdy)/3.d0
-!            do I = 1,3
-!            B_bar(I,1:3*n_nodes-2:3)= B_bar(I,1:3*n_nodes-2:3) + B_diff(1:n_nodes,1)
-!            B_bar(I,2:3*n_nodes-1:3)= B_bar(I,2:3*n_nodes-1:3) + B_diff(1:n_nodes,2)
-!            B_bar(I,3:3*n_nodes :3) = B_bar(I,3:3*n_nodes :3) + B_diff(1:n_nodes,3)
-!            enddo
-!     !    Assemble matrix G
-!    G = 0.d0
-!    G(1,1) = Bvec(1)
-!    G(2,2) = Bvec(2)
-!    G(3,3) = Bvec(3)
-!    G(4,1) = Bvec(4)
-!    G(4,2) = Bvec(4)
-!    G(5,1) = Bvec(5)
-!    G(5,3) = Bvec(5)
-!    G(6,2) = Bvec(6)
-!    G(6,3) = Bvec(6)
-!    G(1,4) = Bvec(4)
-!    G(2,5) = Bvec(4)
-!    G(4,4) = Bvec(3)
-!    G(4,5) = Bvec(1)
-!    G(5,4) = Bvec(6)
-!    G(6,5) = Bvec(5)
-!    G(1,6) = Bvec(5)
-!    G(3,7) = Bvec(5)
-!    G(4,6) = Bvec(6)
-!    G(5,6) = Bvec(3)
-!    G(5,7) = Bvec(1)
-!    G(6,7) = Bvec(4)
-!    G(2,8) = Bvec(6)
-!    G(3,9) = Bvec(5)
-!    G(4,8) = Bvec(5)
-!    G(5,9) = Bvec(4)
-!    G(6,8) = Bvec(3)
-!    G(6,9) = Bvec(2)
-!    G = 2*G
-!     !    Assemble matrix B_star
-!        B_star = 0.d0
-!        B_star(1,1:3*n_nodes-2:3) = dNdy(1:n_nodes,1)
-!        B_star(2,2:3*n_nodes-1:3) = dNdy(1:n_nodes,2)
-!        B_star(3,3:3*n_nodes:3)   = dNdy(1:n_nodes,3)
-!        B_star(4,1:3*n_nodes-2:3) = dNdy(1:n_nodes,2)
-!        B_star(5,2:3*n_nodes-1:3) = dNdy(1:n_nodes,1)
-!        B_star(6,1:3*n_nodes-2:3) = dNdy(1:n_nodes,3)
-!        B_star(7,3:3*n_nodes:3)   = dNdy(1:n_nodes,1)
-!        B_star(8,2:3*n_nodes-1:3) = dNdy(1:n_nodes,3)
-!        B_star(9,3:3*n_nodes:3)   = dNdy(1:n_nodes,2)
-!
-!        B_diff = (dNbardy - dNdy)/3.d0
-!            do I = 1,3
-!            B_star(I,1:3*n_nodes-2:3)= B_star(I,1:3*n_nodes-2:3) + B_diff(1:n_nodes,1)
-!            B_star(I,2:3*n_nodes-1:3)= B_star(I,2:3*n_nodes-1:3) + B_diff(1:n_nodes,2)
-!            B_star(I,3:3*n_nodes :3) = B_star(I,3:3*n_nodes :3) + B_diff(1:n_nodes,3)
-!            enddo
-!      ! Compute Sigma and Q
-!        S = reshape(matmul(transpose(B),tau),(/3,length_dof_array/3/))
-!      do i = 1,n_nodes
-!        Pvec = reshape(spread(transpose(dNdy(i:i,1:3)),dim=2,ncopies=n_nodes),(/3*n_nodes/))
-!        Pmat(3*i-2:3*i,1:3*n_nodes) = spread(Pvec,dim=1,ncopies=3)
-!        Svec = reshape(spread(S(1:3,i:i),dim=2,ncopies=n_nodes),(/3*n_nodes/))
-!        Smat(3*i-2:3*i,1:3*n_nodes) = spread(Svec,dim=1,ncopies=3)
-!      end do
-!        Sigma = Pmat*transpose(Smat)
-!       do i = 1,n_nodes
-!            Pvec = reshape(spread(transpose(dNdy(i:i,1:3)),dim=2,ncopies=n_nodes),(/3*n_nodes/))
-!            Pmat(3*i-2:3*i,1:3*n_nodes) = spread(Pvec,dim=1,ncopies=3)
-!       end do
-!            Q = Pmat*transpose(Pmat)
 
 
         sdev = tau

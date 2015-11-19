@@ -1,0 +1,681 @@
+!  Subroutines for basic 3D  rate-dependent
+!  porous plastic dynamic problems with no hardening.
+!  Jaumann measure of stress rate is adopted here, and the
+!  Gurson model is adopted for the finite poro-plasticity.
+
+!==========================SUBROUTINE el_linelast_3dbasic_dynamic ==============================
+subroutine el_poro_viscoplasticity_3Ddynamic(lmn, element_identifier, n_nodes, node_property_list, &           ! Input variables
+    n_properties, element_properties,element_coords, length_coord_array, &                               ! Input variables
+    dof_increment, dof_total, length_dof_array,  &                                                       ! Input variables
+    n_state_variables, initial_state_variables, &                                                        ! Input variables
+    updated_state_variables,element_residual,element_deleted)                                            ! Output variables
+    use Types
+    use ParamIO
+    use Mesh, only : node
+    use Element_Utilities, only : N => shape_functions_3D
+    use Element_Utilities, only:  dNdxi => shape_function_derivatives_3D
+    use Element_Utilities, only:  dNdx => shape_function_spatial_derivatives_3D
+    use Element_Utilities, only : xi => integrationpoints_3D, w => integrationweights_3D
+    use Element_Utilities, only : dxdxi => jacobian_3D
+    use Element_Utilities, only : initialize_integration_points
+    use Element_Utilities, only : calculate_shapefunctions
+    use Element_Utilities, only : invert_small
+    implicit none
+
+    integer, intent( in )         :: lmn                                                    ! Element number
+    integer, intent( in )         :: element_identifier                                     ! Flag identifying element type (specified in .in file)
+    integer, intent( in )         :: n_nodes                                                ! # nodes on the element
+    integer, intent( in )         :: n_properties                                           ! # properties for the element
+    integer, intent( in )         :: length_coord_array                                     ! Total # coords
+    integer, intent( in )         :: length_dof_array                                       ! Total # DOF
+    integer, intent( in )         :: n_state_variables                                      ! # state variables for the element
+
+    type (node), intent( in )     :: node_property_list(n_nodes)                  ! Data structure describing storage for nodal variables - see below
+    !  type node
+    !      sequence
+    !      integer :: flag                          ! Integer identifier
+    !      integer :: coord_index                   ! Index of first coordinate in coordinate array
+    !      integer :: n_coords                      ! Total no. coordinates for the node
+    !      integer :: dof_index                     ! Index of first DOF in dof array
+    !      integer :: n_dof                         ! Total no. of DOF for node
+    !   end type node
+    !   Access these using node_property_list(k)%n_coords eg to find the number of coords for the kth node on the element
+
+    real( prec ), intent( in )    :: element_coords(length_coord_array)                     ! Coordinates, stored as x1,(x2),(x3) for each node in turn
+    real( prec ), intent( in )    :: dof_increment(length_dof_array)                        ! DOF increment, stored as du1,du2,du3,du4... for each node in turn
+    real( prec ), intent( in )    :: dof_total(length_dof_array)                            ! accumulated DOF, same storage as for increment
+
+    real( prec ), intent( in )    :: element_properties(n_properties)                       ! Element or material properties, stored in order listed in input file
+    real( prec ), intent( in )    :: initial_state_variables(n_state_variables)             ! Element state variables.  Defined in this routine
+
+    real( prec ), intent( inout ) :: updated_state_variables(n_state_variables)             ! State variables at end of time step
+    real( prec ), intent( out )   :: element_residual(length_dof_array)                     ! Element residual force (ROW)
+
+    logical, intent( inout )      :: element_deleted                                        ! Set to .true. to delete element
+
+    ! Local Variables
+    integer      :: n_points,kint,jj,counting,i,j,k,l,m_count,n_count
+
+    real (prec)  ::  strain(6), dstrain(3,3)             ! Strain vector contains [e11, e22, e33, 2e12, 2e13, 2e23]
+    real (prec)  ::  stress(6)                         ! Stress vector contains [s11, s22, s33, s12, s13, s23]
+    real (prec)  ::  D(6,6)                            ! stress = D*(strain+dstrain)  (NOTE FACTOR OF 2 in shear strain)
+    real (prec)  ::  B(6,length_dof_array)             ! strain = B*(dof_total+dof_increment)
+    real (prec)  ::  B_bar(6,length_dof_array)          ! strain = Bbar*(dof_total+dof_increment), B-bar method
+    real (prec)  ::  temp_bar(6,length_dof_array)      ! temp matrix when constructing B-bar matrix
+    real (prec)  ::  dxidx(3,3), determinant           ! Jacobian inverse and determinant
+    real (prec)  ::  x(3,length_coord_array/3)         ! Re-shaped coordinate array x(i,a) is ith coord of ath node
+    real (prec)  ::  zero,one,two,three,third,five,Iden(3,3) ! Utilities
+    real (prec)  ::  disp(3,length_coord_array/3)       ! Re-shaped displacement array u(i,a) is ith coord of ath node
+    real (prec)  ::  ddisp(3,length_coord_array/3)      ! Re-shaped displacement increment array du(i,a) is ith coord of ath node
+    real (prec)  ::  ita, d_ita,dF(3,3),F_mid(3,3),F_mid_inv(3,3),detF_mid,dL(3,3),dL_bar(3,3)
+    real (prec)  ::  el_vol,dNbardy(n_nodes,3),dNdy(n_nodes,3), tr_dL
+    real (prec)  ::  dW(3,3),temp_R(3,3),temp_R_inv(3,3),det_temp_R,dR(3,3)
+      ! Utilities
+    zero = 0.d0
+    one = 1.d0
+    two = 2.d0
+    three = 3.d0
+    third = 1.d0/3.d0
+    five = 5.d0
+    Iden =0.d0
+    do i=1,3
+     Iden(i,i)=1.d0
+    end do
+    !
+    !     Subroutine to compute element force vector for a linear elastodynamic problem
+    !     El props are:
+
+    !     element_properties(1)         Young's modulus
+    !     element_properties(2)         Poisson's ratio
+
+    x = reshape(element_coords,(/3,length_coord_array/3/))
+    disp = reshape(dof_total,(/3,length_dof_array/3/))
+    ddisp = reshape(dof_increment,(/3,length_dof_array/3/))
+
+    if (n_nodes == 4) n_points = 1
+    if (n_nodes == 10) n_points = 4
+    if (n_nodes == 8) n_points = 8
+    if (n_nodes == 20) n_points = 27
+
+    call initialize_integration_points(n_points, n_nodes, xi, w)
+
+    element_residual = 0.d0
+    el_vol = 0.d0
+    dNbardy = 0.d0
+      ita = 0.d0
+    d_ita = 0.d0
+    !     -- Loop over the integration points for B bar method
+    do kint = 1, n_points
+
+        call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
+        dxdxi = matmul(x(1:3,1:n_nodes),dNdxi(1:n_nodes,1:3))
+        call invert_small(dxdxi,dxidx,determinant)
+        dNdx(1:n_nodes,1:3) = matmul(dNdxi(1:n_nodes,1:3),dxidx)
+       F_mid = 0.d0
+       dF = 0.d0
+    ! Compute the increment in deformation gradient at current step F_tau
+        dF = matmul(ddisp(1:3,1:n_nodes),dNdx(1:n_nodes,1:3))
+    ! Compute the mid-point deformation gradient F_mid
+
+        F_mid = matmul(disp(1:3,1:n_nodes),dNdx(1:n_nodes,1:3))
+        F_mid = F_mid + Iden + dF/2.0d0
+
+
+    ! Compute the inverse of the mid-point deformation gradient and J
+       call  invert_small(F_mid,F_mid_inv,detF_mid)
+    ! Compute the volume averaged Jacobian and the volume averaged volumetric strain increment
+       ita = ita + detF_mid*w(kint)*determinant
+       dL = matmul(dF(1:3,1:3),F_mid_inv(1:3,1:3))
+       tr_dL = dL(1,1)+dL(2,2)+dL(3,3)
+       d_ita = d_ita + detF_mid * tr_dL * w(kint)*determinant
+    ! Convert the shape function derivatives into deformed configurations dNdy
+       dNdy(1:n_nodes,1:3)= matmul(dNdx(1:n_nodes,1:3),F_mid_inv)
+
+    ! Adding contributions to dNbardy and J_bar
+        do m_count = 1,n_nodes
+           do n_count = 1,3
+              dNbardy(m_count,n_count) = dNbardy(m_count,n_count) + &
+                                         detF_mid*dNdy(m_count,n_count)*w(kint)*determinant
+           end do
+        end do
+
+    !   Get the average element volume
+        el_vol = el_vol + w(kint)*determinant
+    end do
+    !   Get the final form of dNbardy and detF0_tau
+        ita = ita/el_vol
+        d_ita = d_ita/el_vol/ita
+        dNbardy = dNbardy/el_vol/ita
+
+
+    jj = 0
+    counting = 0
+    !     --  Loop over integration points
+     do kint = 1, n_points
+
+        call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
+        dxdxi = matmul(x(1:3,1:n_nodes),dNdxi(1:n_nodes,1:3))
+        call invert_small(dxdxi,dxidx,determinant)
+        dNdx(1:n_nodes,1:3) = matmul(dNdxi(1:n_nodes,1:3),dxidx)
+    ! Again compute the increment in deformation gradient at current step F_tau
+        dF = matmul(ddisp(1:3,1:n_nodes),dNdx(1:n_nodes,1:3))
+    ! Compute the mid-point deformation gradient F_mid
+        F_mid = matmul(disp(1:3,1:n_nodes)+0.5d0*ddisp(1:3,1:n_nodes),dNdx(1:n_nodes,1:3))
+        F_mid = F_mid + Iden
+    ! Compute the inverse of the mid-point deformation gradient and J
+       call  invert_small(F_mid,F_mid_inv,detF_mid)
+    ! Compute the corrected velocity gradient increment
+!
+         dL = matmul(dF(1:3,1:3),F_mid_inv(1:3,1:3))
+         tr_dL = dL(1,1)+dL(2,2)+dL(3,3)
+         dL_bar = dL+ (d_ita - tr_dL)*third*Iden
+
+    ! Compute the strain and spin increments
+    dstrain = (dL_bar + transpose(dL_bar))/two
+
+    dW      = (dL_bar - transpose(dL_bar))/two
+
+    ! Calculate the rotation increment associated with the spin
+    temp_R = Iden - dW/two
+    call  invert_small(temp_R,temp_R_inv,det_temp_R)
+    dR = matmul(temp_R_inv,(Iden + dW/two ))
+    ! Calculate the Kirchhoff stress and state variables
+    call  nl_poroplas_material(element_properties,n_properties,dstrain,dR,initial_state_variables,updated_state_variables,&
+                                 n_state_variables,jj,counting,stress)
+    ! Convert the shape function derivatives into deformed configurations dNdy
+       dNdy(1:n_nodes,1:3)= matmul(dNdx(1:n_nodes,1:3),F_mid_inv)
+    ! Assemble B_bar
+        B=0.d0
+        B_bar = 0.d0
+        temp_bar = 0.d0
+        B(1,1:3*n_nodes-2:3) = dNdy(1:n_nodes,1)
+        B(2,2:3*n_nodes-1:3) = dNdy(1:n_nodes,2)
+        B(3,3:3*n_nodes:3)   = dNdy(1:n_nodes,3)
+        B(4,1:3*n_nodes-2:3) = dNdy(1:n_nodes,2)
+        B(4,2:3*n_nodes-1:3) = dNdy(1:n_nodes,1)
+        B(5,1:3*n_nodes-2:3) = dNdy(1:n_nodes,3)
+        B(5,3:3*n_nodes:3)   = dNdy(1:n_nodes,1)
+        B(6,2:3*n_nodes-1:3) = dNdy(1:n_nodes,3)
+        B(6,3:3*n_nodes:3)   = dNdy(1:n_nodes,2)
+        do m_count = 1,n_nodes
+        temp_bar(1:3:1,3*m_count-2) = dNbardy(m_count,1) - dNdy(m_count,1)
+        temp_bar(1:3:1,3*m_count-1) = dNbardy(m_count,2) - dNdy(m_count,2)
+        temp_bar(1:3:1,3*m_count) = dNbardy(m_count,3) - dNdy(m_count,3)
+        end do
+        B_bar = B + third * temp_bar
+
+    ! Calculate the residuals
+        element_residual(1:3*n_nodes) = element_residual(1:3*n_nodes) - matmul(transpose(B_bar),stress)*w(kint)*determinant
+    ! write(*,*) stress
+!         write(*,*)   stress
+!         write(*,*)   ''
+    end do
+
+!         write(*,*)   dNdx(:,2)
+!         write(*,*)   ''
+!         write(*,*)   F_mid(1,2)
+!         write(*,*)   ''
+    ! Delete failure element
+    if (counting .EQ. n_points) then
+      element_deleted = .true.
+    end if
+    !
+    return
+end subroutine el_poro_viscoplasticity_3Ddynamic
+
+
+!==========================SUBROUTINE fieldvars_linelast_3dbasic ==============================
+subroutine fieldvars_3d_porous_plasticity(lmn, element_identifier, n_nodes, node_property_list, &           ! Input variables
+    n_properties, element_properties,element_coords,length_coord_array, &                                ! Input variables
+    dof_increment, dof_total, length_dof_array,  &                                                      ! Input variables
+    n_state_variables, initial_state_variables,updated_state_variables, &                               ! Input variables
+    n_field_variables,field_variable_names, &                                                           ! Field variable definition
+    nodal_fieldvariables)      ! Output variables
+    use Types
+    use ParamIO
+    use Mesh, only : node
+    use Element_Utilities, only : N => shape_functions_3D
+    use Element_Utilities, only: dNdxi => shape_function_derivatives_3D
+    use Element_Utilities, only: dNdx => shape_function_spatial_derivatives_3D
+    use Element_Utilities, only : dNbardx => vol_avg_shape_function_derivatives_3D
+    use Element_Utilities, only : xi => integrationpoints_3D, w => integrationweights_3D
+    use Element_Utilities, only : dxdxi => jacobian_3D
+    use Element_Utilities, only : initialize_integration_points
+    use Element_Utilities, only : calculate_shapefunctions
+    use Element_Utilities, only : invert_small
+    implicit none
+
+    integer, intent( in )         :: lmn                                                    ! Element number
+    integer, intent( in )         :: element_identifier                                     ! Flag identifying element type (specified in .in file)
+    integer, intent( in )         :: n_nodes                                                ! # nodes on the element
+    integer, intent( in )         :: n_properties                                           ! # properties for the element
+    integer, intent( in )         :: length_coord_array                                     ! Total # coords
+    integer, intent( in )         :: length_dof_array                                       ! Total # DOF
+    integer, intent( in )         :: n_state_variables                                      ! # state variables for the element
+    integer, intent( in )         :: n_field_variables                                      ! # field variables
+
+    type (node), intent( in )     :: node_property_list(n_nodes)                  ! Data structure describing storage for nodal variables - see below
+    !  type node
+    !      sequence
+    !      integer :: flag                          ! Integer identifier
+    !      integer :: coord_index                   ! Index of first coordinate in coordinate array
+    !      integer :: n_coords                      ! Total no. coordinates for the node
+    !      integer :: dof_index                     ! Index of first DOF in dof array
+    !      integer :: n_dof                         ! Total no. of DOF for node
+    !   end type node
+    !   Access these using node_property_list(k)%n_coords eg to find the number of coords for the kth node on the element
+
+    character (len=100), intent(in) :: field_variable_names(n_field_variables)
+
+    real( prec ), intent( in )    :: element_coords(length_coord_array)                     ! Coordinates, stored as x1,x2,(x3) for each node in turn
+    real( prec ), intent( in )    :: dof_increment(length_dof_array)                        ! DOF increment, stored as du1,du2,du3,du4... for each node in turn
+    real( prec ), intent( in )    :: dof_total(length_dof_array)                            ! accumulated DOF, same storage as for increment
+
+    real( prec ), intent( in )    :: element_properties(n_properties)                       ! Element or material properties, stored in order listed in input file
+    real( prec ), intent( in )    :: initial_state_variables(n_state_variables)             ! Element state variables.  Defined in this routine
+    real( prec ), intent( in )    :: updated_state_variables(n_state_variables)             ! State variables at end of time step
+
+    real( prec ), intent( out )   :: nodal_fieldvariables(n_field_variables,n_nodes)        ! Nodal field variables
+
+    ! Local Variables
+    logical      :: strcmp
+
+    integer      :: n_points,kint,jj,i,j,k,l
+
+    real (prec)  ::  strain(6), dstrain(6)             ! Strain vector contains [e11, e22, e33, 2e12, 2e13, 2e23]
+    real (prec)  ::  stress(6)                         ! Stress vector contains [s11, s22, s33, s12, s13, s23]
+    real (prec)  ::  dxidx(3,3), determinant           ! Jacobian inverse and determinant
+    real (prec)  ::  x(3,length_coord_array/3)         ! Re-shaped coordinate array x(i,a) is ith coord of ath node
+    real (prec)  ::  smises                           ! Pressure and Mises stress
+    real (prec)  ::  Kirch(6), Kirch0(6), tr_Kirch,V_f
+    real (prec)  :: zero,one,two,three,third,five,Iden(3,3) ! Utilities
+    !     Subroutine to compute element contribution to project element integration point data to nodes
+
+    !     element_properties(1)         Young's modulus
+    !     element_properties(2)         Poisson's ratio
+    ! Utilities
+    zero = 0.d0
+    one = 1.d0
+    two = 2.d0
+    three = 3.d0
+    third = 1.d0/3.d0
+    five = 5.d0
+    Iden =0.d0
+    do i=1,3
+     Iden(i,i)=1.d0
+    end do
+
+    x = reshape(element_coords,(/3,length_coord_array/3/))
+
+    if (n_nodes == 4) n_points = 1
+    if (n_nodes == 10) n_points = 4
+    if (n_nodes == 8) n_points = 8
+    if (n_nodes == 20) n_points = 27
+
+    call initialize_integration_points(n_points, n_nodes, xi, w)
+
+    nodal_fieldvariables = 0.d0
+
+    !     --  Loop over integration points
+    jj = 0 ! jj is used for tracking the state variables
+
+    do kint = 1, n_points
+        call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
+        dxdxi = matmul(x(1:3,1:n_nodes),dNdxi(1:n_nodes,1:3))
+        call invert_small(dxdxi,dxidx,determinant)
+        dNdx(1:n_nodes,1:3) = matmul(dNdxi(1:n_nodes,1:3),dxidx)
+
+       Kirch = updated_state_variables(1+jj:6+jj)
+       V_f  = updated_state_variables(8+jj)
+       tr_Kirch = Kirch(1+jj)+Kirch(2+jj)+Kirch(3+jj)
+
+        stress(1:6) = Kirch(1:6)
+!        write(*,*) 'stress'
+!        write(*,*) ''
+!        write(*,*) stress
+        do i=1,3
+           Kirch0(i) = Kirch(i) - third*tr_Kirch
+        end do
+        Kirch0(4:6) = Kirch(4:6)
+        smises = dsqrt( dot_product(Kirch0(1:3),Kirch0(1:3)) + 2.d0*dot_product(Kirch0(4:6),Kirch0(4:6)) )*dsqrt(1.5d0)
+        jj = jj + 8
+        ! In the code below the strcmp( string1, string2, nchar) function returns true if the first nchar characters in strings match
+        do k = 1,n_field_variables
+            if (strcmp(field_variable_names(k),'S11',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(1)*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'S22',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(2)*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'S33',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(3)*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'S12',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(4)*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'S13',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(5)*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'S23',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + stress(6)*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'E11',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + strain(1)*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'E22',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + strain(2)*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'E33',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + strain(3)*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'E12',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + strain(4)/0.5d0*N(1:n_nodes)*determinant &
+                *w(kint)
+            else if (strcmp(field_variable_names(k),'E13',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + strain(5)/0.5d0*N(1:n_nodes)*determinant &
+                *w(kint)
+            else if (strcmp(field_variable_names(k),'E23',3) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + strain(6)/0.5d0*N(1:n_nodes)*determinant &
+                *w(kint)
+            else if (strcmp(field_variable_names(k),'SMISES',6) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + smises*N(1:n_nodes)*determinant*w(kint)
+            else if (strcmp(field_variable_names(k),'Vf',2) ) then
+                nodal_fieldvariables(k,1:n_nodes) = nodal_fieldvariables(k,1:n_nodes) + V_f*N(1:n_nodes)*determinant*w(kint)
+            end if
+        end do
+
+    end do
+
+    return
+end subroutine fieldvars_3d_porous_plasticity
+
+subroutine nl_poroplas_material(element_properties,n_properties,dstrain,dR,initial_state_variables,updated_state_variables,&
+                                 n_state_variables,jj,counting,stress)
+    use Types
+    use ParamIO
+    use Globals, only: TIME,DTIME  ! For a time dependent problem uncomment this line to access the time increment and total time
+    use Element_Utilities, only : invert_small
+
+    implicit none
+
+    integer, intent( in ) :: n_properties                                                   ! # properties for the element
+    integer, intent( in ) :: n_state_variables                                              ! # state variables for the element
+    integer, intent( inout ) :: jj, counting                                                          ! track of state variables
+
+    real( prec ), intent( in )    :: element_properties(n_properties)                       ! Element or material properties, stored in order listed in input file
+    real( prec ), intent( in )    :: initial_state_variables(n_state_variables)             ! Element state variables.  Defined in this routine
+    real( prec ), intent( in )    :: dstrain(3,3)                                           ! Strain increment
+    real( prec ), intent( in )    :: dR(3,3)                                                ! Rotation increment
+    real( prec ), intent( out )   :: stress(6)                                              !
+    real( prec ), intent( out ) :: updated_state_variables(n_state_variables)               ! State variables at end of time step
+    integer      :: i,j,k,l,iter,maxit
+
+    real (prec)  ::  Eyoung, xnu,Y, E0_dot, m, q1, q2, q3, f_N, s_N, e_N, f_C, f_F           ! Material properties
+    real (prec)  ::  zero,one, two,three,third,five,small,Iden(3,3) ! Utilities
+    real (prec)  ::  Kirch0(6),Kirch(6),Ematrix0,Ematrix,Vf0,Vf
+    real (prec)  ::  Ematrix_t,Ematrix_tau,Vf_t,Vf_tau,Tau_t(3,3),Tau_tau(3,3)
+    real (prec)  ::  tr_dstrain,dE(3,3),tr_Tau_t,Tau0_t(3,3),S_star(3,3),P_star
+    real (prec)  ::  sig_estar,f_star,fbar_F,phi,dEmatrix,dEe,dEv,error,tol,sol(2),p,sig_e
+    real (prec)  ::  dsigdEe,dpdEv,dphidsig_e,dphidp,ddphidpdsig_e,ddphiddsig_e
+    real (prec)  ::  ddphiddp,temp1_F,temp2_F,temp3_F,dF1dEe,dF1dEv,dF2dEe,dF2dEv,F1,F2,F_vec(2)
+    real (prec)  ::  dF_mat(2,2),dE_vec(2),sol_new(2),dF_mat_inv(2,2),det_dF_mat,phi_2
+
+    !     Subroutine to compute stress state for kinematic material
+    !     El props are:
+
+    !     element_properties(1)         Young's modulus
+    !     element_properties(2)         Poisson's ratio
+    !     element_properties(3)         Initial yield stress
+    !     element_properties(4)         Hardening rate c
+    !     element_properties(5)         Nonlinear parameter gamma
+
+    ! Utilities
+     zero = 0.d0
+     one = 1.0d0
+     two = 2.0d0
+     three = 3.0d0
+     third = 1.d0/3.d0
+     five = 5.0d0
+     small = 1.d-8
+     Iden = 0.d0
+        do i=1,3
+            Iden(i,i)=1.0d0
+        end do
+    ! Pass material properties in
+
+        Eyoung         = element_properties(1)
+        xnu            = element_properties(2)
+        Y              = element_properties(3)
+        E0_dot         = element_properties(4)
+        m              = element_properties(5)
+        q1             = element_properties(6)
+        q2             = element_properties(7)
+        q3             = element_properties(8)
+        f_N            = element_properties(9)
+        s_N            = element_properties(10)
+        e_N            = element_properties(11)
+        f_C            = element_properties(12)
+        f_F            = element_properties(13)
+    !
+
+    !      obtian the state variables at step N
+        Kirch0   = initial_state_variables(1+jj:6+jj)
+        Ematrix0 = initial_state_variables(7+jj)
+        Vf0      = initial_state_variables(8+jj)
+
+     !      Construct them into matrix form for further calculation
+           Ematrix_t = Ematrix0
+                Vf_t = Vf0
+
+        do i=1,3
+           Tau_t(i,i)= Kirch0(i)
+        end do
+           Tau_t(1,2) = Kirch0(4)
+           Tau_t(2,1) = Tau_t(1,2)
+           Tau_t(1,3) = Kirch0(5)
+           Tau_t(3,1) = Tau_t(1,3)
+           Tau_t(2,3) = Kirch0(6)
+           Tau_t(3,2) = Tau_t(2,3)
+
+  !**********************************************************************************
+    !  Meterial properties
+  !**********************************************************************************
+
+
+   ! Step 1. Compute the elastic predictors for the deviatoric and hydrostatic stress
+     tr_dstrain = dstrain(1,1)+dstrain(2,2)+dstrain(3,3)
+     dE = dstrain - third*tr_dstrain*Iden
+
+     tr_Tau_t   =  Tau_t(1,1)+Tau_t(2,2)+Tau_t(3,3)
+     Tau0_t = Tau_t - third*tr_Tau_t*Iden
+
+  !   write(*,*) Tau0_t
+!    write(*,*) ''
+!     write(*,*) d
+
+     S_star = Tau0_t + Eyoung/(one+xnu)*dE + matmul(dR,matmul(Tau0_t,transpose(dR)))
+     P_star = third*tr_Tau_t + Eyoung/three/(one - two*xnu)*tr_dstrain
+   !  write(*,*)  dstrain
+   ! Step 2. Calculte the Phi
+
+   ! Mises stress
+     sig_estar = zero
+        do i =1,3
+          do j=1,3
+             sig_estar = sig_estar + 1.5d0* S_star(i,j)* S_star(i,j)
+          end do
+        end do
+        sig_estar = sqrt(sig_estar)
+   ! f_star
+     f_star = zero
+     fbar_F = (q1+sqrt(q1**two -q3))/q3
+
+     if (Vf_t .LT.f_C) then
+         f_star = Vf_t
+     else if (Vf_t .GE. f_C.and.Vf_t .LT.f_F) then
+         f_star = f_C + (fbar_F - f_C)/(f_F - f_C)*(Vf_t - f_C)
+     else if (Vf_t .GE.f_F ) then
+         f_star = fbar_F
+     end if
+   !
+      phi_2 = sig_estar**two/Y/Y + two*q1*f_star*cosh(1.5d0*q2*P_star/Y)- &
+            (one + q3*f_star**two)
+
+   ! Judge whether this is an elastic step or plastic step
+     If (phi_2 .LE. small) then
+        ! Elastic step
+        write(*,*)  'In Elastic Step'
+        Tau_tau = S_star + P_star*Iden
+        dEmatrix = 0.d0
+        Ematrix_tau = Ematrix_t + dEmatrix
+        Vf_tau = Vf_t
+      !     write(*,*)   Tau_tau, P_star
+     else
+        ! Plastic step
+        write(*,*)  'In Plastic Step'
+
+
+   ! Newton Raphson solution of two nonlinear algebraic equations
+   ! set up the iteration
+    dEe = 1.d-15
+    dEv = 1.d-15
+    error = Y
+    tol = 1.d-8 * Y
+    sol(1) =  dEe
+    sol(2) =  dEv
+    iter = 0
+    maxit = 50
+
+     do while(error .GT. tol)
+     ! Compute the sig_e and p
+        sig_e = sig_estar -1.5d0*Eyoung/(one+xnu)*sol(1)
+        p = P_star - Eyoung*third/(one-two*xnu)*sol(2)
+     ! Compute Phi
+      phi = dsqrt(sig_e**two/Y/Y + two*q1*f_star*cosh(1.5d0*q2*p/Y)-(one + q3*f_star**two))
+     ! Solve for the magnitude of deviatoric and volumetric plastic strains dEe and dEv
+     dsigdEe    = -1.5d0*Eyoung/(one+xnu)
+     dpdEv      = -third*Eyoung/(one-two*xnu)
+
+     ! first order derivatives
+     dphidsig_e =  sig_e/Y/Y/phi
+     dphidp     =  1.5d0*q1*q2*f_star*sinh(1.5d0*q2*p/Y)/Y/phi
+     ! second order derivatives
+     ddphidpdsig_e = - sig_e/Y**two/phi**two*dphidp;
+     ddphiddsig_e  = one/Y/Y/phi - sig_e/(Y*phi)**two*dphidsig_e
+     ddphiddp      = 1.5d0*q1*q2*f_star/Y*(cosh(1.5d0*q2*p/Y)*1.5d0*q2/Y/phi &
+                     - sinh(1.5d0*q2*p/Y)/phi**two*dphidp)
+     ! Derivative of F1 and F2
+     temp1_F  = dphidsig_e**two +2.d0/9.d0*dphidp**two
+     temp2_F  = two*dphidsig_e*ddphiddsig_e +4.d0/9.d0*dphidp*ddphidpdsig_e
+     temp3_F  = two*dphidsig_e*ddphidpdsig_e + 4.d0/9.d0*dphidp*ddphiddp
+     dF1dEe = 0.5d0*temp1_F**(-0.5d0)*temp2_F*dsigdEe*sol(1)/dtime/E0_dot + temp1_F**0.5d0/dtime/E0_dot  &
+               -ddphiddsig_e*dsigdEe*phi**m - dphidsig_e*m*phi**(m-one)*dphidsig_e*dsigdEe
+     dF1dEv = 0.5*temp1_F**(-0.5d0)*temp3_F*dpdEv*sol(1)/dtime/E0_dot -ddphidpdsig_e*dpdEv*phi**m -dphidsig_e  &
+              *m*phi**(m-one)*dphidp*dpdEv
+     dF2dEe = 0.5d0*temp1_F**(-0.5d0)*temp2_F*dsigdEe*sol(2)/dtime/E0_dot - ddphidpdsig_e*dsigdEe*phi**m  &
+              -dphidp*m*phi**(m-1)*dphidsig_e*dsigdEe
+     dF2dEv = 0.5*temp1_F**(-0.5d0)*temp3_F*dpdEv*sol(2)/dtime/E0_dot + temp1_F**0.5d0/dtime/E0_dot   &
+              -ddphiddp*dpdEv*phi**m-dphidp*m*phi**(m-1)*dphidp*dpdEv
+     ! Calculte two functions
+         F1 = temp1_F**0.5d0*sol(1)/dtime/E0_dot - dphidsig_e*phi**m
+         F2 = temp1_F**0.5d0*sol(2)/dtime/E0_dot - dphidp*phi**m
+
+         F_vec(1) = F1
+         F_vec(2) = F2
+     !  Calculate the tangents matrix dF_mat
+       dF_mat(1,1) =  dF1dEe
+       dF_mat(1,2) =  dF1dEv
+       dF_mat(2,1) =  dF2dEe
+       dF_mat(2,2) =  dF2dEv
+
+     ! solve the linear equations
+       call  invert_small(dF_mat,dF_mat_inv,det_dF_mat)
+       dE_vec = - matmul(dF_mat_inv,F_vec)
+!       dE_vec(1) = - dF_mat_inv(1,1)*F_vec(1)+ dF_mat_inv(1,2)*F_vec(2)
+!       dE_vec(2) = - dF_mat_inv(2,1)*F_vec(1)+ dF_mat_inv(2,2)*F_vec(2)
+     ! Update the solutions
+        sol_new = sol + dE_vec
+       if (sol_new(1) .LT. 0.d0) then
+            sol(1) = sol(1)/10.d0
+       else
+            sol(1) = sol_new(1)
+       end if
+       if (sol_new(2) .LT. 0.d0) then
+            sol(2) = sol(2)/10.d0
+       else
+            sol(2) = sol_new(2)
+       end if
+     ! Update the error and iterations
+       error = sqrt(F1**two +F2**two)
+       iter = iter + 1
+
+          if (iter .EQ. maxit) then
+            write(*,*) 'Warning in solving delta_mage: Max iterations exceeded.'
+            stop
+          end if
+
+      end do
+
+      dEe = sol(1)
+      dEv = sol(2)
+ !*********************************************************************************************
+   ! Update the sig_e ,p phi, dphidsig_e, dphidp and temp1_F for later use
+        sig_e = sig_estar - 1.5d0*Eyoung/(one+xnu)*dEe
+        p = P_star - Eyoung*third/(one-two*xnu)*dEv
+        phi = sqrt(sig_e**two/Y/Y + two*q1*f_star*cosh(1.5d0*q2*p/Y)-(one + q3*f_star**two))
+        dphidsig_e =  sig_e/Y/Y/phi
+        dphidp     =  q1*f_star*sinh(1.5d0*q2*p/Y)*1.5d0*q2/Y/phi
+        temp1_F  = dphidsig_e**two +2.d0/9.d0*dphidp**two
+
+!**********************************************************************************************
+   ! Stress at the end of the increment
+     Tau_tau = S_star - dEe*Eyoung/(one +xnu)*1.5d0*S_star/sig_estar + (P_star - Eyoung  &
+               *third/(one-two*xnu)*dEv)*Iden
+
+   ! Update the volume fraction and matrix strain
+       dEmatrix = E0_dot*dtime/(one-Vf_t)*phi**m*temp1_F**(-0.5d0)*(dphidsig_e*sig_e+third*dphidp*p)
+
+       Ematrix_tau = Ematrix_t + dEmatrix
+
+       Vf_tau = one + (Vf_t-one)*exp(-dEv)+ f_N*dEmatrix/s_N/sqrt(two*3.1415926d0) &
+                 *exp(-0.5d0*((Ematrix_t-e_N)/s_N)**two)
+
+    end if
+
+       if (Vf_tau .GT. f_F) then
+          counting = counting +1
+       end if
+!    Update state variables
+     Kirch = 0.d0
+     Ematrix = 0.d0
+     Vf = 0.d0
+!
+        do i=1,3
+          Kirch(i) = Tau_tau(i,i)
+        end do
+        Kirch(4) = Tau_tau(1,2)
+        Kirch(5) = Tau_tau(1,3)
+        Kirch(6) = Tau_tau(2,3)
+  !
+        Ematrix = Ematrix_tau
+  !
+        Vf = Vf_tau
+        updated_state_variables(1+jj:6+jj) = Kirch
+        updated_state_variables(7+jj) = Ematrix
+        updated_state_variables(8+jj) = Vf
+
+        jj = jj + 8
+
+
+         stress(1) = Tau_tau(1,1)
+         stress(2) = Tau_tau(2,2)
+         stress(3) = Tau_tau(3,3)
+         stress(4) = Tau_tau(1,2)
+         stress(5) = Tau_tau(1,3)
+         stress(6) = Tau_tau(2,3)
+
+
+!
+!        write(*,*) 'Ematrix_tau'
+!        write(*,*) ''
+!        write(*,*) Ematrix_tau
+!        write(*,*) 'Vf_tau '
+!        write(*,*) ''
+!        write(*,*) Vf_tau
+!        write(*,*) ' Tau_tau'
+!        write(*,*) ''
+!        write(*,*)  Tau_tau
+ !       stop
+
+end subroutine nl_poroplas_material

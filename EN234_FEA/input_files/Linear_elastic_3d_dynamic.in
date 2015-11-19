@@ -37,11 +37,11 @@
 %     The parameters are no. nodes on the element, total no. state variables, integer identifier
 
       ELEMENTS
-        PARAMETERS, 8, 0, 1001
+        PARAMETERS, 8, 0, 1011
 %       Define element properties - the values are passed to user subroutine elstif in the order they are listed here
 %       For the example provided, the params are Youngs Modulus, Poissons ratio
         PROPERTIES
-         1000.d0, 0.3d0
+         1000.d0, 0.33d0
         END PROPERTIES
 %     Define mass density (for explicity dynamics only)
        DENSITY, 10.d0
@@ -97,11 +97,12 @@
 %       The DEGREE OF FREEDOM key assigns values to nodal DOFs
 %       The syntax is node set name, DOF number, and either a value or a history name.
 %     
-%        DEGREES OF FREEDOM
-%           side, 2, VALUE, 0.d0
-%           left, 1, VALUE, 0.d0
-%           right, 1, HISTORY, dof_history
-%        END DEGREES OF FREEDOM
+        DEGREES OF FREEDOM
+           side, 2, VALUE, 0.d0
+           node1, 3, VALUE, 0.d0
+           left, 1, VALUE, 0.d0
+           right, 1, HISTORY, dof_history
+       END DEGREES OF FREEDOM
 
 
 %      The DISTRIBUTED LOAD key sets up prescribed (nominal) tractions on element faces
@@ -112,9 +113,9 @@
 %           element set, face #, SUBROUTINE, subroutine parameter name
 %
 %       We apply a constant traction to the end element - produces a roughly constant acceleration of the two elements plus some vibration....
-        DISTRIBUTED LOADS
-          end_element, 4, Value, 3.d0,0.d0,0.d0
-        END DISTRIBUTED LOADS
+%        DISTRIBUTED LOADS
+%          end_element, 4, Value, 3.d0,0.d0,0.d0
+%        END DISTRIBUTED LOADS
 
 
 
@@ -135,7 +136,7 @@
 
           TIME STEP, 0.01
           NUMBER OF STEPS, 200
-          STATE PRINT STEPS, 20
+          STATE PRINT STEPS, 10
           USER PRINT STEPS, 210
 
 
@@ -145,7 +146,7 @@
 %         The projected states are controlled by the user - see subroutine elstat in file usrelem.f90
 %         Also (for this example file) subroutine state_linelast_3dbasic in file el_linelast_3Dbasic.f90
 %         In this example the states are the stresses sxx,syy,szz,sxy,sxz,syz
-         PRINT STATE, Output_files\contourplots.dat
+         PRINT STATE, Linear_elastic_3d_dynamic/contourplots.dat
             DEGREES OF FREEDOM
             FIELD VARIABLES, S11,S22,S33,S12,S13,S23
             DISPLACED MESH

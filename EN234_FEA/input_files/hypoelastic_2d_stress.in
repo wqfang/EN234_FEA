@@ -121,7 +121,7 @@
 
 %   The CHECK STIFFNESS key tests the element subroutine to ensure that
 %   the residual force vector is consistent with the stiffness
-%       CHECK STIFFNESS, 112
+       CHECK STIFFNESS, 112
 
 
 

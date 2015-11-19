@@ -1,0 +1,4812 @@
+
+
+ The input file has been read successfully 
+ Number of elements:             2960
+ Number of nodes:                4014
+ Number of constraints:             0
+ Total no. degrees of freedom:  12042
+
+
+  Started explicit dynamic analysis 
+
+
+  
+   Step            1  completed
+   Elapsed time is    0.0000000000000000     
+   Printing state... 
+  
+   Step            2  completed
+   Elapsed time is    2.0000000000000000E-003
+   Printing state... 
+  
+   Step            3  completed
+   Elapsed time is    4.0000000000000001E-003
+   Printing state... 
+  
+   Step            4  completed
+   Elapsed time is    6.0000000000000001E-003
+   Printing state... 
+  
+   Step            5  completed
+   Elapsed time is    8.0000000000000002E-003
+   Printing state... 
+  
+   Step            6  completed
+   Elapsed time is    1.0000000000000000E-002
+   Printing state... 
+  
+   Step            7  completed
+   Elapsed time is    1.2000000000000000E-002
+   Printing state... 
+  
+   Step            8  completed
+   Elapsed time is    1.4000000000000000E-002
+   Printing state... 
+  
+   Step            9  completed
+   Elapsed time is    1.6000000000000000E-002
+   Printing state... 
+  
+   Step           10  completed
+   Elapsed time is    1.8000000000000002E-002
+   Printing state... 
+  
+   Step           11  completed
+   Elapsed time is    2.0000000000000004E-002
+   Printing state... 
+  
+   Step           12  completed
+   Elapsed time is    2.2000000000000006E-002
+   Printing state... 
+  
+   Step           13  completed
+   Elapsed time is    2.4000000000000007E-002
+   Printing state... 
+  
+   Step           14  completed
+   Elapsed time is    2.6000000000000009E-002
+   Printing state... 
+  
+   Step           15  completed
+   Elapsed time is    2.8000000000000011E-002
+   Printing state... 
+  
+   Step           16  completed
+   Elapsed time is    3.0000000000000013E-002
+   Printing state... 
+  
+   Step           17  completed
+   Elapsed time is    3.2000000000000015E-002
+   Printing state... 
+  
+   Step           18  completed
+   Elapsed time is    3.4000000000000016E-002
+   Printing state... 
+  
+   Step           19  completed
+   Elapsed time is    3.6000000000000018E-002
+   Printing state... 
+  
+   Step           20  completed
+   Elapsed time is    3.8000000000000020E-002
+   Printing state... 
+  
+   Step           21  completed
+   Elapsed time is    4.0000000000000022E-002
+   Printing state... 
+  
+   Step           22  completed
+   Elapsed time is    4.2000000000000023E-002
+   Printing state... 
+  
+   Step           23  completed
+   Elapsed time is    4.4000000000000025E-002
+   Printing state... 
+  
+   Step           24  completed
+   Elapsed time is    4.6000000000000027E-002
+   Printing state... 
+  
+   Step           25  completed
+   Elapsed time is    4.8000000000000029E-002
+   Printing state... 
+  
+   Step           26  completed
+   Elapsed time is    5.0000000000000031E-002
+   Printing state... 
+  
+   Step           27  completed
+   Elapsed time is    5.2000000000000032E-002
+   Printing state... 
+  
+   Step           28  completed
+   Elapsed time is    5.4000000000000034E-002
+   Printing state... 
+  
+   Step           29  completed
+   Elapsed time is    5.6000000000000036E-002
+   Printing state... 
+  
+   Step           30  completed
+   Elapsed time is    5.8000000000000038E-002
+   Printing state... 
+  
+   Step           31  completed
+   Elapsed time is    6.0000000000000039E-002
+   Printing state... 
+  
+   Step           32  completed
+   Elapsed time is    6.2000000000000041E-002
+   Printing state... 
+  
+   Step           33  completed
+   Elapsed time is    6.4000000000000043E-002
+   Printing state... 
+  
+   Step           34  completed
+   Elapsed time is    6.6000000000000045E-002
+   Printing state... 
+  
+   Step           35  completed
+   Elapsed time is    6.8000000000000047E-002
+   Printing state... 
+  
+   Step           36  completed
+   Elapsed time is    7.0000000000000048E-002
+   Printing state... 
+  
+   Step           37  completed
+   Elapsed time is    7.2000000000000050E-002
+   Printing state... 
+  
+   Step           38  completed
+   Elapsed time is    7.4000000000000052E-002
+   Printing state... 
+  
+   Step           39  completed
+   Elapsed time is    7.6000000000000054E-002
+   Printing state... 
+  
+   Step           40  completed
+   Elapsed time is    7.8000000000000055E-002
+   Printing state... 
+  
+   Step           41  completed
+   Elapsed time is    8.0000000000000057E-002
+   Printing state... 
+  
+   Step           42  completed
+   Elapsed time is    8.2000000000000059E-002
+   Printing state... 
+  
+   Step           43  completed
+   Elapsed time is    8.4000000000000061E-002
+   Printing state... 
+  
+   Step           44  completed
+   Elapsed time is    8.6000000000000063E-002
+   Printing state... 
+  
+   Step           45  completed
+   Elapsed time is    8.8000000000000064E-002
+   Printing state... 
+  
+   Step           46  completed
+   Elapsed time is    9.0000000000000066E-002
+   Printing state... 
+  
+   Step           47  completed
+   Elapsed time is    9.2000000000000068E-002
+   Printing state... 
+  
+   Step           48  completed
+   Elapsed time is    9.4000000000000070E-002
+   Printing state... 
+  
+   Step           49  completed
+   Elapsed time is    9.6000000000000071E-002
+   Printing state... 
+  
+   Step           50  completed
+   Elapsed time is    9.8000000000000073E-002
+   Printing state... 
+  
+   Step           51  completed
+   Elapsed time is   0.10000000000000007     
+   Printing state... 
+  
+   Step           52  completed
+   Elapsed time is   0.10200000000000008     
+   Printing state... 
+  
+   Step           53  completed
+   Elapsed time is   0.10400000000000008     
+   Printing state... 
+  
+   Step           54  completed
+   Elapsed time is   0.10600000000000008     
+   Printing state... 
+  
+   Step           55  completed
+   Elapsed time is   0.10800000000000008     
+   Printing state... 
+  
+   Step           56  completed
+   Elapsed time is   0.11000000000000008     
+   Printing state... 
+  
+   Step           57  completed
+   Elapsed time is   0.11200000000000009     
+   Printing state... 
+  
+   Step           58  completed
+   Elapsed time is   0.11400000000000009     
+   Printing state... 
+  
+   Step           59  completed
+   Elapsed time is   0.11600000000000009     
+   Printing state... 
+  
+   Step           60  completed
+   Elapsed time is   0.11800000000000009     
+   Printing state... 
+  
+   Step           61  completed
+   Elapsed time is   0.12000000000000009     
+   Printing state... 
+  
+   Step           62  completed
+   Elapsed time is   0.12200000000000009     
+   Printing state... 
+  
+   Step           63  completed
+   Elapsed time is   0.12400000000000010     
+   Printing state... 
+  
+   Step           64  completed
+   Elapsed time is   0.12600000000000008     
+   Printing state... 
+  
+   Step           65  completed
+   Elapsed time is   0.12800000000000009     
+   Printing state... 
+  
+   Step           66  completed
+   Elapsed time is   0.13000000000000009     
+   Printing state... 
+  
+   Step           67  completed
+   Elapsed time is   0.13200000000000009     
+   Printing state... 
+  
+   Step           68  completed
+   Elapsed time is   0.13400000000000009     
+   Printing state... 
+  
+   Step           69  completed
+   Elapsed time is   0.13600000000000009     
+   Printing state... 
+  
+   Step           70  completed
+   Elapsed time is   0.13800000000000009     
+   Printing state... 
+  
+   Step           71  completed
+   Elapsed time is   0.14000000000000010     
+   Printing state... 
+  
+   Step           72  completed
+   Elapsed time is   0.14200000000000010     
+   Printing state... 
+  
+   Step           73  completed
+   Elapsed time is   0.14400000000000010     
+   Printing state... 
+  
+   Step           74  completed
+   Elapsed time is   0.14600000000000010     
+   Printing state... 
+  
+   Step           75  completed
+   Elapsed time is   0.14800000000000010     
+   Printing state... 
+  
+   Step           76  completed
+   Elapsed time is   0.15000000000000011     
+   Printing state... 
+  
+   Step           77  completed
+   Elapsed time is   0.15200000000000011     
+   Printing state... 
+  
+   Step           78  completed
+   Elapsed time is   0.15400000000000011     
+   Printing state... 
+  
+   Step           79  completed
+   Elapsed time is   0.15600000000000011     
+   Printing state... 
+  
+   Step           80  completed
+   Elapsed time is   0.15800000000000011     
+   Printing state... 
+  
+   Step           81  completed
+   Elapsed time is   0.16000000000000011     
+   Printing state... 
+  
+   Step           82  completed
+   Elapsed time is   0.16200000000000012     
+   Printing state... 
+  
+   Step           83  completed
+   Elapsed time is   0.16400000000000012     
+   Printing state... 
+  
+   Step           84  completed
+   Elapsed time is   0.16600000000000012     
+   Printing state... 
+  
+   Step           85  completed
+   Elapsed time is   0.16800000000000012     
+   Printing state... 
+  
+   Step           86  completed
+   Elapsed time is   0.17000000000000012     
+   Printing state... 
+  
+   Step           87  completed
+   Elapsed time is   0.17200000000000013     
+   Printing state... 
+  
+   Step           88  completed
+   Elapsed time is   0.17400000000000013     
+   Printing state... 
+  
+   Step           89  completed
+   Elapsed time is   0.17600000000000013     
+   Printing state... 
+  
+   Step           90  completed
+   Elapsed time is   0.17800000000000013     
+   Printing state... 
+  
+   Step           91  completed
+   Elapsed time is   0.18000000000000013     
+   Printing state... 
+  
+   Step           92  completed
+   Elapsed time is   0.18200000000000013     
+   Printing state... 
+  
+   Step           93  completed
+   Elapsed time is   0.18400000000000014     
+   Printing state... 
+  
+   Step           94  completed
+   Elapsed time is   0.18600000000000014     
+   Printing state... 
+  
+   Step           95  completed
+   Elapsed time is   0.18800000000000014     
+   Printing state... 
+  
+   Step           96  completed
+   Elapsed time is   0.19000000000000014     
+   Printing state... 
+  
+   Step           97  completed
+   Elapsed time is   0.19200000000000014     
+   Printing state... 
+  
+   Step           98  completed
+   Elapsed time is   0.19400000000000014     
+   Printing state... 
+  
+   Step           99  completed
+   Elapsed time is   0.19600000000000015     
+   Printing state... 
+  
+   Step          100  completed
+   Elapsed time is   0.19800000000000015     
+   Printing state... 
+  
+   Step          101  completed
+   Elapsed time is   0.20000000000000015     
+   Printing state... 
+  
+   Step          102  completed
+   Elapsed time is   0.20200000000000015     
+   Printing state... 
+  
+   Step          103  completed
+   Elapsed time is   0.20400000000000015     
+   Printing state... 
+  
+   Step          104  completed
+   Elapsed time is   0.20600000000000016     
+   Printing state... 
+  
+   Step          105  completed
+   Elapsed time is   0.20800000000000016     
+   Printing state... 
+  
+   Step          106  completed
+   Elapsed time is   0.21000000000000016     
+   Printing state... 
+  
+   Step          107  completed
+   Elapsed time is   0.21200000000000016     
+   Printing state... 
+  
+   Step          108  completed
+   Elapsed time is   0.21400000000000016     
+   Printing state... 
+  
+   Step          109  completed
+   Elapsed time is   0.21600000000000016     
+   Printing state... 
+  
+   Step          110  completed
+   Elapsed time is   0.21800000000000017     
+   Printing state... 
+  
+   Step          111  completed
+   Elapsed time is   0.22000000000000017     
+   Printing state... 
+  
+   Step          112  completed
+   Elapsed time is   0.22200000000000017     
+   Printing state... 
+  
+   Step          113  completed
+   Elapsed time is   0.22400000000000017     
+   Printing state... 
+  
+   Step          114  completed
+   Elapsed time is   0.22600000000000017     
+   Printing state... 
+  
+   Step          115  completed
+   Elapsed time is   0.22800000000000017     
+   Printing state... 
+  
+   Step          116  completed
+   Elapsed time is   0.23000000000000018     
+   Printing state... 
+  
+   Step          117  completed
+   Elapsed time is   0.23200000000000018     
+   Printing state... 
+  
+   Step          118  completed
+   Elapsed time is   0.23400000000000018     
+   Printing state... 
+  
+   Step          119  completed
+   Elapsed time is   0.23600000000000018     
+   Printing state... 
+  
+   Step          120  completed
+   Elapsed time is   0.23800000000000018     
+   Printing state... 
+  
+   Step          121  completed
+   Elapsed time is   0.24000000000000019     
+   Printing state... 
+  
+   Step          122  completed
+   Elapsed time is   0.24200000000000019     
+   Printing state... 
+  
+   Step          123  completed
+   Elapsed time is   0.24400000000000019     
+   Printing state... 
+  
+   Step          124  completed
+   Elapsed time is   0.24600000000000019     
+   Printing state... 
+  
+   Step          125  completed
+   Elapsed time is   0.24800000000000019     
+   Printing state... 
+  
+   Step          126  completed
+   Elapsed time is   0.25000000000000017     
+   Printing state... 
+  
+   Step          127  completed
+   Elapsed time is   0.25200000000000017     
+   Printing state... 
+  
+   Step          128  completed
+   Elapsed time is   0.25400000000000017     
+   Printing state... 
+  
+   Step          129  completed
+   Elapsed time is   0.25600000000000017     
+   Printing state... 
+  
+   Step          130  completed
+   Elapsed time is   0.25800000000000017     
+   Printing state... 
+  
+   Step          131  completed
+   Elapsed time is   0.26000000000000018     
+   Printing state... 
+  
+   Step          132  completed
+   Elapsed time is   0.26200000000000018     
+   Printing state... 
+  
+   Step          133  completed
+   Elapsed time is   0.26400000000000018     
+   Printing state... 
+  
+   Step          134  completed
+   Elapsed time is   0.26600000000000018     
+   Printing state... 
+  
+   Step          135  completed
+   Elapsed time is   0.26800000000000018     
+   Printing state... 
+  
+   Step          136  completed
+   Elapsed time is   0.27000000000000018     
+   Printing state... 
+  
+   Step          137  completed
+   Elapsed time is   0.27200000000000019     
+   Printing state... 
+  
+   Step          138  completed
+   Elapsed time is   0.27400000000000019     
+   Printing state... 
+  
+   Step          139  completed
+   Elapsed time is   0.27600000000000019     
+   Printing state... 
+  
+   Step          140  completed
+   Elapsed time is   0.27800000000000019     
+   Printing state... 
+  
+   Step          141  completed
+   Elapsed time is   0.28000000000000019     
+   Printing state... 
+  
+   Step          142  completed
+   Elapsed time is   0.28200000000000019     
+   Printing state... 
+  
+   Step          143  completed
+   Elapsed time is   0.28400000000000020     
+   Printing state... 
+  
+   Step          144  completed
+   Elapsed time is   0.28600000000000020     
+   Printing state... 
+  
+   Step          145  completed
+   Elapsed time is   0.28800000000000020     
+   Printing state... 
+  
+   Step          146  completed
+   Elapsed time is   0.29000000000000020     
+   Printing state... 
+  
+   Step          147  completed
+   Elapsed time is   0.29200000000000020     
+   Printing state... 
+  
+   Step          148  completed
+   Elapsed time is   0.29400000000000021     
+   Printing state... 
+  
+   Step          149  completed
+   Elapsed time is   0.29600000000000021     
+   Printing state... 
+  
+   Step          150  completed
+   Elapsed time is   0.29800000000000021     
+   Printing state... 
+  
+   Step          151  completed
+   Elapsed time is   0.30000000000000021     
+   Printing state... 
+  
+   Step          152  completed
+   Elapsed time is   0.30200000000000021     
+   Printing state... 
+  
+   Step          153  completed
+   Elapsed time is   0.30400000000000021     
+   Printing state... 
+  
+   Step          154  completed
+   Elapsed time is   0.30600000000000022     
+   Printing state... 
+  
+   Step          155  completed
+   Elapsed time is   0.30800000000000022     
+   Printing state... 
+  
+   Step          156  completed
+   Elapsed time is   0.31000000000000022     
+   Printing state... 
+  
+   Step          157  completed
+   Elapsed time is   0.31200000000000022     
+   Printing state... 
+  
+   Step          158  completed
+   Elapsed time is   0.31400000000000022     
+   Printing state... 
+  
+   Step          159  completed
+   Elapsed time is   0.31600000000000023     
+   Printing state... 
+  
+   Step          160  completed
+   Elapsed time is   0.31800000000000023     
+   Printing state... 
+  
+   Step          161  completed
+   Elapsed time is   0.32000000000000023     
+   Printing state... 
+  
+   Step          162  completed
+   Elapsed time is   0.32200000000000023     
+   Printing state... 
+  
+   Step          163  completed
+   Elapsed time is   0.32400000000000023     
+   Printing state... 
+  
+   Step          164  completed
+   Elapsed time is   0.32600000000000023     
+   Printing state... 
+  
+   Step          165  completed
+   Elapsed time is   0.32800000000000024     
+   Printing state... 
+  
+   Step          166  completed
+   Elapsed time is   0.33000000000000024     
+   Printing state... 
+  
+   Step          167  completed
+   Elapsed time is   0.33200000000000024     
+   Printing state... 
+  
+   Step          168  completed
+   Elapsed time is   0.33400000000000024     
+   Printing state... 
+  
+   Step          169  completed
+   Elapsed time is   0.33600000000000024     
+   Printing state... 
+  
+   Step          170  completed
+   Elapsed time is   0.33800000000000024     
+   Printing state... 
+  
+   Step          171  completed
+   Elapsed time is   0.34000000000000025     
+   Printing state... 
+  
+   Step          172  completed
+   Elapsed time is   0.34200000000000025     
+   Printing state... 
+  
+   Step          173  completed
+   Elapsed time is   0.34400000000000025     
+   Printing state... 
+  
+   Step          174  completed
+   Elapsed time is   0.34600000000000025     
+   Printing state... 
+  
+   Step          175  completed
+   Elapsed time is   0.34800000000000025     
+   Printing state... 
+  
+   Step          176  completed
+   Elapsed time is   0.35000000000000026     
+   Printing state... 
+  
+   Step          177  completed
+   Elapsed time is   0.35200000000000026     
+   Printing state... 
+  
+   Step          178  completed
+   Elapsed time is   0.35400000000000026     
+   Printing state... 
+  
+   Step          179  completed
+   Elapsed time is   0.35600000000000026     
+   Printing state... 
+  
+   Step          180  completed
+   Elapsed time is   0.35800000000000026     
+   Printing state... 
+  
+   Step          181  completed
+   Elapsed time is   0.36000000000000026     
+   Printing state... 
+  
+   Step          182  completed
+   Elapsed time is   0.36200000000000027     
+   Printing state... 
+  
+   Step          183  completed
+   Elapsed time is   0.36400000000000027     
+   Printing state... 
+  
+   Step          184  completed
+   Elapsed time is   0.36600000000000027     
+   Printing state... 
+  
+   Step          185  completed
+   Elapsed time is   0.36800000000000027     
+   Printing state... 
+  
+   Step          186  completed
+   Elapsed time is   0.37000000000000027     
+   Printing state... 
+  
+   Step          187  completed
+   Elapsed time is   0.37200000000000027     
+   Printing state... 
+  
+   Step          188  completed
+   Elapsed time is   0.37400000000000028     
+   Printing state... 
+  
+   Step          189  completed
+   Elapsed time is   0.37600000000000028     
+   Printing state... 
+  
+   Step          190  completed
+   Elapsed time is   0.37800000000000028     
+   Printing state... 
+  
+   Step          191  completed
+   Elapsed time is   0.38000000000000028     
+   Printing state... 
+  
+   Step          192  completed
+   Elapsed time is   0.38200000000000028     
+   Printing state... 
+  
+   Step          193  completed
+   Elapsed time is   0.38400000000000029     
+   Printing state... 
+  
+   Step          194  completed
+   Elapsed time is   0.38600000000000029     
+   Printing state... 
+  
+   Step          195  completed
+   Elapsed time is   0.38800000000000029     
+   Printing state... 
+  
+   Step          196  completed
+   Elapsed time is   0.39000000000000029     
+   Printing state... 
+  
+   Step          197  completed
+   Elapsed time is   0.39200000000000029     
+   Printing state... 
+  
+   Step          198  completed
+   Elapsed time is   0.39400000000000029     
+   Printing state... 
+  
+   Step          199  completed
+   Elapsed time is   0.39600000000000030     
+   Printing state... 
+  
+   Step          200  completed
+   Elapsed time is   0.39800000000000030     
+   Printing state... 
+  
+   Step          201  completed
+   Elapsed time is   0.40000000000000030     
+   Printing state... 
+  
+   Step          202  completed
+   Elapsed time is   0.40200000000000030     
+   Printing state... 
+  
+   Step          203  completed
+   Elapsed time is   0.40400000000000030     
+   Printing state... 
+  
+   Step          204  completed
+   Elapsed time is   0.40600000000000031     
+   Printing state... 
+  
+   Step          205  completed
+   Elapsed time is   0.40800000000000031     
+   Printing state... 
+  
+   Step          206  completed
+   Elapsed time is   0.41000000000000031     
+   Printing state... 
+  
+   Step          207  completed
+   Elapsed time is   0.41200000000000031     
+   Printing state... 
+  
+   Step          208  completed
+   Elapsed time is   0.41400000000000031     
+   Printing state... 
+  
+   Step          209  completed
+   Elapsed time is   0.41600000000000031     
+   Printing state... 
+  
+   Step          210  completed
+   Elapsed time is   0.41800000000000032     
+   Printing state... 
+  
+   Step          211  completed
+   Elapsed time is   0.42000000000000032     
+   Printing state... 
+  
+   Step          212  completed
+   Elapsed time is   0.42200000000000032     
+   Printing state... 
+  
+   Step          213  completed
+   Elapsed time is   0.42400000000000032     
+   Printing state... 
+  
+   Step          214  completed
+   Elapsed time is   0.42600000000000032     
+   Printing state... 
+  
+   Step          215  completed
+   Elapsed time is   0.42800000000000032     
+   Printing state... 
+  
+   Step          216  completed
+   Elapsed time is   0.43000000000000033     
+   Printing state... 
+  
+   Step          217  completed
+   Elapsed time is   0.43200000000000033     
+   Printing state... 
+  
+   Step          218  completed
+   Elapsed time is   0.43400000000000033     
+   Printing state... 
+  
+   Step          219  completed
+   Elapsed time is   0.43600000000000033     
+   Printing state... 
+  
+   Step          220  completed
+   Elapsed time is   0.43800000000000033     
+   Printing state... 
+  
+   Step          221  completed
+   Elapsed time is   0.44000000000000034     
+   Printing state... 
+  
+   Step          222  completed
+   Elapsed time is   0.44200000000000034     
+   Printing state... 
+  
+   Step          223  completed
+   Elapsed time is   0.44400000000000034     
+   Printing state... 
+  
+   Step          224  completed
+   Elapsed time is   0.44600000000000034     
+   Printing state... 
+  
+   Step          225  completed
+   Elapsed time is   0.44800000000000034     
+   Printing state... 
+  
+   Step          226  completed
+   Elapsed time is   0.45000000000000034     
+   Printing state... 
+  
+   Step          227  completed
+   Elapsed time is   0.45200000000000035     
+   Printing state... 
+  
+   Step          228  completed
+   Elapsed time is   0.45400000000000035     
+   Printing state... 
+  
+   Step          229  completed
+   Elapsed time is   0.45600000000000035     
+   Printing state... 
+  
+   Step          230  completed
+   Elapsed time is   0.45800000000000035     
+   Printing state... 
+  
+   Step          231  completed
+   Elapsed time is   0.46000000000000035     
+   Printing state... 
+  
+   Step          232  completed
+   Elapsed time is   0.46200000000000035     
+   Printing state... 
+  
+   Step          233  completed
+   Elapsed time is   0.46400000000000036     
+   Printing state... 
+  
+   Step          234  completed
+   Elapsed time is   0.46600000000000036     
+   Printing state... 
+  
+   Step          235  completed
+   Elapsed time is   0.46800000000000036     
+   Printing state... 
+  
+   Step          236  completed
+   Elapsed time is   0.47000000000000036     
+   Printing state... 
+  
+   Step          237  completed
+   Elapsed time is   0.47200000000000036     
+   Printing state... 
+  
+   Step          238  completed
+   Elapsed time is   0.47400000000000037     
+   Printing state... 
+  
+   Step          239  completed
+   Elapsed time is   0.47600000000000037     
+   Printing state... 
+  
+   Step          240  completed
+   Elapsed time is   0.47800000000000037     
+   Printing state... 
+  
+   Step          241  completed
+   Elapsed time is   0.48000000000000037     
+   Printing state... 
+  
+   Step          242  completed
+   Elapsed time is   0.48200000000000037     
+   Printing state... 
+  
+   Step          243  completed
+   Elapsed time is   0.48400000000000037     
+   Printing state... 
+  
+   Step          244  completed
+   Elapsed time is   0.48600000000000038     
+   Printing state... 
+  
+   Step          245  completed
+   Elapsed time is   0.48800000000000038     
+   Printing state... 
+  
+   Step          246  completed
+   Elapsed time is   0.49000000000000038     
+   Printing state... 
+  
+   Step          247  completed
+   Elapsed time is   0.49200000000000038     
+   Printing state... 
+  
+   Step          248  completed
+   Elapsed time is   0.49400000000000038     
+   Printing state... 
+  
+   Step          249  completed
+   Elapsed time is   0.49600000000000039     
+   Printing state... 
+  
+   Step          250  completed
+   Elapsed time is   0.49800000000000039     
+   Printing state... 
+  
+   Step          251  completed
+   Elapsed time is   0.50000000000000033     
+   Printing state... 
+  
+   Step          252  completed
+   Elapsed time is   0.50200000000000033     
+   Printing state... 
+  
+   Step          253  completed
+   Elapsed time is   0.50400000000000034     
+   Printing state... 
+  
+   Step          254  completed
+   Elapsed time is   0.50600000000000034     
+   Printing state... 
+  
+   Step          255  completed
+   Elapsed time is   0.50800000000000034     
+   Printing state... 
+  
+   Step          256  completed
+   Elapsed time is   0.51000000000000034     
+   Printing state... 
+  
+   Step          257  completed
+   Elapsed time is   0.51200000000000034     
+   Printing state... 
+  
+   Step          258  completed
+   Elapsed time is   0.51400000000000035     
+   Printing state... 
+  
+   Step          259  completed
+   Elapsed time is   0.51600000000000035     
+   Printing state... 
+  
+   Step          260  completed
+   Elapsed time is   0.51800000000000035     
+   Printing state... 
+  
+   Step          261  completed
+   Elapsed time is   0.52000000000000035     
+   Printing state... 
+  
+   Step          262  completed
+   Elapsed time is   0.52200000000000035     
+   Printing state... 
+  
+   Step          263  completed
+   Elapsed time is   0.52400000000000035     
+   Printing state... 
+  
+   Step          264  completed
+   Elapsed time is   0.52600000000000036     
+   Printing state... 
+  
+   Step          265  completed
+   Elapsed time is   0.52800000000000036     
+   Printing state... 
+  
+   Step          266  completed
+   Elapsed time is   0.53000000000000036     
+   Printing state... 
+  
+   Step          267  completed
+   Elapsed time is   0.53200000000000036     
+   Printing state... 
+  
+   Step          268  completed
+   Elapsed time is   0.53400000000000036     
+   Printing state... 
+  
+   Step          269  completed
+   Elapsed time is   0.53600000000000037     
+   Printing state... 
+  
+   Step          270  completed
+   Elapsed time is   0.53800000000000037     
+   Printing state... 
+  
+   Step          271  completed
+   Elapsed time is   0.54000000000000037     
+   Printing state... 
+  
+   Step          272  completed
+   Elapsed time is   0.54200000000000037     
+   Printing state... 
+  
+   Step          273  completed
+   Elapsed time is   0.54400000000000037     
+   Printing state... 
+  
+   Step          274  completed
+   Elapsed time is   0.54600000000000037     
+   Printing state... 
+  
+   Step          275  completed
+   Elapsed time is   0.54800000000000038     
+   Printing state... 
+  
+   Step          276  completed
+   Elapsed time is   0.55000000000000038     
+   Printing state... 
+  
+   Step          277  completed
+   Elapsed time is   0.55200000000000038     
+   Printing state... 
+  
+   Step          278  completed
+   Elapsed time is   0.55400000000000038     
+   Printing state... 
+  
+   Step          279  completed
+   Elapsed time is   0.55600000000000038     
+   Printing state... 
+  
+   Step          280  completed
+   Elapsed time is   0.55800000000000038     
+   Printing state... 
+  
+   Step          281  completed
+   Elapsed time is   0.56000000000000039     
+   Printing state... 
+  
+   Step          282  completed
+   Elapsed time is   0.56200000000000039     
+   Printing state... 
+  
+   Step          283  completed
+   Elapsed time is   0.56400000000000039     
+   Printing state... 
+  
+   Step          284  completed
+   Elapsed time is   0.56600000000000039     
+   Printing state... 
+  
+   Step          285  completed
+   Elapsed time is   0.56800000000000039     
+   Printing state... 
+  
+   Step          286  completed
+   Elapsed time is   0.57000000000000040     
+   Printing state... 
+  
+   Step          287  completed
+   Elapsed time is   0.57200000000000040     
+   Printing state... 
+  
+   Step          288  completed
+   Elapsed time is   0.57400000000000040     
+   Printing state... 
+  
+   Step          289  completed
+   Elapsed time is   0.57600000000000040     
+   Printing state... 
+  
+   Step          290  completed
+   Elapsed time is   0.57800000000000040     
+   Printing state... 
+  
+   Step          291  completed
+   Elapsed time is   0.58000000000000040     
+   Printing state... 
+  
+   Step          292  completed
+   Elapsed time is   0.58200000000000041     
+   Printing state... 
+  
+   Step          293  completed
+   Elapsed time is   0.58400000000000041     
+   Printing state... 
+  
+   Step          294  completed
+   Elapsed time is   0.58600000000000041     
+   Printing state... 
+  
+   Step          295  completed
+   Elapsed time is   0.58800000000000041     
+   Printing state... 
+  
+   Step          296  completed
+   Elapsed time is   0.59000000000000041     
+   Printing state... 
+  
+   Step          297  completed
+   Elapsed time is   0.59200000000000041     
+   Printing state... 
+  
+   Step          298  completed
+   Elapsed time is   0.59400000000000042     
+   Printing state... 
+  
+   Step          299  completed
+   Elapsed time is   0.59600000000000042     
+   Printing state... 
+  
+   Step          300  completed
+   Elapsed time is   0.59800000000000042     
+   Printing state... 
+  
+   Step          301  completed
+   Elapsed time is   0.60000000000000042     
+   Printing state... 
+  
+   Step          302  completed
+   Elapsed time is   0.60200000000000042     
+   Printing state... 
+  
+   Step          303  completed
+   Elapsed time is   0.60400000000000043     
+   Printing state... 
+  
+   Step          304  completed
+   Elapsed time is   0.60600000000000043     
+   Printing state... 
+  
+   Step          305  completed
+   Elapsed time is   0.60800000000000043     
+   Printing state... 
+  
+   Step          306  completed
+   Elapsed time is   0.61000000000000043     
+   Printing state... 
+  
+   Step          307  completed
+   Elapsed time is   0.61200000000000043     
+   Printing state... 
+  
+   Step          308  completed
+   Elapsed time is   0.61400000000000043     
+   Printing state... 
+  
+   Step          309  completed
+   Elapsed time is   0.61600000000000044     
+   Printing state... 
+  
+   Step          310  completed
+   Elapsed time is   0.61800000000000044     
+   Printing state... 
+  
+   Step          311  completed
+   Elapsed time is   0.62000000000000044     
+   Printing state... 
+  
+   Step          312  completed
+   Elapsed time is   0.62200000000000044     
+   Printing state... 
+  
+   Step          313  completed
+   Elapsed time is   0.62400000000000044     
+   Printing state... 
+  
+   Step          314  completed
+   Elapsed time is   0.62600000000000044     
+   Printing state... 
+  
+   Step          315  completed
+   Elapsed time is   0.62800000000000045     
+   Printing state... 
+  
+   Step          316  completed
+   Elapsed time is   0.63000000000000045     
+   Printing state... 
+  
+   Step          317  completed
+   Elapsed time is   0.63200000000000045     
+   Printing state... 
+  
+   Step          318  completed
+   Elapsed time is   0.63400000000000045     
+   Printing state... 
+  
+   Step          319  completed
+   Elapsed time is   0.63600000000000045     
+   Printing state... 
+  
+   Step          320  completed
+   Elapsed time is   0.63800000000000046     
+   Printing state... 
+  
+   Step          321  completed
+   Elapsed time is   0.64000000000000046     
+   Printing state... 
+  
+   Step          322  completed
+   Elapsed time is   0.64200000000000046     
+   Printing state... 
+  
+   Step          323  completed
+   Elapsed time is   0.64400000000000046     
+   Printing state... 
+  
+   Step          324  completed
+   Elapsed time is   0.64600000000000046     
+   Printing state... 
+  
+   Step          325  completed
+   Elapsed time is   0.64800000000000046     
+   Printing state... 
+  
+   Step          326  completed
+   Elapsed time is   0.65000000000000047     
+   Printing state... 
+  
+   Step          327  completed
+   Elapsed time is   0.65200000000000047     
+   Printing state... 
+  
+   Step          328  completed
+   Elapsed time is   0.65400000000000047     
+   Printing state... 
+  
+   Step          329  completed
+   Elapsed time is   0.65600000000000047     
+   Printing state... 
+  
+   Step          330  completed
+   Elapsed time is   0.65800000000000047     
+   Printing state... 
+  
+   Step          331  completed
+   Elapsed time is   0.66000000000000048     
+   Printing state... 
+  
+   Step          332  completed
+   Elapsed time is   0.66200000000000048     
+   Printing state... 
+  
+   Step          333  completed
+   Elapsed time is   0.66400000000000048     
+   Printing state... 
+  
+   Step          334  completed
+   Elapsed time is   0.66600000000000048     
+   Printing state... 
+  
+   Step          335  completed
+   Elapsed time is   0.66800000000000048     
+   Printing state... 
+  
+   Step          336  completed
+   Elapsed time is   0.67000000000000048     
+   Printing state... 
+  
+   Step          337  completed
+   Elapsed time is   0.67200000000000049     
+   Printing state... 
+  
+   Step          338  completed
+   Elapsed time is   0.67400000000000049     
+   Printing state... 
+  
+   Step          339  completed
+   Elapsed time is   0.67600000000000049     
+   Printing state... 
+  
+   Step          340  completed
+   Elapsed time is   0.67800000000000049     
+   Printing state... 
+  
+   Step          341  completed
+   Elapsed time is   0.68000000000000049     
+   Printing state... 
+  
+   Step          342  completed
+   Elapsed time is   0.68200000000000049     
+   Printing state... 
+  
+   Step          343  completed
+   Elapsed time is   0.68400000000000050     
+   Printing state... 
+  
+   Step          344  completed
+   Elapsed time is   0.68600000000000050     
+   Printing state... 
+  
+   Step          345  completed
+   Elapsed time is   0.68800000000000050     
+   Printing state... 
+  
+   Step          346  completed
+   Elapsed time is   0.69000000000000050     
+   Printing state... 
+  
+   Step          347  completed
+   Elapsed time is   0.69200000000000050     
+   Printing state... 
+  
+   Step          348  completed
+   Elapsed time is   0.69400000000000051     
+   Printing state... 
+  
+   Step          349  completed
+   Elapsed time is   0.69600000000000051     
+   Printing state... 
+  
+   Step          350  completed
+   Elapsed time is   0.69800000000000051     
+   Printing state... 
+  
+   Step          351  completed
+   Elapsed time is   0.70000000000000051     
+   Printing state... 
+  
+   Step          352  completed
+   Elapsed time is   0.70200000000000051     
+   Printing state... 
+  
+   Step          353  completed
+   Elapsed time is   0.70400000000000051     
+   Printing state... 
+  
+   Step          354  completed
+   Elapsed time is   0.70600000000000052     
+   Printing state... 
+  
+   Step          355  completed
+   Elapsed time is   0.70800000000000052     
+   Printing state... 
+  
+   Step          356  completed
+   Elapsed time is   0.71000000000000052     
+   Printing state... 
+  
+   Step          357  completed
+   Elapsed time is   0.71200000000000052     
+   Printing state... 
+  
+   Step          358  completed
+   Elapsed time is   0.71400000000000052     
+   Printing state... 
+  
+   Step          359  completed
+   Elapsed time is   0.71600000000000052     
+   Printing state... 
+  
+   Step          360  completed
+   Elapsed time is   0.71800000000000053     
+   Printing state... 
+  
+   Step          361  completed
+   Elapsed time is   0.72000000000000053     
+   Printing state... 
+  
+   Step          362  completed
+   Elapsed time is   0.72200000000000053     
+   Printing state... 
+  
+   Step          363  completed
+   Elapsed time is   0.72400000000000053     
+   Printing state... 
+  
+   Step          364  completed
+   Elapsed time is   0.72600000000000053     
+   Printing state... 
+  
+   Step          365  completed
+   Elapsed time is   0.72800000000000054     
+   Printing state... 
+  
+   Step          366  completed
+   Elapsed time is   0.73000000000000054     
+   Printing state... 
+  
+   Step          367  completed
+   Elapsed time is   0.73200000000000054     
+   Printing state... 
+  
+   Step          368  completed
+   Elapsed time is   0.73400000000000054     
+   Printing state... 
+  
+   Step          369  completed
+   Elapsed time is   0.73600000000000054     
+   Printing state... 
+  
+   Step          370  completed
+   Elapsed time is   0.73800000000000054     
+   Printing state... 
+  
+   Step          371  completed
+   Elapsed time is   0.74000000000000055     
+   Printing state... 
+  
+   Step          372  completed
+   Elapsed time is   0.74200000000000055     
+   Printing state... 
+  
+   Step          373  completed
+   Elapsed time is   0.74400000000000055     
+   Printing state... 
+  
+   Step          374  completed
+   Elapsed time is   0.74600000000000055     
+   Printing state... 
+  
+   Step          375  completed
+   Elapsed time is   0.74800000000000055     
+   Printing state... 
+  
+   Step          376  completed
+   Elapsed time is   0.75000000000000056     
+   Printing state... 
+  
+   Step          377  completed
+   Elapsed time is   0.75200000000000056     
+   Printing state... 
+  
+   Step          378  completed
+   Elapsed time is   0.75400000000000056     
+   Printing state... 
+  
+   Step          379  completed
+   Elapsed time is   0.75600000000000056     
+   Printing state... 
+  
+   Step          380  completed
+   Elapsed time is   0.75800000000000056     
+   Printing state... 
+  
+   Step          381  completed
+   Elapsed time is   0.76000000000000056     
+   Printing state... 
+  
+   Step          382  completed
+   Elapsed time is   0.76200000000000057     
+   Printing state... 
+  
+   Step          383  completed
+   Elapsed time is   0.76400000000000057     
+   Printing state... 
+  
+   Step          384  completed
+   Elapsed time is   0.76600000000000057     
+   Printing state... 
+  
+   Step          385  completed
+   Elapsed time is   0.76800000000000057     
+   Printing state... 
+  
+   Step          386  completed
+   Elapsed time is   0.77000000000000057     
+   Printing state... 
+  
+   Step          387  completed
+   Elapsed time is   0.77200000000000057     
+   Printing state... 
+  
+   Step          388  completed
+   Elapsed time is   0.77400000000000058     
+   Printing state... 
+  
+   Step          389  completed
+   Elapsed time is   0.77600000000000058     
+   Printing state... 
+  
+   Step          390  completed
+   Elapsed time is   0.77800000000000058     
+   Printing state... 
+  
+   Step          391  completed
+   Elapsed time is   0.78000000000000058     
+   Printing state... 
+  
+   Step          392  completed
+   Elapsed time is   0.78200000000000058     
+   Printing state... 
+  
+   Step          393  completed
+   Elapsed time is   0.78400000000000059     
+   Printing state... 
+  
+   Step          394  completed
+   Elapsed time is   0.78600000000000059     
+   Printing state... 
+  
+   Step          395  completed
+   Elapsed time is   0.78800000000000059     
+   Printing state... 
+  
+   Step          396  completed
+   Elapsed time is   0.79000000000000059     
+   Printing state... 
+  
+   Step          397  completed
+   Elapsed time is   0.79200000000000059     
+   Printing state... 
+  
+   Step          398  completed
+   Elapsed time is   0.79400000000000059     
+   Printing state... 
+  
+   Step          399  completed
+   Elapsed time is   0.79600000000000060     
+   Printing state... 
+  
+   Step          400  completed
+   Elapsed time is   0.79800000000000060     
+   Printing state... 
+  
+   Step          401  completed
+   Elapsed time is   0.80000000000000060     
+   Printing state... 
+  
+   Step          402  completed
+   Elapsed time is   0.80200000000000060     
+   Printing state... 
+  
+   Step          403  completed
+   Elapsed time is   0.80400000000000060     
+   Printing state... 
+  
+   Step          404  completed
+   Elapsed time is   0.80600000000000060     
+   Printing state... 
+  
+   Step          405  completed
+   Elapsed time is   0.80800000000000061     
+   Printing state... 
+  
+   Step          406  completed
+   Elapsed time is   0.81000000000000061     
+   Printing state... 
+  
+   Step          407  completed
+   Elapsed time is   0.81200000000000061     
+   Printing state... 
+  
+   Step          408  completed
+   Elapsed time is   0.81400000000000061     
+   Printing state... 
+  
+   Step          409  completed
+   Elapsed time is   0.81600000000000061     
+   Printing state... 
+  
+   Step          410  completed
+   Elapsed time is   0.81800000000000062     
+   Printing state... 
+  
+   Step          411  completed
+   Elapsed time is   0.82000000000000062     
+   Printing state... 
+  
+   Step          412  completed
+   Elapsed time is   0.82200000000000062     
+   Printing state... 
+  
+   Step          413  completed
+   Elapsed time is   0.82400000000000062     
+   Printing state... 
+  
+   Step          414  completed
+   Elapsed time is   0.82600000000000062     
+   Printing state... 
+  
+   Step          415  completed
+   Elapsed time is   0.82800000000000062     
+   Printing state... 
+  
+   Step          416  completed
+   Elapsed time is   0.83000000000000063     
+   Printing state... 
+  
+   Step          417  completed
+   Elapsed time is   0.83200000000000063     
+   Printing state... 
+  
+   Step          418  completed
+   Elapsed time is   0.83400000000000063     
+   Printing state... 
+  
+   Step          419  completed
+   Elapsed time is   0.83600000000000063     
+   Printing state... 
+  
+   Step          420  completed
+   Elapsed time is   0.83800000000000063     
+   Printing state... 
+  
+   Step          421  completed
+   Elapsed time is   0.84000000000000064     
+   Printing state... 
+  
+   Step          422  completed
+   Elapsed time is   0.84200000000000064     
+   Printing state... 
+  
+   Step          423  completed
+   Elapsed time is   0.84400000000000064     
+   Printing state... 
+  
+   Step          424  completed
+   Elapsed time is   0.84600000000000064     
+   Printing state... 
+  
+   Step          425  completed
+   Elapsed time is   0.84800000000000064     
+   Printing state... 
+  
+   Step          426  completed
+   Elapsed time is   0.85000000000000064     
+   Printing state... 
+  
+   Step          427  completed
+   Elapsed time is   0.85200000000000065     
+   Printing state... 
+  
+   Step          428  completed
+   Elapsed time is   0.85400000000000065     
+   Printing state... 
+  
+   Step          429  completed
+   Elapsed time is   0.85600000000000065     
+   Printing state... 
+  
+   Step          430  completed
+   Elapsed time is   0.85800000000000065     
+   Printing state... 
+  
+   Step          431  completed
+   Elapsed time is   0.86000000000000065     
+   Printing state... 
+  
+   Step          432  completed
+   Elapsed time is   0.86200000000000065     
+   Printing state... 
+  
+   Step          433  completed
+   Elapsed time is   0.86400000000000066     
+   Printing state... 
+  
+   Step          434  completed
+   Elapsed time is   0.86600000000000066     
+   Printing state... 
+  
+   Step          435  completed
+   Elapsed time is   0.86800000000000066     
+   Printing state... 
+  
+   Step          436  completed
+   Elapsed time is   0.87000000000000066     
+   Printing state... 
+  
+   Step          437  completed
+   Elapsed time is   0.87200000000000066     
+   Printing state... 
+  
+   Step          438  completed
+   Elapsed time is   0.87400000000000067     
+   Printing state... 
+  
+   Step          439  completed
+   Elapsed time is   0.87600000000000067     
+   Printing state... 
+  
+   Step          440  completed
+   Elapsed time is   0.87800000000000067     
+   Printing state... 
+  
+   Step          441  completed
+   Elapsed time is   0.88000000000000067     
+   Printing state... 
+  
+   Step          442  completed
+   Elapsed time is   0.88200000000000067     
+   Printing state... 
+  
+   Step          443  completed
+   Elapsed time is   0.88400000000000067     
+   Printing state... 
+  
+   Step          444  completed
+   Elapsed time is   0.88600000000000068     
+   Printing state... 
+  
+   Step          445  completed
+   Elapsed time is   0.88800000000000068     
+   Printing state... 
+  
+   Step          446  completed
+   Elapsed time is   0.89000000000000068     
+   Printing state... 
+  
+   Step          447  completed
+   Elapsed time is   0.89200000000000068     
+   Printing state... 
+  
+   Step          448  completed
+   Elapsed time is   0.89400000000000068     
+   Printing state... 
+  
+   Step          449  completed
+   Elapsed time is   0.89600000000000068     
+   Printing state... 
+  
+   Step          450  completed
+   Elapsed time is   0.89800000000000069     
+   Printing state... 
+  
+   Step          451  completed
+   Elapsed time is   0.90000000000000069     
+   Printing state... 
+  
+   Step          452  completed
+   Elapsed time is   0.90200000000000069     
+   Printing state... 
+  
+   Step          453  completed
+   Elapsed time is   0.90400000000000069     
+   Printing state... 
+  
+   Step          454  completed
+   Elapsed time is   0.90600000000000069     
+   Printing state... 
+  
+   Step          455  completed
+   Elapsed time is   0.90800000000000070     
+   Printing state... 
+  
+   Step          456  completed
+   Elapsed time is   0.91000000000000070     
+   Printing state... 
+  
+   Step          457  completed
+   Elapsed time is   0.91200000000000070     
+   Printing state... 
+  
+   Step          458  completed
+   Elapsed time is   0.91400000000000070     
+   Printing state... 
+  
+   Step          459  completed
+   Elapsed time is   0.91600000000000070     
+   Printing state... 
+  
+   Step          460  completed
+   Elapsed time is   0.91800000000000070     
+   Printing state... 
+  
+   Step          461  completed
+   Elapsed time is   0.92000000000000071     
+   Printing state... 
+  
+   Step          462  completed
+   Elapsed time is   0.92200000000000071     
+   Printing state... 
+  
+   Step          463  completed
+   Elapsed time is   0.92400000000000071     
+   Printing state... 
+  
+   Step          464  completed
+   Elapsed time is   0.92600000000000071     
+   Printing state... 
+  
+   Step          465  completed
+   Elapsed time is   0.92800000000000071     
+   Printing state... 
+  
+   Step          466  completed
+   Elapsed time is   0.93000000000000071     
+   Printing state... 
+  
+   Step          467  completed
+   Elapsed time is   0.93200000000000072     
+   Printing state... 
+  
+   Step          468  completed
+   Elapsed time is   0.93400000000000072     
+   Printing state... 
+  
+   Step          469  completed
+   Elapsed time is   0.93600000000000072     
+   Printing state... 
+  
+   Step          470  completed
+   Elapsed time is   0.93800000000000072     
+   Printing state... 
+  
+   Step          471  completed
+   Elapsed time is   0.94000000000000072     
+   Printing state... 
+  
+   Step          472  completed
+   Elapsed time is   0.94200000000000073     
+   Printing state... 
+  
+   Step          473  completed
+   Elapsed time is   0.94400000000000073     
+   Printing state... 
+  
+   Step          474  completed
+   Elapsed time is   0.94600000000000073     
+   Printing state... 
+  
+   Step          475  completed
+   Elapsed time is   0.94800000000000073     
+   Printing state... 
+  
+   Step          476  completed
+   Elapsed time is   0.95000000000000073     
+   Printing state... 
+  
+   Step          477  completed
+   Elapsed time is   0.95200000000000073     
+   Printing state... 
+  
+   Step          478  completed
+   Elapsed time is   0.95400000000000074     
+   Printing state... 
+  
+   Step          479  completed
+   Elapsed time is   0.95600000000000074     
+   Printing state... 
+  
+   Step          480  completed
+   Elapsed time is   0.95800000000000074     
+   Printing state... 
+  
+   Step          481  completed
+   Elapsed time is   0.96000000000000074     
+   Printing state... 
+  
+   Step          482  completed
+   Elapsed time is   0.96200000000000074     
+   Printing state... 
+  
+   Step          483  completed
+   Elapsed time is   0.96400000000000075     
+   Printing state... 
+  
+   Step          484  completed
+   Elapsed time is   0.96600000000000075     
+   Printing state... 
+  
+   Step          485  completed
+   Elapsed time is   0.96800000000000075     
+   Printing state... 
+  
+   Step          486  completed
+   Elapsed time is   0.97000000000000075     
+   Printing state... 
+  
+   Step          487  completed
+   Elapsed time is   0.97200000000000075     
+   Printing state... 
+  
+   Step          488  completed
+   Elapsed time is   0.97400000000000075     
+   Printing state... 
+  
+   Step          489  completed
+   Elapsed time is   0.97600000000000076     
+   Printing state... 
+  
+   Step          490  completed
+   Elapsed time is   0.97800000000000076     
+   Printing state... 
+  
+   Step          491  completed
+   Elapsed time is   0.98000000000000076     
+   Printing state... 
+  
+   Step          492  completed
+   Elapsed time is   0.98200000000000076     
+   Printing state... 
+  
+   Step          493  completed
+   Elapsed time is   0.98400000000000076     
+   Printing state... 
+  
+   Step          494  completed
+   Elapsed time is   0.98600000000000076     
+   Printing state... 
+  
+   Step          495  completed
+   Elapsed time is   0.98800000000000077     
+   Printing state... 
+  
+   Step          496  completed
+   Elapsed time is   0.99000000000000077     
+   Printing state... 
+  
+   Step          497  completed
+   Elapsed time is   0.99200000000000077     
+   Printing state... 
+  
+   Step          498  completed
+   Elapsed time is   0.99400000000000077     
+   Printing state... 
+  
+   Step          499  completed
+   Elapsed time is   0.99600000000000077     
+   Printing state... 
+  
+   Step          500  completed
+   Elapsed time is   0.99800000000000078     
+   Printing state... 
+  
+   Step          501  completed
+   Elapsed time is    1.0000000000000007     
+   Printing state... 
+  
+   Step          502  completed
+   Elapsed time is    1.0020000000000007     
+   Printing state... 
+  
+   Step          503  completed
+   Elapsed time is    1.0040000000000007     
+   Printing state... 
+  
+   Step          504  completed
+   Elapsed time is    1.0060000000000007     
+   Printing state... 
+  
+   Step          505  completed
+   Elapsed time is    1.0080000000000007     
+   Printing state... 
+  
+   Step          506  completed
+   Elapsed time is    1.0100000000000007     
+   Printing state... 
+  
+   Step          507  completed
+   Elapsed time is    1.0120000000000007     
+   Printing state... 
+  
+   Step          508  completed
+   Elapsed time is    1.0140000000000007     
+   Printing state... 
+  
+   Step          509  completed
+   Elapsed time is    1.0160000000000007     
+   Printing state... 
+  
+   Step          510  completed
+   Elapsed time is    1.0180000000000007     
+   Printing state... 
+  
+   Step          511  completed
+   Elapsed time is    1.0200000000000007     
+   Printing state... 
+  
+   Step          512  completed
+   Elapsed time is    1.0220000000000007     
+   Printing state... 
+  
+   Step          513  completed
+   Elapsed time is    1.0240000000000007     
+   Printing state... 
+  
+   Step          514  completed
+   Elapsed time is    1.0260000000000007     
+   Printing state... 
+  
+   Step          515  completed
+   Elapsed time is    1.0280000000000007     
+   Printing state... 
+  
+   Step          516  completed
+   Elapsed time is    1.0300000000000007     
+   Printing state... 
+  
+   Step          517  completed
+   Elapsed time is    1.0320000000000007     
+   Printing state... 
+  
+   Step          518  completed
+   Elapsed time is    1.0340000000000007     
+   Printing state... 
+  
+   Step          519  completed
+   Elapsed time is    1.0360000000000007     
+   Printing state... 
+  
+   Step          520  completed
+   Elapsed time is    1.0380000000000007     
+   Printing state... 
+  
+   Step          521  completed
+   Elapsed time is    1.0400000000000007     
+   Printing state... 
+  
+   Step          522  completed
+   Elapsed time is    1.0420000000000007     
+   Printing state... 
+  
+   Step          523  completed
+   Elapsed time is    1.0440000000000007     
+   Printing state... 
+  
+   Step          524  completed
+   Elapsed time is    1.0460000000000007     
+   Printing state... 
+  
+   Step          525  completed
+   Elapsed time is    1.0480000000000007     
+   Printing state... 
+  
+   Step          526  completed
+   Elapsed time is    1.0500000000000007     
+   Printing state... 
+  
+   Step          527  completed
+   Elapsed time is    1.0520000000000007     
+   Printing state... 
+  
+   Step          528  completed
+   Elapsed time is    1.0540000000000007     
+   Printing state... 
+  
+   Step          529  completed
+   Elapsed time is    1.0560000000000007     
+   Printing state... 
+  
+   Step          530  completed
+   Elapsed time is    1.0580000000000007     
+   Printing state... 
+  
+   Step          531  completed
+   Elapsed time is    1.0600000000000007     
+   Printing state... 
+  
+   Step          532  completed
+   Elapsed time is    1.0620000000000007     
+   Printing state... 
+  
+   Step          533  completed
+   Elapsed time is    1.0640000000000007     
+   Printing state... 
+  
+   Step          534  completed
+   Elapsed time is    1.0660000000000007     
+   Printing state... 
+  
+   Step          535  completed
+   Elapsed time is    1.0680000000000007     
+   Printing state... 
+  
+   Step          536  completed
+   Elapsed time is    1.0700000000000007     
+   Printing state... 
+  
+   Step          537  completed
+   Elapsed time is    1.0720000000000007     
+   Printing state... 
+  
+   Step          538  completed
+   Elapsed time is    1.0740000000000007     
+   Printing state... 
+  
+   Step          539  completed
+   Elapsed time is    1.0760000000000007     
+   Printing state... 
+  
+   Step          540  completed
+   Elapsed time is    1.0780000000000007     
+   Printing state... 
+  
+   Step          541  completed
+   Elapsed time is    1.0800000000000007     
+   Printing state... 
+  
+   Step          542  completed
+   Elapsed time is    1.0820000000000007     
+   Printing state... 
+  
+   Step          543  completed
+   Elapsed time is    1.0840000000000007     
+   Printing state... 
+  
+   Step          544  completed
+   Elapsed time is    1.0860000000000007     
+   Printing state... 
+  
+   Step          545  completed
+   Elapsed time is    1.0880000000000007     
+   Printing state... 
+  
+   Step          546  completed
+   Elapsed time is    1.0900000000000007     
+   Printing state... 
+  
+   Step          547  completed
+   Elapsed time is    1.0920000000000007     
+   Printing state... 
+  
+   Step          548  completed
+   Elapsed time is    1.0940000000000007     
+   Printing state... 
+  
+   Step          549  completed
+   Elapsed time is    1.0960000000000008     
+   Printing state... 
+  
+   Step          550  completed
+   Elapsed time is    1.0980000000000008     
+   Printing state... 
+  
+   Step          551  completed
+   Elapsed time is    1.1000000000000008     
+   Printing state... 
+  
+   Step          552  completed
+   Elapsed time is    1.1020000000000008     
+   Printing state... 
+  
+   Step          553  completed
+   Elapsed time is    1.1040000000000008     
+   Printing state... 
+  
+   Step          554  completed
+   Elapsed time is    1.1060000000000008     
+   Printing state... 
+  
+   Step          555  completed
+   Elapsed time is    1.1080000000000008     
+   Printing state... 
+  
+   Step          556  completed
+   Elapsed time is    1.1100000000000008     
+   Printing state... 
+  
+   Step          557  completed
+   Elapsed time is    1.1120000000000008     
+   Printing state... 
+  
+   Step          558  completed
+   Elapsed time is    1.1140000000000008     
+   Printing state... 
+  
+   Step          559  completed
+   Elapsed time is    1.1160000000000008     
+   Printing state... 
+  
+   Step          560  completed
+   Elapsed time is    1.1180000000000008     
+   Printing state... 
+  
+   Step          561  completed
+   Elapsed time is    1.1200000000000008     
+   Printing state... 
+  
+   Step          562  completed
+   Elapsed time is    1.1220000000000008     
+   Printing state... 
+  
+   Step          563  completed
+   Elapsed time is    1.1240000000000008     
+   Printing state... 
+  
+   Step          564  completed
+   Elapsed time is    1.1260000000000008     
+   Printing state... 
+  
+   Step          565  completed
+   Elapsed time is    1.1280000000000008     
+   Printing state... 
+  
+   Step          566  completed
+   Elapsed time is    1.1300000000000008     
+   Printing state... 
+  
+   Step          567  completed
+   Elapsed time is    1.1320000000000008     
+   Printing state... 
+  
+   Step          568  completed
+   Elapsed time is    1.1340000000000008     
+   Printing state... 
+  
+   Step          569  completed
+   Elapsed time is    1.1360000000000008     
+   Printing state... 
+  
+   Step          570  completed
+   Elapsed time is    1.1380000000000008     
+   Printing state... 
+  
+   Step          571  completed
+   Elapsed time is    1.1400000000000008     
+   Printing state... 
+  
+   Step          572  completed
+   Elapsed time is    1.1420000000000008     
+   Printing state... 
+  
+   Step          573  completed
+   Elapsed time is    1.1440000000000008     
+   Printing state... 
+  
+   Step          574  completed
+   Elapsed time is    1.1460000000000008     
+   Printing state... 
+  
+   Step          575  completed
+   Elapsed time is    1.1480000000000008     
+   Printing state... 
+  
+   Step          576  completed
+   Elapsed time is    1.1500000000000008     
+   Printing state... 
+  
+   Step          577  completed
+   Elapsed time is    1.1520000000000008     
+   Printing state... 
+  
+   Step          578  completed
+   Elapsed time is    1.1540000000000008     
+   Printing state... 
+  
+   Step          579  completed
+   Elapsed time is    1.1560000000000008     
+   Printing state... 
+  
+   Step          580  completed
+   Elapsed time is    1.1580000000000008     
+   Printing state... 
+  
+   Step          581  completed
+   Elapsed time is    1.1600000000000008     
+   Printing state... 
+  
+   Step          582  completed
+   Elapsed time is    1.1620000000000008     
+   Printing state... 
+  
+   Step          583  completed
+   Elapsed time is    1.1640000000000008     
+   Printing state... 
+  
+   Step          584  completed
+   Elapsed time is    1.1660000000000008     
+   Printing state... 
+  
+   Step          585  completed
+   Elapsed time is    1.1680000000000008     
+   Printing state... 
+  
+   Step          586  completed
+   Elapsed time is    1.1700000000000008     
+   Printing state... 
+  
+   Step          587  completed
+   Elapsed time is    1.1720000000000008     
+   Printing state... 
+  
+   Step          588  completed
+   Elapsed time is    1.1740000000000008     
+   Printing state... 
+  
+   Step          589  completed
+   Elapsed time is    1.1760000000000008     
+   Printing state... 
+  
+   Step          590  completed
+   Elapsed time is    1.1780000000000008     
+   Printing state... 
+  
+   Step          591  completed
+   Elapsed time is    1.1800000000000008     
+   Printing state... 
+  
+   Step          592  completed
+   Elapsed time is    1.1820000000000008     
+   Printing state... 
+  
+   Step          593  completed
+   Elapsed time is    1.1840000000000008     
+   Printing state... 
+  
+   Step          594  completed
+   Elapsed time is    1.1860000000000008     
+   Printing state... 
+  
+   Step          595  completed
+   Elapsed time is    1.1880000000000008     
+   Printing state... 
+  
+   Step          596  completed
+   Elapsed time is    1.1900000000000008     
+   Printing state... 
+  
+   Step          597  completed
+   Elapsed time is    1.1920000000000008     
+   Printing state... 
+  
+   Step          598  completed
+   Elapsed time is    1.1940000000000008     
+   Printing state... 
+  
+   Step          599  completed
+   Elapsed time is    1.1960000000000008     
+   Printing state... 
+  
+   Step          600  completed
+   Elapsed time is    1.1980000000000008     
+   Printing state... 
+  
+   Step          601  completed
+   Elapsed time is    1.2000000000000008     
+   Printing state... 
+  
+   Step          602  completed
+   Elapsed time is    1.2020000000000008     
+   Printing state... 
+  
+   Step          603  completed
+   Elapsed time is    1.2040000000000008     
+   Printing state... 
+  
+   Step          604  completed
+   Elapsed time is    1.2060000000000008     
+   Printing state... 
+  
+   Step          605  completed
+   Elapsed time is    1.2080000000000009     
+   Printing state... 
+  
+   Step          606  completed
+   Elapsed time is    1.2100000000000009     
+   Printing state... 
+  
+   Step          607  completed
+   Elapsed time is    1.2120000000000009     
+   Printing state... 
+  
+   Step          608  completed
+   Elapsed time is    1.2140000000000009     
+   Printing state... 
+  
+   Step          609  completed
+   Elapsed time is    1.2160000000000009     
+   Printing state... 
+  
+   Step          610  completed
+   Elapsed time is    1.2180000000000009     
+   Printing state... 
+  
+   Step          611  completed
+   Elapsed time is    1.2200000000000009     
+   Printing state... 
+  
+   Step          612  completed
+   Elapsed time is    1.2220000000000009     
+   Printing state... 
+  
+   Step          613  completed
+   Elapsed time is    1.2240000000000009     
+   Printing state... 
+  
+   Step          614  completed
+   Elapsed time is    1.2260000000000009     
+   Printing state... 
+  
+   Step          615  completed
+   Elapsed time is    1.2280000000000009     
+   Printing state... 
+  
+   Step          616  completed
+   Elapsed time is    1.2300000000000009     
+   Printing state... 
+  
+   Step          617  completed
+   Elapsed time is    1.2320000000000009     
+   Printing state... 
+  
+   Step          618  completed
+   Elapsed time is    1.2340000000000009     
+   Printing state... 
+  
+   Step          619  completed
+   Elapsed time is    1.2360000000000009     
+   Printing state... 
+  
+   Step          620  completed
+   Elapsed time is    1.2380000000000009     
+   Printing state... 
+  
+   Step          621  completed
+   Elapsed time is    1.2400000000000009     
+   Printing state... 
+  
+   Step          622  completed
+   Elapsed time is    1.2420000000000009     
+   Printing state... 
+  
+   Step          623  completed
+   Elapsed time is    1.2440000000000009     
+   Printing state... 
+  
+   Step          624  completed
+   Elapsed time is    1.2460000000000009     
+   Printing state... 
+  
+   Step          625  completed
+   Elapsed time is    1.2480000000000009     
+   Printing state... 
+  
+   Step          626  completed
+   Elapsed time is    1.2500000000000009     
+   Printing state... 
+  
+   Step          627  completed
+   Elapsed time is    1.2520000000000009     
+   Printing state... 
+  
+   Step          628  completed
+   Elapsed time is    1.2540000000000009     
+   Printing state... 
+  
+   Step          629  completed
+   Elapsed time is    1.2560000000000009     
+   Printing state... 
+  
+   Step          630  completed
+   Elapsed time is    1.2580000000000009     
+   Printing state... 
+  
+   Step          631  completed
+   Elapsed time is    1.2600000000000009     
+   Printing state... 
+  
+   Step          632  completed
+   Elapsed time is    1.2620000000000009     
+   Printing state... 
+  
+   Step          633  completed
+   Elapsed time is    1.2640000000000009     
+   Printing state... 
+  
+   Step          634  completed
+   Elapsed time is    1.2660000000000009     
+   Printing state... 
+  
+   Step          635  completed
+   Elapsed time is    1.2680000000000009     
+   Printing state... 
+  
+   Step          636  completed
+   Elapsed time is    1.2700000000000009     
+   Printing state... 
+  
+   Step          637  completed
+   Elapsed time is    1.2720000000000009     
+   Printing state... 
+  
+   Step          638  completed
+   Elapsed time is    1.2740000000000009     
+   Printing state... 
+  
+   Step          639  completed
+   Elapsed time is    1.2760000000000009     
+   Printing state... 
+  
+   Step          640  completed
+   Elapsed time is    1.2780000000000009     
+   Printing state... 
+  
+   Step          641  completed
+   Elapsed time is    1.2800000000000009     
+   Printing state... 
+  
+   Step          642  completed
+   Elapsed time is    1.2820000000000009     
+   Printing state... 
+  
+   Step          643  completed
+   Elapsed time is    1.2840000000000009     
+   Printing state... 
+  
+   Step          644  completed
+   Elapsed time is    1.2860000000000009     
+   Printing state... 
+  
+   Step          645  completed
+   Elapsed time is    1.2880000000000009     
+   Printing state... 
+  
+   Step          646  completed
+   Elapsed time is    1.2900000000000009     
+   Printing state... 
+  
+   Step          647  completed
+   Elapsed time is    1.2920000000000009     
+   Printing state... 
+  
+   Step          648  completed
+   Elapsed time is    1.2940000000000009     
+   Printing state... 
+  
+   Step          649  completed
+   Elapsed time is    1.2960000000000009     
+   Printing state... 
+  
+   Step          650  completed
+   Elapsed time is    1.2980000000000009     
+   Printing state... 
+  
+   Step          651  completed
+   Elapsed time is    1.3000000000000009     
+   Printing state... 
+  
+   Step          652  completed
+   Elapsed time is    1.3020000000000009     
+   Printing state... 
+  
+   Step          653  completed
+   Elapsed time is    1.3040000000000009     
+   Printing state... 
+  
+   Step          654  completed
+   Elapsed time is    1.3060000000000009     
+   Printing state... 
+  
+   Step          655  completed
+   Elapsed time is    1.3080000000000009     
+   Printing state... 
+  
+   Step          656  completed
+   Elapsed time is    1.3100000000000009     
+   Printing state... 
+  
+   Step          657  completed
+   Elapsed time is    1.3120000000000009     
+   Printing state... 
+  
+   Step          658  completed
+   Elapsed time is    1.3140000000000009     
+   Printing state... 
+  
+   Step          659  completed
+   Elapsed time is    1.3160000000000009     
+   Printing state... 
+  
+   Step          660  completed
+   Elapsed time is    1.3180000000000009     
+   Printing state... 
+  
+   Step          661  completed
+   Elapsed time is    1.3200000000000010     
+   Printing state... 
+  
+   Step          662  completed
+   Elapsed time is    1.3220000000000010     
+   Printing state... 
+  
+   Step          663  completed
+   Elapsed time is    1.3240000000000010     
+   Printing state... 
+  
+   Step          664  completed
+   Elapsed time is    1.3260000000000010     
+   Printing state... 
+  
+   Step          665  completed
+   Elapsed time is    1.3280000000000010     
+   Printing state... 
+  
+   Step          666  completed
+   Elapsed time is    1.3300000000000010     
+   Printing state... 
+  
+   Step          667  completed
+   Elapsed time is    1.3320000000000010     
+   Printing state... 
+  
+   Step          668  completed
+   Elapsed time is    1.3340000000000010     
+   Printing state... 
+  
+   Step          669  completed
+   Elapsed time is    1.3360000000000010     
+   Printing state... 
+  
+   Step          670  completed
+   Elapsed time is    1.3380000000000010     
+   Printing state... 
+  
+   Step          671  completed
+   Elapsed time is    1.3400000000000010     
+   Printing state... 
+  
+   Step          672  completed
+   Elapsed time is    1.3420000000000010     
+   Printing state... 
+  
+   Step          673  completed
+   Elapsed time is    1.3440000000000010     
+   Printing state... 
+  
+   Step          674  completed
+   Elapsed time is    1.3460000000000010     
+   Printing state... 
+  
+   Step          675  completed
+   Elapsed time is    1.3480000000000010     
+   Printing state... 
+  
+   Step          676  completed
+   Elapsed time is    1.3500000000000010     
+   Printing state... 
+  
+   Step          677  completed
+   Elapsed time is    1.3520000000000010     
+   Printing state... 
+  
+   Step          678  completed
+   Elapsed time is    1.3540000000000010     
+   Printing state... 
+  
+   Step          679  completed
+   Elapsed time is    1.3560000000000010     
+   Printing state... 
+  
+   Step          680  completed
+   Elapsed time is    1.3580000000000010     
+   Printing state... 
+  
+   Step          681  completed
+   Elapsed time is    1.3600000000000010     
+   Printing state... 
+  
+   Step          682  completed
+   Elapsed time is    1.3620000000000010     
+   Printing state... 
+  
+   Step          683  completed
+   Elapsed time is    1.3640000000000010     
+   Printing state... 
+  
+   Step          684  completed
+   Elapsed time is    1.3660000000000010     
+   Printing state... 
+  
+   Step          685  completed
+   Elapsed time is    1.3680000000000010     
+   Printing state... 
+  
+   Step          686  completed
+   Elapsed time is    1.3700000000000010     
+   Printing state... 
+  
+   Step          687  completed
+   Elapsed time is    1.3720000000000010     
+   Printing state... 
+  
+   Step          688  completed
+   Elapsed time is    1.3740000000000010     
+   Printing state... 
+  
+   Step          689  completed
+   Elapsed time is    1.3760000000000010     
+   Printing state... 
+  
+   Step          690  completed
+   Elapsed time is    1.3780000000000010     
+   Printing state... 
+  
+   Step          691  completed
+   Elapsed time is    1.3800000000000010     
+   Printing state... 
+  
+   Step          692  completed
+   Elapsed time is    1.3820000000000010     
+   Printing state... 
+  
+   Step          693  completed
+   Elapsed time is    1.3840000000000010     
+   Printing state... 
+  
+   Step          694  completed
+   Elapsed time is    1.3860000000000010     
+   Printing state... 
+  
+   Step          695  completed
+   Elapsed time is    1.3880000000000010     
+   Printing state... 
+  
+   Step          696  completed
+   Elapsed time is    1.3900000000000010     
+   Printing state... 
+  
+   Step          697  completed
+   Elapsed time is    1.3920000000000010     
+   Printing state... 
+  
+   Step          698  completed
+   Elapsed time is    1.3940000000000010     
+   Printing state... 
+  
+   Step          699  completed
+   Elapsed time is    1.3960000000000010     
+   Printing state... 
+  
+   Step          700  completed
+   Elapsed time is    1.3980000000000010     
+   Printing state... 
+  
+   Step          701  completed
+   Elapsed time is    1.4000000000000010     
+   Printing state... 
+  
+   Step          702  completed
+   Elapsed time is    1.4020000000000010     
+   Printing state... 
+  
+   Step          703  completed
+   Elapsed time is    1.4040000000000010     
+   Printing state... 
+  
+   Step          704  completed
+   Elapsed time is    1.4060000000000010     
+   Printing state... 
+  
+   Step          705  completed
+   Elapsed time is    1.4080000000000010     
+   Printing state... 
+  
+   Step          706  completed
+   Elapsed time is    1.4100000000000010     
+   Printing state... 
+  
+   Step          707  completed
+   Elapsed time is    1.4120000000000010     
+   Printing state... 
+  
+   Step          708  completed
+   Elapsed time is    1.4140000000000010     
+   Printing state... 
+  
+   Step          709  completed
+   Elapsed time is    1.4160000000000010     
+   Printing state... 
+  
+   Step          710  completed
+   Elapsed time is    1.4180000000000010     
+   Printing state... 
+  
+   Step          711  completed
+   Elapsed time is    1.4200000000000010     
+   Printing state... 
+  
+   Step          712  completed
+   Elapsed time is    1.4220000000000010     
+   Printing state... 
+  
+   Step          713  completed
+   Elapsed time is    1.4240000000000010     
+   Printing state... 
+  
+   Step          714  completed
+   Elapsed time is    1.4260000000000010     
+   Printing state... 
+  
+   Step          715  completed
+   Elapsed time is    1.4280000000000010     
+   Printing state... 
+  
+   Step          716  completed
+   Elapsed time is    1.4300000000000010     
+   Printing state... 
+  
+   Step          717  completed
+   Elapsed time is    1.4320000000000010     
+   Printing state... 
+  
+   Step          718  completed
+   Elapsed time is    1.4340000000000011     
+   Printing state... 
+  
+   Step          719  completed
+   Elapsed time is    1.4360000000000011     
+   Printing state... 
+  
+   Step          720  completed
+   Elapsed time is    1.4380000000000011     
+   Printing state... 
+  
+   Step          721  completed
+   Elapsed time is    1.4400000000000011     
+   Printing state... 
+  
+   Step          722  completed
+   Elapsed time is    1.4420000000000011     
+   Printing state... 
+  
+   Step          723  completed
+   Elapsed time is    1.4440000000000011     
+   Printing state... 
+  
+   Step          724  completed
+   Elapsed time is    1.4460000000000011     
+   Printing state... 
+  
+   Step          725  completed
+   Elapsed time is    1.4480000000000011     
+   Printing state... 
+  
+   Step          726  completed
+   Elapsed time is    1.4500000000000011     
+   Printing state... 
+  
+   Step          727  completed
+   Elapsed time is    1.4520000000000011     
+   Printing state... 
+  
+   Step          728  completed
+   Elapsed time is    1.4540000000000011     
+   Printing state... 
+  
+   Step          729  completed
+   Elapsed time is    1.4560000000000011     
+   Printing state... 
+  
+   Step          730  completed
+   Elapsed time is    1.4580000000000011     
+   Printing state... 
+  
+   Step          731  completed
+   Elapsed time is    1.4600000000000011     
+   Printing state... 
+  
+   Step          732  completed
+   Elapsed time is    1.4620000000000011     
+   Printing state... 
+  
+   Step          733  completed
+   Elapsed time is    1.4640000000000011     
+   Printing state... 
+  
+   Step          734  completed
+   Elapsed time is    1.4660000000000011     
+   Printing state... 
+  
+   Step          735  completed
+   Elapsed time is    1.4680000000000011     
+   Printing state... 
+  
+   Step          736  completed
+   Elapsed time is    1.4700000000000011     
+   Printing state... 
+  
+   Step          737  completed
+   Elapsed time is    1.4720000000000011     
+   Printing state... 
+  
+   Step          738  completed
+   Elapsed time is    1.4740000000000011     
+   Printing state... 
+  
+   Step          739  completed
+   Elapsed time is    1.4760000000000011     
+   Printing state... 
+  
+   Step          740  completed
+   Elapsed time is    1.4780000000000011     
+   Printing state... 
+  
+   Step          741  completed
+   Elapsed time is    1.4800000000000011     
+   Printing state... 
+  
+   Step          742  completed
+   Elapsed time is    1.4820000000000011     
+   Printing state... 
+  
+   Step          743  completed
+   Elapsed time is    1.4840000000000011     
+   Printing state... 
+  
+   Step          744  completed
+   Elapsed time is    1.4860000000000011     
+   Printing state... 
+  
+   Step          745  completed
+   Elapsed time is    1.4880000000000011     
+   Printing state... 
+  
+   Step          746  completed
+   Elapsed time is    1.4900000000000011     
+   Printing state... 
+  
+   Step          747  completed
+   Elapsed time is    1.4920000000000011     
+   Printing state... 
+  
+   Step          748  completed
+   Elapsed time is    1.4940000000000011     
+   Printing state... 
+  
+   Step          749  completed
+   Elapsed time is    1.4960000000000011     
+   Printing state... 
+  
+   Step          750  completed
+   Elapsed time is    1.4980000000000011     
+   Printing state... 
+  
+   Step          751  completed
+   Elapsed time is    1.5000000000000011     
+   Printing state... 
+  
+   Step          752  completed
+   Elapsed time is    1.5020000000000011     
+   Printing state... 
+  
+   Step          753  completed
+   Elapsed time is    1.5040000000000011     
+   Printing state... 
+  
+   Step          754  completed
+   Elapsed time is    1.5060000000000011     
+   Printing state... 
+  
+   Step          755  completed
+   Elapsed time is    1.5080000000000011     
+   Printing state... 
+  
+   Step          756  completed
+   Elapsed time is    1.5100000000000011     
+   Printing state... 
+  
+   Step          757  completed
+   Elapsed time is    1.5120000000000011     
+   Printing state... 
+  
+   Step          758  completed
+   Elapsed time is    1.5140000000000011     
+   Printing state... 
+  
+   Step          759  completed
+   Elapsed time is    1.5160000000000011     
+   Printing state... 
+  
+   Step          760  completed
+   Elapsed time is    1.5180000000000011     
+   Printing state... 
+  
+   Step          761  completed
+   Elapsed time is    1.5200000000000011     
+   Printing state... 
+  
+   Step          762  completed
+   Elapsed time is    1.5220000000000011     
+   Printing state... 
+  
+   Step          763  completed
+   Elapsed time is    1.5240000000000011     
+   Printing state... 
+  
+   Step          764  completed
+   Elapsed time is    1.5260000000000011     
+   Printing state... 
+  
+   Step          765  completed
+   Elapsed time is    1.5280000000000011     
+   Printing state... 
+  
+   Step          766  completed
+   Elapsed time is    1.5300000000000011     
+   Printing state... 
+  
+   Step          767  completed
+   Elapsed time is    1.5320000000000011     
+   Printing state... 
+  
+   Step          768  completed
+   Elapsed time is    1.5340000000000011     
+   Printing state... 
+  
+   Step          769  completed
+   Elapsed time is    1.5360000000000011     
+   Printing state... 
+  
+   Step          770  completed
+   Elapsed time is    1.5380000000000011     
+   Printing state... 
+  
+   Step          771  completed
+   Elapsed time is    1.5400000000000011     
+   Printing state... 
+  
+   Step          772  completed
+   Elapsed time is    1.5420000000000011     
+   Printing state... 
+  
+   Step          773  completed
+   Elapsed time is    1.5440000000000011     
+   Printing state... 
+  
+   Step          774  completed
+   Elapsed time is    1.5460000000000012     
+   Printing state... 
+  
+   Step          775  completed
+   Elapsed time is    1.5480000000000012     
+   Printing state... 
+  
+   Step          776  completed
+   Elapsed time is    1.5500000000000012     
+   Printing state... 
+  
+   Step          777  completed
+   Elapsed time is    1.5520000000000012     
+   Printing state... 
+  
+   Step          778  completed
+   Elapsed time is    1.5540000000000012     
+   Printing state... 
+  
+   Step          779  completed
+   Elapsed time is    1.5560000000000012     
+   Printing state... 
+  
+   Step          780  completed
+   Elapsed time is    1.5580000000000012     
+   Printing state... 
+  
+   Step          781  completed
+   Elapsed time is    1.5600000000000012     
+   Printing state... 
+  
+   Step          782  completed
+   Elapsed time is    1.5620000000000012     
+   Printing state... 
+  
+   Step          783  completed
+   Elapsed time is    1.5640000000000012     
+   Printing state... 
+  
+   Step          784  completed
+   Elapsed time is    1.5660000000000012     
+   Printing state... 
+  
+   Step          785  completed
+   Elapsed time is    1.5680000000000012     
+   Printing state... 
+  
+   Step          786  completed
+   Elapsed time is    1.5700000000000012     
+   Printing state... 
+  
+   Step          787  completed
+   Elapsed time is    1.5720000000000012     
+   Printing state... 
+  
+   Step          788  completed
+   Elapsed time is    1.5740000000000012     
+   Printing state... 
+  
+   Step          789  completed
+   Elapsed time is    1.5760000000000012     
+   Printing state... 
+  
+   Step          790  completed
+   Elapsed time is    1.5780000000000012     
+   Printing state... 
+  
+   Step          791  completed
+   Elapsed time is    1.5800000000000012     
+   Printing state... 
+  
+   Step          792  completed
+   Elapsed time is    1.5820000000000012     
+   Printing state... 
+  
+   Step          793  completed
+   Elapsed time is    1.5840000000000012     
+   Printing state... 
+  
+   Step          794  completed
+   Elapsed time is    1.5860000000000012     
+   Printing state... 
+  
+   Step          795  completed
+   Elapsed time is    1.5880000000000012     
+   Printing state... 
+  
+   Step          796  completed
+   Elapsed time is    1.5900000000000012     
+   Printing state... 
+  
+   Step          797  completed
+   Elapsed time is    1.5920000000000012     
+   Printing state... 
+  
+   Step          798  completed
+   Elapsed time is    1.5940000000000012     
+   Printing state... 
+  
+   Step          799  completed
+   Elapsed time is    1.5960000000000012     
+   Printing state... 
+  
+   Step          800  completed
+   Elapsed time is    1.5980000000000012     
+   Printing state... 
+  
+   Step          801  completed
+   Elapsed time is    1.6000000000000012     
+   Printing state... 
+  
+   Step          802  completed
+   Elapsed time is    1.6020000000000012     
+   Printing state... 
+  
+   Step          803  completed
+   Elapsed time is    1.6040000000000012     
+   Printing state... 
+  
+   Step          804  completed
+   Elapsed time is    1.6060000000000012     
+   Printing state... 
+  
+   Step          805  completed
+   Elapsed time is    1.6080000000000012     
+   Printing state... 
+  
+   Step          806  completed
+   Elapsed time is    1.6100000000000012     
+   Printing state... 
+  
+   Step          807  completed
+   Elapsed time is    1.6120000000000012     
+   Printing state... 
+  
+   Step          808  completed
+   Elapsed time is    1.6140000000000012     
+   Printing state... 
+  
+   Step          809  completed
+   Elapsed time is    1.6160000000000012     
+   Printing state... 
+  
+   Step          810  completed
+   Elapsed time is    1.6180000000000012     
+   Printing state... 
+  
+   Step          811  completed
+   Elapsed time is    1.6200000000000012     
+   Printing state... 
+  
+   Step          812  completed
+   Elapsed time is    1.6220000000000012     
+   Printing state... 
+  
+   Step          813  completed
+   Elapsed time is    1.6240000000000012     
+   Printing state... 
+  
+   Step          814  completed
+   Elapsed time is    1.6260000000000012     
+   Printing state... 
+  
+   Step          815  completed
+   Elapsed time is    1.6280000000000012     
+   Printing state... 
+  
+   Step          816  completed
+   Elapsed time is    1.6300000000000012     
+   Printing state... 
+  
+   Step          817  completed
+   Elapsed time is    1.6320000000000012     
+   Printing state... 
+  
+   Step          818  completed
+   Elapsed time is    1.6340000000000012     
+   Printing state... 
+  
+   Step          819  completed
+   Elapsed time is    1.6360000000000012     
+   Printing state... 
+  
+   Step          820  completed
+   Elapsed time is    1.6380000000000012     
+   Printing state... 
+  
+   Step          821  completed
+   Elapsed time is    1.6400000000000012     
+   Printing state... 
+  
+   Step          822  completed
+   Elapsed time is    1.6420000000000012     
+   Printing state... 
+  
+   Step          823  completed
+   Elapsed time is    1.6440000000000012     
+   Printing state... 
+  
+   Step          824  completed
+   Elapsed time is    1.6460000000000012     
+   Printing state... 
+  
+   Step          825  completed
+   Elapsed time is    1.6480000000000012     
+   Printing state... 
+  
+   Step          826  completed
+   Elapsed time is    1.6500000000000012     
+   Printing state... 
+  
+   Step          827  completed
+   Elapsed time is    1.6520000000000012     
+   Printing state... 
+  
+   Step          828  completed
+   Elapsed time is    1.6540000000000012     
+   Printing state... 
+  
+   Step          829  completed
+   Elapsed time is    1.6560000000000012     
+   Printing state... 
+  
+   Step          830  completed
+   Elapsed time is    1.6580000000000013     
+   Printing state... 
+  
+   Step          831  completed
+   Elapsed time is    1.6600000000000013     
+   Printing state... 
+  
+   Step          832  completed
+   Elapsed time is    1.6620000000000013     
+   Printing state... 
+  
+   Step          833  completed
+   Elapsed time is    1.6640000000000013     
+   Printing state... 
+  
+   Step          834  completed
+   Elapsed time is    1.6660000000000013     
+   Printing state... 
+  
+   Step          835  completed
+   Elapsed time is    1.6680000000000013     
+   Printing state... 
+  
+   Step          836  completed
+   Elapsed time is    1.6700000000000013     
+   Printing state... 
+  
+   Step          837  completed
+   Elapsed time is    1.6720000000000013     
+   Printing state... 
+  
+   Step          838  completed
+   Elapsed time is    1.6740000000000013     
+   Printing state... 
+  
+   Step          839  completed
+   Elapsed time is    1.6760000000000013     
+   Printing state... 
+  
+   Step          840  completed
+   Elapsed time is    1.6780000000000013     
+   Printing state... 
+  
+   Step          841  completed
+   Elapsed time is    1.6800000000000013     
+   Printing state... 
+  
+   Step          842  completed
+   Elapsed time is    1.6820000000000013     
+   Printing state... 
+  
+   Step          843  completed
+   Elapsed time is    1.6840000000000013     
+   Printing state... 
+  
+   Step          844  completed
+   Elapsed time is    1.6860000000000013     
+   Printing state... 
+  
+   Step          845  completed
+   Elapsed time is    1.6880000000000013     
+   Printing state... 
+  
+   Step          846  completed
+   Elapsed time is    1.6900000000000013     
+   Printing state... 
+  
+   Step          847  completed
+   Elapsed time is    1.6920000000000013     
+   Printing state... 
+  
+   Step          848  completed
+   Elapsed time is    1.6940000000000013     
+   Printing state... 
+  
+   Step          849  completed
+   Elapsed time is    1.6960000000000013     
+   Printing state... 
+  
+   Step          850  completed
+   Elapsed time is    1.6980000000000013     
+   Printing state... 
+  
+   Step          851  completed
+   Elapsed time is    1.7000000000000013     
+   Printing state... 
+  
+   Step          852  completed
+   Elapsed time is    1.7020000000000013     
+   Printing state... 
+  
+   Step          853  completed
+   Elapsed time is    1.7040000000000013     
+   Printing state... 
+  
+   Step          854  completed
+   Elapsed time is    1.7060000000000013     
+   Printing state... 
+  
+   Step          855  completed
+   Elapsed time is    1.7080000000000013     
+   Printing state... 
+  
+   Step          856  completed
+   Elapsed time is    1.7100000000000013     
+   Printing state... 
+  
+   Step          857  completed
+   Elapsed time is    1.7120000000000013     
+   Printing state... 
+  
+   Step          858  completed
+   Elapsed time is    1.7140000000000013     
+   Printing state... 
+  
+   Step          859  completed
+   Elapsed time is    1.7160000000000013     
+   Printing state... 
+  
+   Step          860  completed
+   Elapsed time is    1.7180000000000013     
+   Printing state... 
+  
+   Step          861  completed
+   Elapsed time is    1.7200000000000013     
+   Printing state... 
+  
+   Step          862  completed
+   Elapsed time is    1.7220000000000013     
+   Printing state... 
+  
+   Step          863  completed
+   Elapsed time is    1.7240000000000013     
+   Printing state... 
+  
+   Step          864  completed
+   Elapsed time is    1.7260000000000013     
+   Printing state... 
+  
+   Step          865  completed
+   Elapsed time is    1.7280000000000013     
+   Printing state... 
+  
+   Step          866  completed
+   Elapsed time is    1.7300000000000013     
+   Printing state... 
+  
+   Step          867  completed
+   Elapsed time is    1.7320000000000013     
+   Printing state... 
+  
+   Step          868  completed
+   Elapsed time is    1.7340000000000013     
+   Printing state... 
+  
+   Step          869  completed
+   Elapsed time is    1.7360000000000013     
+   Printing state... 
+  
+   Step          870  completed
+   Elapsed time is    1.7380000000000013     
+   Printing state... 
+  
+   Step          871  completed
+   Elapsed time is    1.7400000000000013     
+   Printing state... 
+  
+   Step          872  completed
+   Elapsed time is    1.7420000000000013     
+   Printing state... 
+  
+   Step          873  completed
+   Elapsed time is    1.7440000000000013     
+   Printing state... 
+  
+   Step          874  completed
+   Elapsed time is    1.7460000000000013     
+   Printing state... 
+  
+   Step          875  completed
+   Elapsed time is    1.7480000000000013     
+   Printing state... 
+  
+   Step          876  completed
+   Elapsed time is    1.7500000000000013     
+   Printing state... 
+  
+   Step          877  completed
+   Elapsed time is    1.7520000000000013     
+   Printing state... 
+  
+   Step          878  completed
+   Elapsed time is    1.7540000000000013     
+   Printing state... 
+  
+   Step          879  completed
+   Elapsed time is    1.7560000000000013     
+   Printing state... 
+  
+   Step          880  completed
+   Elapsed time is    1.7580000000000013     
+   Printing state... 
+  
+   Step          881  completed
+   Elapsed time is    1.7600000000000013     
+   Printing state... 
+  
+   Step          882  completed
+   Elapsed time is    1.7620000000000013     
+   Printing state... 
+  
+   Step          883  completed
+   Elapsed time is    1.7640000000000013     
+   Printing state... 
+  
+   Step          884  completed
+   Elapsed time is    1.7660000000000013     
+   Printing state... 
+  
+   Step          885  completed
+   Elapsed time is    1.7680000000000013     
+   Printing state... 
+  
+   Step          886  completed
+   Elapsed time is    1.7700000000000014     
+   Printing state... 
+  
+   Step          887  completed
+   Elapsed time is    1.7720000000000014     
+   Printing state... 
+  
+   Step          888  completed
+   Elapsed time is    1.7740000000000014     
+   Printing state... 
+  
+   Step          889  completed
+   Elapsed time is    1.7760000000000014     
+   Printing state... 
+  
+   Step          890  completed
+   Elapsed time is    1.7780000000000014     
+   Printing state... 
+  
+   Step          891  completed
+   Elapsed time is    1.7800000000000014     
+   Printing state... 
+  
+   Step          892  completed
+   Elapsed time is    1.7820000000000014     
+   Printing state... 
+  
+   Step          893  completed
+   Elapsed time is    1.7840000000000014     
+   Printing state... 
+  
+   Step          894  completed
+   Elapsed time is    1.7860000000000014     
+   Printing state... 
+  
+   Step          895  completed
+   Elapsed time is    1.7880000000000014     
+   Printing state... 
+  
+   Step          896  completed
+   Elapsed time is    1.7900000000000014     
+   Printing state... 
+  
+   Step          897  completed
+   Elapsed time is    1.7920000000000014     
+   Printing state... 
+  
+   Step          898  completed
+   Elapsed time is    1.7940000000000014     
+   Printing state... 
+  
+   Step          899  completed
+   Elapsed time is    1.7960000000000014     
+   Printing state... 
+  
+   Step          900  completed
+   Elapsed time is    1.7980000000000014     
+   Printing state... 
+  
+   Step          901  completed
+   Elapsed time is    1.8000000000000014     
+   Printing state... 
+  
+   Step          902  completed
+   Elapsed time is    1.8020000000000014     
+   Printing state... 
+  
+   Step          903  completed
+   Elapsed time is    1.8040000000000014     
+   Printing state... 
+  
+   Step          904  completed
+   Elapsed time is    1.8060000000000014     
+   Printing state... 
+  
+   Step          905  completed
+   Elapsed time is    1.8080000000000014     
+   Printing state... 
+  
+   Step          906  completed
+   Elapsed time is    1.8100000000000014     
+   Printing state... 
+  
+   Step          907  completed
+   Elapsed time is    1.8120000000000014     
+   Printing state... 
+  
+   Step          908  completed
+   Elapsed time is    1.8140000000000014     
+   Printing state... 
+  
+   Step          909  completed
+   Elapsed time is    1.8160000000000014     
+   Printing state... 
+  
+   Step          910  completed
+   Elapsed time is    1.8180000000000014     
+   Printing state... 
+  
+   Step          911  completed
+   Elapsed time is    1.8200000000000014     
+   Printing state... 
+  
+   Step          912  completed
+   Elapsed time is    1.8220000000000014     
+   Printing state... 
+  
+   Step          913  completed
+   Elapsed time is    1.8240000000000014     
+   Printing state... 
+  
+   Step          914  completed
+   Elapsed time is    1.8260000000000014     
+   Printing state... 
+  
+   Step          915  completed
+   Elapsed time is    1.8280000000000014     
+   Printing state... 
+  
+   Step          916  completed
+   Elapsed time is    1.8300000000000014     
+   Printing state... 
+  
+   Step          917  completed
+   Elapsed time is    1.8320000000000014     
+   Printing state... 
+  
+   Step          918  completed
+   Elapsed time is    1.8340000000000014     
+   Printing state... 
+  
+   Step          919  completed
+   Elapsed time is    1.8360000000000014     
+   Printing state... 
+  
+   Step          920  completed
+   Elapsed time is    1.8380000000000014     
+   Printing state... 
+  
+   Step          921  completed
+   Elapsed time is    1.8400000000000014     
+   Printing state... 
+  
+   Step          922  completed
+   Elapsed time is    1.8420000000000014     
+   Printing state... 
+  
+   Step          923  completed
+   Elapsed time is    1.8440000000000014     
+   Printing state... 
+  
+   Step          924  completed
+   Elapsed time is    1.8460000000000014     
+   Printing state... 
+  
+   Step          925  completed
+   Elapsed time is    1.8480000000000014     
+   Printing state... 
+  
+   Step          926  completed
+   Elapsed time is    1.8500000000000014     
+   Printing state... 
+  
+   Step          927  completed
+   Elapsed time is    1.8520000000000014     
+   Printing state... 
+  
+   Step          928  completed
+   Elapsed time is    1.8540000000000014     
+   Printing state... 
+  
+   Step          929  completed
+   Elapsed time is    1.8560000000000014     
+   Printing state... 
+  
+   Step          930  completed
+   Elapsed time is    1.8580000000000014     
+   Printing state... 
+  
+   Step          931  completed
+   Elapsed time is    1.8600000000000014     
+   Printing state... 
+  
+   Step          932  completed
+   Elapsed time is    1.8620000000000014     
+   Printing state... 
+  
+   Step          933  completed
+   Elapsed time is    1.8640000000000014     
+   Printing state... 
+  
+   Step          934  completed
+   Elapsed time is    1.8660000000000014     
+   Printing state... 
+  
+   Step          935  completed
+   Elapsed time is    1.8680000000000014     
+   Printing state... 
+  
+   Step          936  completed
+   Elapsed time is    1.8700000000000014     
+   Printing state... 
+  
+   Step          937  completed
+   Elapsed time is    1.8720000000000014     
+   Printing state... 
+  
+   Step          938  completed
+   Elapsed time is    1.8740000000000014     
+   Printing state... 
+  
+   Step          939  completed
+   Elapsed time is    1.8760000000000014     
+   Printing state... 
+  
+   Step          940  completed
+   Elapsed time is    1.8780000000000014     
+   Printing state... 
+  
+   Step          941  completed
+   Elapsed time is    1.8800000000000014     
+   Printing state... 
+  
+   Step          942  completed
+   Elapsed time is    1.8820000000000014     
+   Printing state... 
+  
+   Step          943  completed
+   Elapsed time is    1.8840000000000015     
+   Printing state... 
+  
+   Step          944  completed
+   Elapsed time is    1.8860000000000015     
+   Printing state... 
+  
+   Step          945  completed
+   Elapsed time is    1.8880000000000015     
+   Printing state... 
+  
+   Step          946  completed
+   Elapsed time is    1.8900000000000015     
+   Printing state... 
+  
+   Step          947  completed
+   Elapsed time is    1.8920000000000015     
+   Printing state... 
+  
+   Step          948  completed
+   Elapsed time is    1.8940000000000015     
+   Printing state... 
+  
+   Step          949  completed
+   Elapsed time is    1.8960000000000015     
+   Printing state... 
+  
+   Step          950  completed
+   Elapsed time is    1.8980000000000015     
+   Printing state... 
+  
+   Step          951  completed
+   Elapsed time is    1.9000000000000015     
+   Printing state... 
+  
+   Step          952  completed
+   Elapsed time is    1.9020000000000015     
+   Printing state... 
+  
+   Step          953  completed
+   Elapsed time is    1.9040000000000015     
+   Printing state... 
+  
+   Step          954  completed
+   Elapsed time is    1.9060000000000015     
+   Printing state... 
+  
+   Step          955  completed
+   Elapsed time is    1.9080000000000015     
+   Printing state... 
+  
+   Step          956  completed
+   Elapsed time is    1.9100000000000015     
+   Printing state... 
+  
+   Step          957  completed
+   Elapsed time is    1.9120000000000015     
+   Printing state... 
+  
+   Step          958  completed
+   Elapsed time is    1.9140000000000015     
+   Printing state... 
+  
+   Step          959  completed
+   Elapsed time is    1.9160000000000015     
+   Printing state... 
+  
+   Step          960  completed
+   Elapsed time is    1.9180000000000015     
+   Printing state... 
+  
+   Step          961  completed
+   Elapsed time is    1.9200000000000015     
+   Printing state... 
+  
+   Step          962  completed
+   Elapsed time is    1.9220000000000015     
+   Printing state... 
+  
+   Step          963  completed
+   Elapsed time is    1.9240000000000015     
+   Printing state... 
+  
+   Step          964  completed
+   Elapsed time is    1.9260000000000015     
+   Printing state... 
+  
+   Step          965  completed
+   Elapsed time is    1.9280000000000015     
+   Printing state... 
+  
+   Step          966  completed
+   Elapsed time is    1.9300000000000015     
+   Printing state... 
+  
+   Step          967  completed
+   Elapsed time is    1.9320000000000015     
+   Printing state... 
+  
+   Step          968  completed
+   Elapsed time is    1.9340000000000015     
+   Printing state... 
+  
+   Step          969  completed
+   Elapsed time is    1.9360000000000015     
+   Printing state... 
+  
+   Step          970  completed
+   Elapsed time is    1.9380000000000015     
+   Printing state... 
+  
+   Step          971  completed
+   Elapsed time is    1.9400000000000015     
+   Printing state... 
+  
+   Step          972  completed
+   Elapsed time is    1.9420000000000015     
+   Printing state... 
+  
+   Step          973  completed
+   Elapsed time is    1.9440000000000015     
+   Printing state... 
+  
+   Step          974  completed
+   Elapsed time is    1.9460000000000015     
+   Printing state... 
+  
+   Step          975  completed
+   Elapsed time is    1.9480000000000015     
+   Printing state... 
+  
+   Step          976  completed
+   Elapsed time is    1.9500000000000015     
+   Printing state... 
+  
+   Step          977  completed
+   Elapsed time is    1.9520000000000015     
+   Printing state... 
+  
+   Step          978  completed
+   Elapsed time is    1.9540000000000015     
+   Printing state... 
+  
+   Step          979  completed
+   Elapsed time is    1.9560000000000015     
+   Printing state... 
+  
+   Step          980  completed
+   Elapsed time is    1.9580000000000015     
+   Printing state... 
+  
+   Step          981  completed
+   Elapsed time is    1.9600000000000015     
+   Printing state... 
+  
+   Step          982  completed
+   Elapsed time is    1.9620000000000015     
+   Printing state... 
+  
+   Step          983  completed
+   Elapsed time is    1.9640000000000015     
+   Printing state... 
+  
+   Step          984  completed
+   Elapsed time is    1.9660000000000015     
+   Printing state... 
+  
+   Step          985  completed
+   Elapsed time is    1.9680000000000015     
+   Printing state... 
+  
+   Step          986  completed
+   Elapsed time is    1.9700000000000015     
+   Printing state... 
+  
+   Step          987  completed
+   Elapsed time is    1.9720000000000015     
+   Printing state... 
+  
+   Step          988  completed
+   Elapsed time is    1.9740000000000015     
+   Printing state... 
+  
+   Step          989  completed
+   Elapsed time is    1.9760000000000015     
+   Printing state... 
+  
+   Step          990  completed
+   Elapsed time is    1.9780000000000015     
+   Printing state... 
+  
+   Step          991  completed
+   Elapsed time is    1.9800000000000015     
+   Printing state... 
+  
+   Step          992  completed
+   Elapsed time is    1.9820000000000015     
+   Printing state... 
+  
+   Step          993  completed
+   Elapsed time is    1.9840000000000015     
+   Printing state... 
+  
+   Step          994  completed
+   Elapsed time is    1.9860000000000015     
+   Printing state... 
+  
+   Step          995  completed
+   Elapsed time is    1.9880000000000015     
+   Printing state... 
+  
+   Step          996  completed
+   Elapsed time is    1.9900000000000015     
+   Printing state... 
+  
+   Step          997  completed
+   Elapsed time is    1.9920000000000015     
+   Printing state... 
+  
+   Step          998  completed
+   Elapsed time is    1.9940000000000015     
+   Printing state... 
+  
+   Step          999  completed
+   Elapsed time is    1.9960000000000016     
+   Printing state... 
+  
+   Step         1000  completed
+   Elapsed time is    1.9980000000000016     
+   Printing state... 
+  
+   Step         1001  completed
+   Elapsed time is    2.0000000000000013     
+   Printing state... 
+  
+   Step         1002  completed
+   Elapsed time is    2.0020000000000011     
+   Printing state... 
+  
+   Step         1003  completed
+   Elapsed time is    2.0040000000000009     
+   Printing state... 
+  
+   Step         1004  completed
+   Elapsed time is    2.0060000000000007     
+   Printing state... 
+  
+   Step         1005  completed
+   Elapsed time is    2.0080000000000005     
+   Printing state... 
+  
+   Step         1006  completed
+   Elapsed time is    2.0100000000000002     
+   Printing state... 
+  
+   Step         1007  completed
+   Elapsed time is    2.0120000000000000     
+   Printing state... 
+  
+   Step         1008  completed
+   Elapsed time is    2.0139999999999998     
+   Printing state... 
+  
+   Step         1009  completed
+   Elapsed time is    2.0159999999999996     
+   Printing state... 
+  
+   Step         1010  completed
+   Elapsed time is    2.0179999999999993     
+   Printing state... 
+  
+   Step         1011  completed
+   Elapsed time is    2.0199999999999991     
+   Printing state... 
+  
+   Step         1012  completed
+   Elapsed time is    2.0219999999999989     
+   Printing state... 
+  
+   Step         1013  completed
+   Elapsed time is    2.0239999999999987     
+   Printing state... 
+  
+   Step         1014  completed
+   Elapsed time is    2.0259999999999985     
+   Printing state... 
+  
+   Step         1015  completed
+   Elapsed time is    2.0279999999999982     
+   Printing state... 
+  
+   Step         1016  completed
+   Elapsed time is    2.0299999999999980     
+   Printing state... 
+  
+   Step         1017  completed
+   Elapsed time is    2.0319999999999978     
+   Printing state... 
+  
+   Step         1018  completed
+   Elapsed time is    2.0339999999999976     
+   Printing state... 
+  
+   Step         1019  completed
+   Elapsed time is    2.0359999999999974     
+   Printing state... 
+  
+   Step         1020  completed
+   Elapsed time is    2.0379999999999971     
+   Printing state... 
+  
+   Step         1021  completed
+   Elapsed time is    2.0399999999999969     
+   Printing state... 
+  
+   Step         1022  completed
+   Elapsed time is    2.0419999999999967     
+   Printing state... 
+  
+   Step         1023  completed
+   Elapsed time is    2.0439999999999965     
+   Printing state... 
+  
+   Step         1024  completed
+   Elapsed time is    2.0459999999999963     
+   Printing state... 
+  
+   Step         1025  completed
+   Elapsed time is    2.0479999999999960     
+   Printing state... 
+  
+   Step         1026  completed
+   Elapsed time is    2.0499999999999958     
+   Printing state... 
+  
+   Step         1027  completed
+   Elapsed time is    2.0519999999999956     
+   Printing state... 
+  
+   Step         1028  completed
+   Elapsed time is    2.0539999999999954     
+   Printing state... 
+  
+   Step         1029  completed
+   Elapsed time is    2.0559999999999952     
+   Printing state... 
+  
+   Step         1030  completed
+   Elapsed time is    2.0579999999999949     
+   Printing state... 
+  
+   Step         1031  completed
+   Elapsed time is    2.0599999999999947     
+   Printing state... 
+  
+   Step         1032  completed
+   Elapsed time is    2.0619999999999945     
+   Printing state... 
+  
+   Step         1033  completed
+   Elapsed time is    2.0639999999999943     
+   Printing state... 
+  
+   Step         1034  completed
+   Elapsed time is    2.0659999999999941     
+   Printing state... 
+  
+   Step         1035  completed
+   Elapsed time is    2.0679999999999938     
+   Printing state... 
+  
+   Step         1036  completed
+   Elapsed time is    2.0699999999999936     
+   Printing state... 
+  
+   Step         1037  completed
+   Elapsed time is    2.0719999999999934     
+   Printing state... 
+  
+   Step         1038  completed
+   Elapsed time is    2.0739999999999932     
+   Printing state... 
+  
+   Step         1039  completed
+   Elapsed time is    2.0759999999999930     
+   Printing state... 
+  
+   Step         1040  completed
+   Elapsed time is    2.0779999999999927     
+   Printing state... 
+  
+   Step         1041  completed
+   Elapsed time is    2.0799999999999925     
+   Printing state... 
+  
+   Step         1042  completed
+   Elapsed time is    2.0819999999999923     
+   Printing state... 
+  
+   Step         1043  completed
+   Elapsed time is    2.0839999999999921     
+   Printing state... 
+  
+   Step         1044  completed
+   Elapsed time is    2.0859999999999919     
+   Printing state... 
+  
+   Step         1045  completed
+   Elapsed time is    2.0879999999999916     
+   Printing state... 
+  
+   Step         1046  completed
+   Elapsed time is    2.0899999999999914     
+   Printing state... 
+  
+   Step         1047  completed
+   Elapsed time is    2.0919999999999912     
+   Printing state... 
+  
+   Step         1048  completed
+   Elapsed time is    2.0939999999999910     
+   Printing state... 
+  
+   Step         1049  completed
+   Elapsed time is    2.0959999999999908     
+   Printing state... 
+  
+   Step         1050  completed
+   Elapsed time is    2.0979999999999905     
+   Printing state... 
+  
+   Step         1051  completed
+   Elapsed time is    2.0999999999999903     
+   Printing state... 
+  
+   Step         1052  completed
+   Elapsed time is    2.1019999999999901     
+   Printing state... 
+  
+   Step         1053  completed
+   Elapsed time is    2.1039999999999899     
+   Printing state... 
+  
+   Step         1054  completed
+   Elapsed time is    2.1059999999999897     
+   Printing state... 
+  
+   Step         1055  completed
+   Elapsed time is    2.1079999999999894     
+   Printing state... 
+  
+   Step         1056  completed
+   Elapsed time is    2.1099999999999892     
+   Printing state... 
+  
+   Step         1057  completed
+   Elapsed time is    2.1119999999999890     
+   Printing state... 
+  
+   Step         1058  completed
+   Elapsed time is    2.1139999999999888     
+   Printing state... 
+  
+   Step         1059  completed
+   Elapsed time is    2.1159999999999886     
+   Printing state... 
+  
+   Step         1060  completed
+   Elapsed time is    2.1179999999999883     
+   Printing state... 
+  
+   Step         1061  completed
+   Elapsed time is    2.1199999999999881     
+   Printing state... 
+  
+   Step         1062  completed
+   Elapsed time is    2.1219999999999879     
+   Printing state... 
+  
+   Step         1063  completed
+   Elapsed time is    2.1239999999999877     
+   Printing state... 
+  
+   Step         1064  completed
+   Elapsed time is    2.1259999999999875     
+   Printing state... 
+  
+   Step         1065  completed
+   Elapsed time is    2.1279999999999872     
+   Printing state... 
+  
+   Step         1066  completed
+   Elapsed time is    2.1299999999999870     
+   Printing state... 
+  
+   Step         1067  completed
+   Elapsed time is    2.1319999999999868     
+   Printing state... 
+  
+   Step         1068  completed
+   Elapsed time is    2.1339999999999866     
+   Printing state... 
+  
+   Step         1069  completed
+   Elapsed time is    2.1359999999999864     
+   Printing state... 
+  
+   Step         1070  completed
+   Elapsed time is    2.1379999999999861     
+   Printing state... 
+  
+   Step         1071  completed
+   Elapsed time is    2.1399999999999859     
+   Printing state... 
+  
+   Step         1072  completed
+   Elapsed time is    2.1419999999999857     
+   Printing state... 
+  
+   Step         1073  completed
+   Elapsed time is    2.1439999999999855     
+   Printing state... 
+  
+   Step         1074  completed
+   Elapsed time is    2.1459999999999853     
+   Printing state... 
+  
+   Step         1075  completed
+   Elapsed time is    2.1479999999999850     
+   Printing state... 
+  
+   Step         1076  completed
+   Elapsed time is    2.1499999999999848     
+   Printing state... 
+  
+   Step         1077  completed
+   Elapsed time is    2.1519999999999846     
+   Printing state... 
+  
+   Step         1078  completed
+   Elapsed time is    2.1539999999999844     
+   Printing state... 
+  
+   Step         1079  completed
+   Elapsed time is    2.1559999999999842     
+   Printing state... 
+  
+   Step         1080  completed
+   Elapsed time is    2.1579999999999839     
+   Printing state... 
+  
+   Step         1081  completed
+   Elapsed time is    2.1599999999999837     
+   Printing state... 
+  
+   Step         1082  completed
+   Elapsed time is    2.1619999999999835     
+   Printing state... 
+  
+   Step         1083  completed
+   Elapsed time is    2.1639999999999833     
+   Printing state... 
+  
+   Step         1084  completed
+   Elapsed time is    2.1659999999999831     
+   Printing state... 
+  
+   Step         1085  completed
+   Elapsed time is    2.1679999999999828     
+   Printing state... 
+  
+   Step         1086  completed
+   Elapsed time is    2.1699999999999826     
+   Printing state... 
+  
+   Step         1087  completed
+   Elapsed time is    2.1719999999999824     
+   Printing state... 
+  
+   Step         1088  completed
+   Elapsed time is    2.1739999999999822     
+   Printing state... 
+  
+   Step         1089  completed
+   Elapsed time is    2.1759999999999819     
+   Printing state... 
+  
+   Step         1090  completed
+   Elapsed time is    2.1779999999999817     
+   Printing state... 
+  
+   Step         1091  completed
+   Elapsed time is    2.1799999999999815     
+   Printing state... 
+  
+   Step         1092  completed
+   Elapsed time is    2.1819999999999813     
+   Printing state... 
+  
+   Step         1093  completed
+   Elapsed time is    2.1839999999999811     
+   Printing state... 
+  
+   Step         1094  completed
+   Elapsed time is    2.1859999999999808     
+   Printing state... 
+  
+   Step         1095  completed
+   Elapsed time is    2.1879999999999806     
+   Printing state... 
+  
+   Step         1096  completed
+   Elapsed time is    2.1899999999999804     
+   Printing state... 
+  
+   Step         1097  completed
+   Elapsed time is    2.1919999999999802     
+   Printing state... 
+  
+   Step         1098  completed
+   Elapsed time is    2.1939999999999800     
+   Printing state... 
+  
+   Step         1099  completed
+   Elapsed time is    2.1959999999999797     
+   Printing state... 
+  
+   Step         1100  completed
+   Elapsed time is    2.1979999999999795     
+   Printing state... 
+  
+   Step         1101  completed
+   Elapsed time is    2.1999999999999793     
+   Printing state... 
+  
+   Step         1102  completed
+   Elapsed time is    2.2019999999999791     
+   Printing state... 
+  
+   Step         1103  completed
+   Elapsed time is    2.2039999999999789     
+   Printing state... 
+  
+   Step         1104  completed
+   Elapsed time is    2.2059999999999786     
+   Printing state... 
+  
+   Step         1105  completed
+   Elapsed time is    2.2079999999999784     
+   Printing state... 
+  
+   Step         1106  completed
+   Elapsed time is    2.2099999999999782     
+   Printing state... 
+  
+   Step         1107  completed
+   Elapsed time is    2.2119999999999780     
+   Printing state... 
+  
+   Step         1108  completed
+   Elapsed time is    2.2139999999999778     
+   Printing state... 
+  
+   Step         1109  completed
+   Elapsed time is    2.2159999999999775     
+   Printing state... 
+  
+   Step         1110  completed
+   Elapsed time is    2.2179999999999773     
+   Printing state... 
+  
+   Step         1111  completed
+   Elapsed time is    2.2199999999999771     
+   Printing state... 
+  
+   Step         1112  completed
+   Elapsed time is    2.2219999999999769     
+   Printing state... 
+  
+   Step         1113  completed
+   Elapsed time is    2.2239999999999767     
+   Printing state... 
+  
+   Step         1114  completed
+   Elapsed time is    2.2259999999999764     
+   Printing state... 
+  
+   Step         1115  completed
+   Elapsed time is    2.2279999999999762     
+   Printing state... 
+  
+   Step         1116  completed
+   Elapsed time is    2.2299999999999760     
+   Printing state... 
+  
+   Step         1117  completed
+   Elapsed time is    2.2319999999999758     
+   Printing state... 
+  
+   Step         1118  completed
+   Elapsed time is    2.2339999999999756     
+   Printing state... 
+  
+   Step         1119  completed
+   Elapsed time is    2.2359999999999753     
+   Printing state... 
+  
+   Step         1120  completed
+   Elapsed time is    2.2379999999999751     
+   Printing state... 
+  
+   Step         1121  completed
+   Elapsed time is    2.2399999999999749     
+   Printing state... 
+  
+   Step         1122  completed
+   Elapsed time is    2.2419999999999747     
+   Printing state... 
+  
+   Step         1123  completed
+   Elapsed time is    2.2439999999999745     
+   Printing state... 
+  
+   Step         1124  completed
+   Elapsed time is    2.2459999999999742     
+   Printing state... 
+  
+   Step         1125  completed
+   Elapsed time is    2.2479999999999740     
+   Printing state... 
+  
+   Step         1126  completed
+   Elapsed time is    2.2499999999999738     
+   Printing state... 
+  
+   Step         1127  completed
+   Elapsed time is    2.2519999999999736     
+   Printing state... 
+  
+   Step         1128  completed
+   Elapsed time is    2.2539999999999734     
+   Printing state... 
+  
+   Step         1129  completed
+   Elapsed time is    2.2559999999999731     
+   Printing state... 
+  
+   Step         1130  completed
+   Elapsed time is    2.2579999999999729     
+   Printing state... 
+  
+   Step         1131  completed
+   Elapsed time is    2.2599999999999727     
+   Printing state... 
+  
+   Step         1132  completed
+   Elapsed time is    2.2619999999999725     
+   Printing state... 
+  
+   Step         1133  completed
+   Elapsed time is    2.2639999999999723     
+   Printing state... 
+  
+   Step         1134  completed
+   Elapsed time is    2.2659999999999720     
+   Printing state... 
+  
+   Step         1135  completed
+   Elapsed time is    2.2679999999999718     
+   Printing state... 
+  
+   Step         1136  completed
+   Elapsed time is    2.2699999999999716     
+   Printing state... 
+  
+   Step         1137  completed
+   Elapsed time is    2.2719999999999714     
+   Printing state... 
+  
+   Step         1138  completed
+   Elapsed time is    2.2739999999999712     
+   Printing state... 
+  
+   Step         1139  completed
+   Elapsed time is    2.2759999999999709     
+   Printing state... 
+  
+   Step         1140  completed
+   Elapsed time is    2.2779999999999707     
+   Printing state... 
+  
+   Step         1141  completed
+   Elapsed time is    2.2799999999999705     
+   Printing state... 
+  
+   Step         1142  completed
+   Elapsed time is    2.2819999999999703     
+   Printing state... 
+  
+   Step         1143  completed
+   Elapsed time is    2.2839999999999701     
+   Printing state... 
+  
+   Step         1144  completed
+   Elapsed time is    2.2859999999999698     
+   Printing state... 
+  
+   Step         1145  completed
+   Elapsed time is    2.2879999999999696     
+   Printing state... 
+  
+   Step         1146  completed
+   Elapsed time is    2.2899999999999694     
+   Printing state... 
+  
+   Step         1147  completed
+   Elapsed time is    2.2919999999999692     
+   Printing state... 
+  
+   Step         1148  completed
+   Elapsed time is    2.2939999999999690     
+   Printing state... 
+  
+   Step         1149  completed
+   Elapsed time is    2.2959999999999687     
+   Printing state... 
+  
+   Step         1150  completed
+   Elapsed time is    2.2979999999999685     
+   Printing state... 
+  
+   Step         1151  completed
+   Elapsed time is    2.2999999999999683     
+   Printing state... 
+  
+   Step         1152  completed
+   Elapsed time is    2.3019999999999681     
+   Printing state... 
+  
+   Step         1153  completed
+   Elapsed time is    2.3039999999999679     
+   Printing state... 
+  
+   Step         1154  completed
+   Elapsed time is    2.3059999999999676     
+   Printing state... 
+  
+   Step         1155  completed
+   Elapsed time is    2.3079999999999674     
+   Printing state... 
+  
+   Step         1156  completed
+   Elapsed time is    2.3099999999999672     
+   Printing state... 
+  
+   Step         1157  completed
+   Elapsed time is    2.3119999999999670     
+   Printing state... 
+  
+   Step         1158  completed
+   Elapsed time is    2.3139999999999668     
+   Printing state... 
+  
+   Step         1159  completed
+   Elapsed time is    2.3159999999999665     
+   Printing state... 
+  
+   Step         1160  completed
+   Elapsed time is    2.3179999999999663     
+   Printing state... 
+  
+   Step         1161  completed
+   Elapsed time is    2.3199999999999661     
+   Printing state... 
+  
+   Step         1162  completed
+   Elapsed time is    2.3219999999999659     
+   Printing state... 
+  
+   Step         1163  completed
+   Elapsed time is    2.3239999999999656     
+   Printing state... 
+  
+   Step         1164  completed
+   Elapsed time is    2.3259999999999654     
+   Printing state... 
+  
+   Step         1165  completed
+   Elapsed time is    2.3279999999999652     
+   Printing state... 
+  
+   Step         1166  completed
+   Elapsed time is    2.3299999999999650     
+   Printing state... 
+  
+   Step         1167  completed
+   Elapsed time is    2.3319999999999648     
+   Printing state... 
+  
+   Step         1168  completed
+   Elapsed time is    2.3339999999999645     
+   Printing state... 
+  
+   Step         1169  completed
+   Elapsed time is    2.3359999999999643     
+   Printing state... 
+  
+   Step         1170  completed
+   Elapsed time is    2.3379999999999641     
+   Printing state... 
+  
+   Step         1171  completed
+   Elapsed time is    2.3399999999999639     
+   Printing state... 
+  
+   Step         1172  completed
+   Elapsed time is    2.3419999999999637     
+   Printing state... 
+  
+   Step         1173  completed
+   Elapsed time is    2.3439999999999634     
+   Printing state... 
+  
+   Step         1174  completed
+   Elapsed time is    2.3459999999999632     
+   Printing state... 
+  
+   Step         1175  completed
+   Elapsed time is    2.3479999999999630     
+   Printing state... 
+  
+   Step         1176  completed
+   Elapsed time is    2.3499999999999628     
+   Printing state... 
+  
+   Step         1177  completed
+   Elapsed time is    2.3519999999999626     
+   Printing state... 
+  
+   Step         1178  completed
+   Elapsed time is    2.3539999999999623     
+   Printing state... 
+  
+   Step         1179  completed
+   Elapsed time is    2.3559999999999621     
+   Printing state... 
+  
+   Step         1180  completed
+   Elapsed time is    2.3579999999999619     
+   Printing state... 
+  
+   Step         1181  completed
+   Elapsed time is    2.3599999999999617     
+   Printing state... 
+  
+   Step         1182  completed
+   Elapsed time is    2.3619999999999615     
+   Printing state... 
+  
+   Step         1183  completed
+   Elapsed time is    2.3639999999999612     
+   Printing state... 
+  
+   Step         1184  completed
+   Elapsed time is    2.3659999999999610     
+   Printing state... 
+  
+   Step         1185  completed
+   Elapsed time is    2.3679999999999608     
+   Printing state... 
+  
+   Step         1186  completed
+   Elapsed time is    2.3699999999999606     
+   Printing state... 
+  
+   Step         1187  completed
+   Elapsed time is    2.3719999999999604     
+   Printing state... 
+  
+   Step         1188  completed
+   Elapsed time is    2.3739999999999601     
+   Printing state... 
+  
+   Step         1189  completed
+   Elapsed time is    2.3759999999999599     
+   Printing state... 
+  
+   Step         1190  completed
+   Elapsed time is    2.3779999999999597     
+   Printing state... 
+  
+   Step         1191  completed
+   Elapsed time is    2.3799999999999595     
+   Printing state... 
+  
+   Step         1192  completed
+   Elapsed time is    2.3819999999999593     
+   Printing state... 
+  
+   Step         1193  completed
+   Elapsed time is    2.3839999999999590     
+   Printing state... 
+  
+   Step         1194  completed
+   Elapsed time is    2.3859999999999588     
+   Printing state... 
+  
+   Step         1195  completed
+   Elapsed time is    2.3879999999999586     
+   Printing state... 
+  
+   Step         1196  completed
+   Elapsed time is    2.3899999999999584     
+   Printing state... 
+  
+   Step         1197  completed
+   Elapsed time is    2.3919999999999582     
+   Printing state... 
+  
+   Step         1198  completed
+   Elapsed time is    2.3939999999999579     
+   Printing state... 
+  
+   Step         1199  completed
+   Elapsed time is    2.3959999999999577     
+   Printing state... 
+  
+   Step         1200  completed
+   Elapsed time is    2.3979999999999575     
+   Printing state... 

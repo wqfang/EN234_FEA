@@ -184,6 +184,7 @@ subroutine el_linelast_3dbasic_dynamic(lmn, element_identifier, n_nodes, node_pr
     use Mesh, only : node
     use Element_Utilities, only : N => shape_functions_3D
     use Element_Utilities, only:  dNdxi => shape_function_derivatives_3D
+    use Element_Utilities, only:  dNbardx => vol_avg_shape_function_derivatives_3D
     use Element_Utilities, only:  dNdx => shape_function_spatial_derivatives_3D
     use Element_Utilities, only : xi => integrationpoints_3D, w => integrationweights_3D
     use Element_Utilities, only : dxdxi => jacobian_3D
@@ -224,15 +225,17 @@ subroutine el_linelast_3dbasic_dynamic(lmn, element_identifier, n_nodes, node_pr
     logical, intent( inout )      :: element_deleted                                        ! Set to .true. to delete element
 
     ! Local Variables
-    integer      :: n_points,kint
+    integer      :: n_points,kint,I,J
 
     real (prec)  ::  strain(6), dstrain(6)             ! Strain vector contains [e11, e22, e33, 2e12, 2e13, 2e23]
-    real (prec)  ::  stress(6)                         ! Stress vector contains [s11, s22, s33, s12, s13, s23]
+    real (prec)  ::  stress(6), dstress(6)                         ! Stress vector contains [s11, s22, s33, s12, s13, s23]
     real (prec)  ::  D(6,6)                            ! stress = D*(strain+dstrain)  (NOTE FACTOR OF 2 in shear strain)
     real (prec)  ::  B(6,length_dof_array)             ! strain = B*(dof_total+dof_increment)
     real (prec)  ::  dxidx(3,3), determinant           ! Jacobian inverse and determinant
     real (prec)  ::  x(3,length_coord_array/3)         ! Re-shaped coordinate array x(i,a) is ith coord of ath node
     real (prec)  :: E, xnu, D44, D11, D12              ! Material properties
+    real (prec)  ::  el_vol                            ! element volume
+    real (prec)  ::  B_diff(20,3)                      !
     !
     !     Subroutine to compute element force vector for a linear elastodynamic problem
     !     El props are:
@@ -252,6 +255,25 @@ subroutine el_linelast_3dbasic_dynamic(lmn, element_identifier, n_nodes, node_pr
     element_residual = 0.d0
 
     !     --  Loop over integration points
+        if ( element_identifier == 1011 ) then
+   el_vol = 0
+   dNbardx = 0
+    do kint = 1, n_points
+        call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
+        dxdxi = matmul(x(1:3,1:n_nodes),dNdxi(1:n_nodes,1:3))
+        call invert_small(dxdxi,dxidx,determinant)
+        dNdx(1:n_nodes,1:3) = matmul(dNdxi(1:n_nodes,1:3),dxidx)
+            do I = 1,n_nodes
+                do J = 1,3
+                    dNbardx(I,J) = dNbardx(I,J) + dNdx(I,J)*w(kint)*determinant
+                enddo
+            enddo
+            el_vol = el_vol + w(kint)*determinant
+    enddo
+            dNbardx = dNbardx/el_vol
+        end if
+
+    !     --  Loop over integration points
     do kint = 1, n_points
         call calculate_shapefunctions(xi(1:3,kint),n_nodes,N,dNdxi)
         dxdxi = matmul(x(1:3,1:n_nodes),dNdxi(1:n_nodes,1:3))
@@ -267,9 +289,21 @@ subroutine el_linelast_3dbasic_dynamic(lmn, element_identifier, n_nodes, node_pr
         B(5,3:3*n_nodes:3)   = dNdx(1:n_nodes,1)
         B(6,2:3*n_nodes-1:3) = dNdx(1:n_nodes,3)
         B(6,3:3*n_nodes:3)   = dNdx(1:n_nodes,2)
+        if ( element_identifier == 1011 ) then
+
+            B_diff = (dNbardx - dNdx)/3
+            do I = 1,3
+            B(I,1:3*n_nodes-2:3)= B(I,1:3*n_nodes-2:3) + B_diff(1:n_nodes,1)
+            B(I,2:3*n_nodes-1:3)= B(I,2:3*n_nodes-1:3) + B_diff(1:n_nodes,2)
+            B(I,3:3*n_nodes :3)= B(I,3:3*n_nodes :3) + B_diff(1:n_nodes,3)
+            enddo
+
+        end if
 
         strain = matmul(B,dof_total)
         dstrain = matmul(B,dof_increment)
+
+!     write(*,*) dstrain
 
     if (n_properties == 2) then
 
@@ -287,6 +321,7 @@ subroutine el_linelast_3dbasic_dynamic(lmn, element_identifier, n_nodes, node_pr
     D(5,5) = d44
     D(6,6) = d44
 
+
     stress = matmul(D,strain+dstrain)
 
     else if (n_properties == 4) then
@@ -297,6 +332,8 @@ subroutine el_linelast_3dbasic_dynamic(lmn, element_identifier, n_nodes, node_pr
 
 
         element_residual(1:3*n_nodes) = element_residual(1:3*n_nodes) - matmul(transpose(B),stress)*w(kint)*determinant
+
+!     write(*,*) element_residual
 
     end do
   

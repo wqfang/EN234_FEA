@@ -4046,7 +4046,7 @@
          2.d0, 0.01d0, 5.d0  % Y, edot0, m
          1.25d0, 1.d0, 1.25d0  % q1, q2, q3
          0.06d0, 0.05d0, 0.05d0  % fn, sn, en
-         0.1d0, 0.15d0  % fc, ff
+         0.001d0, 0.0015d0  % fc, ff
         END PROPERTIES
 %     Define mass density (for explicity dynamics only)
        DENSITY, 100.d0
@@ -7113,7 +7113,7 @@
 %         The projected states are controlled by the user - see subroutine elstat in file usrelem.f90
 %         Also (for this example file) subroutine state_linelast_3dbasic in file el_linelast_3Dbasic.f90
 %         In this example the states are the stresses sxx,syy,szz,sxy,sxz,syz
-         PRINT STATE, Output_files\contourplots.dat
+         PRINT STATE, notch_fracture_dynamic/contourplots.dat
             DEGREES OF FREEDOM
             FIELD VARIABLES, S11,S22,S33,S12,S13,S23,Vf
             DISPLACED MESH

@@ -220,12 +220,14 @@ subroutine hypoelastic_tangent_2D_stress(strain,n_properties,element_properties,
     delta2(1:2,1:2) = 1.d0
 
     !Newton Raphson iteration
-      tol = 0.0001d0
+      tol = 0.00000000000001d0
       maxit = 50
       relax = 0.7d0
       err1 =  1.d0
       nit = 0
       strain_33 = 0.d0
+
+  !    write(*,*) strain
     if (all(abs(strain) == 0.d0)) then
     strain_33 = 0.d0
 
@@ -268,15 +270,10 @@ subroutine hypoelastic_tangent_2D_stress(strain,n_properties,element_properties,
     err1 = dstrain_33*dstrain_33
     err1 = dsqrt(err1)
 
-    write(IOW,*)' Newton Raphson for strain_33 completed successfully '
-    write(IOW,'(1x,D12.5,I5)') err1,nit
 
     end do
 
-
-
     D = (4.d0/9.d0/strain_e**2)*(Et-Es)*e_dyadic_e+Es/3.d0*delta1+(K-2.d0*Es/9.d0)*delta2
-
 
     stress(1:2) = 2.d0/3.d0 *stress_e * e(1:2) /strain_e +3.d0*K*strain_kk
     stress(3) = 2.d0/3.d0 *stress_e * e(3) /strain_e
