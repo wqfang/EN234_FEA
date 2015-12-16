@@ -2,12 +2,15 @@ subroutine user_print(n_steps)
   use Types
   use ParamIO
   use Globals, only : TIME, DTIME
-  use Mesh
+  use Mesh,only : extract_element_data
+  use Mesh,only : extract_node_data
+  use Mesh,only : zone,zone_list
+  use Mesh,only : n_zones,n_nodes,n_elements
   use Printparameters, only : n_user_print_files                  ! No. files specified by the user
   use Printparameters, only : n_user_print_parameters             ! No. user supplied print parameters
   use Printparameters, only : user_print_units                    ! Unit numbers
   use Printparameters, only : user_print_parameters               ! List of user supplied parameters
-  use User_Subroutine_Storage, only : length_state_variable_array ! Max no. state variables on any element
+  use User_Subroutine_Storage
   implicit none
   
   integer :: n_steps,lmn,lmn_start,lmn_end                                 ! Current step number
@@ -16,6 +19,84 @@ subroutine user_print(n_steps)
   real (prec) ::   vol_averaged_strain(6)                                    ! Volume averaged strain in an element
   real (prec), allocatable ::   vol_averaged_state_variables(:)              ! Volume averaged state variables in an element
   real (prec) ::  J_integral_value
+
+! Local variables
+
+    integer    :: node_identifier                              ! Flag identifying node type
+    integer    :: element_identifier                           ! Flag identifying element type (specified in .in file)
+    integer    :: n_properties                                 ! # properties for the element
+    integer    :: nnodes                                 ! # properties for the element
+    integer    :: n_state_variables                            ! # state variables for the element
+    integer    :: n_coords                                     ! No. coords for a node
+    integer    :: n_dof                                        ! No. DOFs for a node
+
+    integer      :: i,j                 ! Loop counter
+    character ( len = 130 ) :: tecplotstring
+    character (len=20) :: format_string
+
+    integer, allocatable    :: node_list(:)                                ! List of nodes on the element (connectivity)
+    real( prec ), allocatable   :: element_properties(:)                  ! Element or material properties, stored in order listed in input file
+    real( prec ), allocatable   :: initial_state_variables(:)             ! Element state variables at start of step.
+    real( prec ), allocatable   :: updated_state_variables(:)             ! State variables at end of time step
+
+    real( prec ) :: x(6)                                  ! Nodal coords x(i,a) is ith coord of ath node
+    real( prec ) :: dof_increment(6)                        ! DOF increment, using usual element storage convention
+    real( prec ) :: dof_total(6)                            ! accumulated DOF, using usual element storage convention
+    !
+    !  The variables specifying the sizes of the arrays listed below are determined while reading the input file
+    !  They specify the array dimensions required to store the relevant variables for _any_ element or node in the mesh
+    !  The actual data will vary depending on the element or node selected
+    !
+
+    allocate(node_list(length_node_array), stat=status)
+    allocate(element_properties(length_property_array), stat=status)
+    allocate(initial_state_variables(length_state_variable_array), stat=status)
+    allocate(updated_state_variables(length_state_variable_array), stat=status)
+
+   if (status/=0) then
+      write(IOW,*) ' Error in subroutine user_print'
+      write(IOW,*) ' Unable to allocate memory for state variables '
+      stop
+   endif
+
+
+
+        !   Write a header for separate zones
+            tecplotstring = 'VARIABLES = X,Y,Z,AX,AY,AZ,DU1,DU2,DU3,DAX,DAY,DAZ'
+            write(user_print_units(1),*) trim(tecplotstring)
+            write (user_print_units(1),'(A10,D10.4,A15,I5,A3,I5,A12)') ' ZONE, T="',TIME+DTIME, &
+                    '" F=FEPOINT, I=', n_nodes, ' J=', n_elements,' ET=LINESEG'
+            write (user_print_units(2),'(A10,D10.4)') 'T="',TIME+DTIME
+
+        ! Print the nodes
+
+        do i = 1, n_nodes
+        format_string ='(12(1X,E18.10))'
+
+        call extract_node_data(i,node_identifier,n_coords,x,n_dof,dof_increment,dof_total)
+
+        write (user_print_units(1), format_string) (x(j)+dof_total(j), j=1,6),(dof_increment(j),j=1,6)
+        enddo
+
+
+    do i = 1,n_zones
+        lmn_start = zone_list(i)%start_element
+        lmn_end = zone_list(i)%end_element
+
+        do lmn=lmn_start,lmn_end
+        call extract_element_data(lmn,element_identifier,nnodes,node_list,n_properties,element_properties, &
+                                  n_state_variables,initial_state_variables,updated_state_variables)
+        write (user_print_units(1), *) (node_list(j),j=1,2)
+        write (user_print_units(2), '(I5,6D15.5)') lmn,(updated_state_variables(j),j=1,6)
+        end do
+    enddo
+
+    deallocate(node_list)
+    deallocate(element_properties)
+    deallocate(initial_state_variables)
+    deallocate(updated_state_variables)
+
+
 
 
 !
@@ -31,39 +112,35 @@ subroutine user_print(n_steps)
 !    call compute_J_integral(J_integral_value)
 !    write(user_print_units(1),'(1x,I5,E15.7)') n_steps,J_integral_value
 
-   allocate(vol_averaged_state_variables(length_state_variable_array), stat=status)
+!   allocate(vol_averaged_state_variables(length_state_variable_array), stat=status)
+!
 
-   if (status/=0) then
-      write(IOW,*) ' Error in subroutine user_print'
-      write(IOW,*) ' Unable to allocate memory for state variables '
-      stop
-   endif
-
-   lmn_start = zone_list(1)%start_element
-   lmn_end = zone_list(1)%end_element
-
-   do lmn=lmn_start,lmn_end
-
-   call compute_element_volume_average_3D(lmn,vol_averaged_strain,vol_averaged_state_variables,length_state_variable_array, &
-                                                       n_state_vars_per_intpt)
+!
+!   lmn_start = zone_list(1)%start_element
+!   lmn_end = zone_list(1)%end_element
+!
+!   do lmn=lmn_start,lmn_end
+!
+!   call compute_element_volume_average_3D(lmn,vol_averaged_strain,vol_averaged_state_variables,length_state_variable_array, &
+!                                                       n_state_vars_per_intpt)
 !  call compute_element_volume_average_2D(lmn,vol_averaged_strain,vol_averaged_state_variables,length_state_variable_array, &
 !                                                       n_state_vars_per_intpt)
-    if (TIME<1.d-12) then
-      if (n_state_vars_per_intpt<6) then
-        write(user_print_units(1),'(A)') 'VARIABLES = TIME,e11,s11'
-      else
-         write(user_print_units(1),'(A)') 'VARIABLES = TIME,e11,e22,e33,e12,e13,e23,s11,s22,s33,s12,s13,s23'
-      endif
-    endif
-
-   if (n_state_vars_per_intpt<6) then
-      write(user_print_units(1),'(13(1x,D12.5))') TIME+DTIME,vol_averaged_strain(1),vol_averaged_state_variables(1)
-   else
-      vol_averaged_state_variables(1:3) = vol_averaged_state_variables(1:3) + vol_averaged_state_variables(7)
-      write(user_print_units(1),'(13(1x,D12.5))') TIME+DTIME,vol_averaged_strain(1:6),vol_averaged_state_variables(1:6)
-   endif
-
-    end do
+!    if (TIME<1.d-12) then
+!      if (n_state_vars_per_intpt<6) then
+!        write(user_print_units(1),'(A)') 'VARIABLES = TIME,e11,s11'
+!      else
+!         write(user_print_units(1),'(A)') 'VARIABLES = TIME,e11,e22,e33,e12,e13,e23,s11,s22,s33,s12,s13,s23'
+!      endif
+!    endif
+!
+!   if (n_state_vars_per_intpt<6) then
+!      write(user_print_units(1),'(13(1x,D12.5))') TIME+DTIME,vol_averaged_strain(1),vol_averaged_state_variables(1)
+!   else
+!      vol_averaged_state_variables(1:3) = vol_averaged_state_variables(1:3) + vol_averaged_state_variables(7)
+!      write(user_print_units(1),'(13(1x,D12.5))') TIME+DTIME,vol_averaged_strain(1:6),vol_averaged_state_variables(1:6)
+!   endif
+!
+!    end do
 
 
 end subroutine user_print

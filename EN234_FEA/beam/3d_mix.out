@@ -1,0 +1,66 @@
+
+
+ The input file has been read successfully 
+ Number of elements:                2
+ Number of nodes:                   3
+ Number of constraints:             0
+ Total no. degrees of freedom:     18
+
+
+ Direct Solver Profiler has completed profile computation 
+     Total number of equations         18
+     Maximum half bandwidth:           11
+     Mean half bandwidth:               7
+     RMS half bandwidth:                7
+     Size of stiffness matrix:        117
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.1118E+09
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.1118E+09
+      Maximum no. diagonal digits lost:   1
+
+
+    Step number     1 has completed successfully
+    Steps remaining:                           2
+    Elapsed time:                     1.0000    
+    Time remaining:                   9.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.1118E+09
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.1118E+09
+      Maximum no. diagonal digits lost:   1
+
+
+    Step number     2 has completed successfully
+    Steps remaining:                           1
+    Elapsed time:                     2.0000    
+    Time remaining:                   8.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.1118E+09
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.1118E+09
+      Maximum no. diagonal digits lost:   1
+
+
+    Step number     3 has completed successfully
+    Steps remaining:                           0
+    Elapsed time:                     3.0000    
+    Time remaining:                   7.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02

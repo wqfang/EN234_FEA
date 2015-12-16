@@ -1,0 +1,196 @@
+  *** Warning *** 
+  A zone to be printed using a STATE PRINT command contains nodes with
+  an inconsistent number of DOF 
+  This zone will not be printed 
+  *** Warning *** 
+  A zone to be printed using a STATE PRINT command contains nodes with
+  an inconsistent number of DOF 
+  This zone will not be printed 
+  *** Warning *** 
+  No printable zones were found 
+  STATE PRINT has been suppressed 
+
+
+ The input file has been read successfully 
+ Number of elements:                2
+ Number of nodes:                   3
+ Number of constraints:             0
+ Total no. degrees of freedom:     18
+
+
+ Direct Solver Profiler has completed profile computation 
+     Total number of equations         18
+     Maximum half bandwidth:           11
+     Mean half bandwidth:               7
+     RMS half bandwidth:                7
+     Size of stiffness matrix:        117
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number     1 has completed successfully
+    Steps remaining:                           9
+    Elapsed time:                     1.0000    
+    Time remaining:                   9.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number     2 has completed successfully
+    Steps remaining:                           8
+    Elapsed time:                     2.0000    
+    Time remaining:                   8.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number     3 has completed successfully
+    Steps remaining:                           7
+    Elapsed time:                     3.0000    
+    Time remaining:                   7.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number     4 has completed successfully
+    Steps remaining:                           6
+    Elapsed time:                     4.0000    
+    Time remaining:                   6.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number     5 has completed successfully
+    Steps remaining:                           5
+    Elapsed time:                     5.0000    
+    Time remaining:                   5.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number     6 has completed successfully
+    Steps remaining:                           4
+    Elapsed time:                     6.0000    
+    Time remaining:                   4.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number     7 has completed successfully
+    Steps remaining:                           3
+    Elapsed time:                     7.0000    
+    Time remaining:                   3.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number     8 has completed successfully
+    Steps remaining:                           2
+    Elapsed time:                     8.0000    
+    Time remaining:                   2.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number     9 has completed successfully
+    Steps remaining:                           1
+    Elapsed time:                     9.0000    
+    Time remaining:                   1.0000    
+    Time step has been adjusted to:   1.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02
+
+
+ Direct Solver has completed LU decomposition 
+    Conditioning information: 
+      Max diagonal in reduced matrix:    0.2005E+06
+      Min diagonal in reduced matrix:    0.1000E+01
+      Ratio:                             0.2005E+06
+      Maximum no. diagonal digits lost:   0
+
+
+    Step number    10 has completed successfully
+    Steps remaining:                           0
+    Elapsed time:                     10.000    
+    Time remaining:                   0.0000    
+    Time step has been adjusted to:   0.0000    
+    Max time step:                    1.0000    
+    Min time step:                   0.10000E-02

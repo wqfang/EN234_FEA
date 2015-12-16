@@ -174,11 +174,11 @@ subroutine fracture_3d_dynamic(lmn, element_identifier, n_nodes, node_property_l
 
     end do
 
-!    if (Ndelete ==  n_points) then
-!    element_deleted = .true.
-!    else
-!    element_deleted = .false.
-!    endif
+    if (Ndelete ==  n_points) then
+    element_deleted = .true.
+    else
+    element_deleted = .false.
+    endif
     return
 end subroutine fracture_3d_dynamic
 

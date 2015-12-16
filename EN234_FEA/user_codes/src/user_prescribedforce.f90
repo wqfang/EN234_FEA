@@ -14,6 +14,5 @@
      ! Subroutine must return a value for force_value
      
     force_value = 0.d0
-     
-     
+
      end subroutine user_prescribedforce

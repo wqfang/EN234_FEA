@@ -13,6 +13,26 @@ program en234fea
 !  outfil = './Linear_elastic_3d/linear_elastic_3d.out'
 !  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
+!  infil = './beam/3d_mix.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './beam/3d_mix.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+  infil = './beam/complex.in'
+  open (unit = IOR, file = infil, status = 'old', ERR=500)
+  outfil = './beam/complex.out'
+  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+!  infil = './beam/beam_bend_mix.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './beam/beam_bend_mix.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
+!  infil = './beam/beam_bend_point.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './beam/beam_bend_point.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+
 !  infil = './input_files/Holeplate_3d.in'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)
 !  outfil = './Holeplate_3d/Holeplate_3d.out'
@@ -163,10 +183,10 @@ program en234fea
 !  outfil = './notch_fracture_dynamic/notch_fracture_dynamic.out'
 !  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
-  infil = './input_files/Gurson_3d_dynamic.in'
-  open (unit = IOR, file = infil, status = 'old', ERR=500)
-  outfil = './Gurson_3d_dynamic/Gurson_3d_dynamic.out'
-  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
+!  infil = './input_files/Gurson_3d_dynamic.in'
+!  open (unit = IOR, file = infil, status = 'old', ERR=500)
+!  outfil = './Gurson_3d_dynamic/Gurson_3d_dynamic.out'
+!  open (UNIT = IOW, FILE = outfil, STATUS = 'unknown', ERR=500)
 
 !  infil = './input_files/linear_elastic_3d_dynamic.in'
 !  open (unit = IOR, file = infil, status = 'old', ERR=500)
